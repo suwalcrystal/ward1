@@ -1,4 +1,4 @@
-$ File G:\2082_2083\drg\krishna gosain bkt municipal\etabs file.$et saved 2/25/2026 3:00:46 PM
+$ File G:\2082_2083\drg\krishna gosain bkt municipal\etabs file.$et saved 2/26/2026 2:57:53 PM
  
 $ PROGRAM INFORMATION
   PROGRAM  "ETABS"  VERSION "22.7.0"  
@@ -31,6 +31,10 @@ $ GRIDS
 
 $ DIAPHRAGM NAMES
   DIAPHRAGM "D1"    TYPE RIGID
+  DIAPHRAGM "D2"    TYPE RIGID
+  DIAPHRAGM "D3"    TYPE RIGID
+  DIAPHRAGM "D4"    TYPE RIGID
+  DIAPHRAGM "D5"    TYPE RIGID
 
 $ MATERIAL PROPERTIES
   MATERIAL  "A992Fy50"    TYPE "Steel"    GRADE "Grade 50"    WEIGHTPERVOLUME 7.6972865E-05
@@ -138,6 +142,20 @@ $ PIER/SPANDREL NAMES
 $ LOAD PATTERNS
   LOADPATTERN "Dead"  TYPE  "Dead"  SELFWEIGHT  1
   LOADPATTERN "Live"  TYPE  "Live"  SELFWEIGHT  0
+  LOADPATTERN "Floor finish"  TYPE  "Super Dead"  SELFWEIGHT  0
+  LOADPATTERN "partition wall"  TYPE  "Super Dead"  SELFWEIGHT  0
+  LOADPATTERN "main wall"  TYPE  "Super Dead"  SELFWEIGHT  0
+  LOADPATTERN "staircase steps"  TYPE  "Super Dead"  SELFWEIGHT  0
+  LOADPATTERN "water tank"  TYPE  "Super Dead"  SELFWEIGHT  0
+  LOADPATTERN "LL storage"  TYPE  "Live"  SELFWEIGHT  0
+  LOADPATTERN "EQx ULS"  TYPE  "Seismic"  SELFWEIGHT  0
+  LOADPATTERN "EQy ULS"  TYPE  "Seismic"  SELFWEIGHT  0
+  LOADPATTERN "EQx SLS"  TYPE  "Seismic"  SELFWEIGHT  0
+  LOADPATTERN "EQy SLS"  TYPE  "Seismic"  SELFWEIGHT  0
+  SEISMIC "EQx ULS"  "User Coefficient"    DIR "X X+ECC X-ECC"  ECC 0.1  TOPSTORY "Story5"    BOTTOMSTORY "Base"    SHEARCOEFF 0.1313  HEIGHTEXPONENT 1
+  SEISMIC "EQy ULS"  "User Coefficient"    DIR "Y Y+ECC Y-ECC"  ECC 0.1  TOPSTORY "Story5"    BOTTOMSTORY "Base"    SHEARCOEFF 0.1313  HEIGHTEXPONENT 1
+  SEISMIC "EQx SLS"  "User Coefficient"    DIR "X X+ECC X-ECC"  ECC 0.1  TOPSTORY "Story5"    BOTTOMSTORY "Base"    SHEARCOEFF 0.126  HEIGHTEXPONENT 1
+  SEISMIC "EQy SLS"  "User Coefficient"    DIR "Y Y+ECC Y-ECC"  ECC 0.1  TOPSTORY "Story5"    BOTTOMSTORY "Base"    SHEARCOEFF 0.126  HEIGHTEXPONENT 1
 
 $ ANALYSIS OPTIONS
   ACTIVEDOF "UX UY UZ RX RY RZ"  
@@ -146,7 +164,15 @@ $ ANALYSIS OPTIONS
   AUTOMESHOPTIONS  MESHTYPE  "GENERAL"  FLOORMESHMAXSIZE  1250 WALLMESHMAXSIZE  1250 
 
 $ MASS SOURCE
-  MASSSOURCE  "MsSrc1"    INCLUDEELEMENTS "Yes"    INCLUDEADDEDMASS "Yes"    INCLUDELOADS "No"    INCLUDEMOVE "No"    INCLUDELATERALMASS "Yes"    INCLUDEVERTICALMASS "No"    LUMPATSTORIES "Yes"    ISDEFAULT "Yes"  
+  MASSSOURCE  "MsSrc1"    INCLUDEELEMENTS "No"    INCLUDEADDEDMASS "Yes"    INCLUDELOADS "Yes"    INCLUDEMOVE "No"    INCLUDELATERALMASS "Yes"    INCLUDEVERTICALMASS "No"    LUMPATSTORIES "Yes"    ISDEFAULT "Yes"  
+  MASSSOURCELOAD  "MsSrc1"  "Dead"  1 
+  MASSSOURCELOAD  "MsSrc1"  "Live"  0.3 
+  MASSSOURCELOAD  "MsSrc1"  "LL storage"  0.6 
+  MASSSOURCELOAD  "MsSrc1"  "Floor finish"  1 
+  MASSSOURCELOAD  "MsSrc1"  "partition wall"  1 
+  MASSSOURCELOAD  "MsSrc1"  "main wall"  1 
+  MASSSOURCELOAD  "MsSrc1"  "staircase steps"  1 
+  MASSSOURCELOAD  "MsSrc1"  "water tank"  1 
 
 $ FUNCTIONS
   FUNCTION "RampTH"  FUNCTYPE "HISTORY"  HISTTYPE "USER"  
@@ -165,6 +191,26 @@ $ LOAD CASES
   LOADCASE "Dead"  LOADPAT  "Dead"  SF  1 
   LOADCASE "Live"  TYPE  "Linear Static"  INITCOND  "PRESET"  
   LOADCASE "Live"  LOADPAT  "Live"  SF  1 
+  LOADCASE "Floor finish"  TYPE  "Linear Static"  INITCOND  "PRESET"  
+  LOADCASE "Floor finish"  LOADPAT  "Floor finish"  SF  1 
+  LOADCASE "partition wall"  TYPE  "Linear Static"  INITCOND  "PRESET"  
+  LOADCASE "partition wall"  LOADPAT  "partition wall"  SF  1 
+  LOADCASE "main wall"  TYPE  "Linear Static"  INITCOND  "PRESET"  
+  LOADCASE "main wall"  LOADPAT  "main wall"  SF  1 
+  LOADCASE "staircase steps"  TYPE  "Linear Static"  INITCOND  "PRESET"  
+  LOADCASE "staircase steps"  LOADPAT  "staircase steps"  SF  1 
+  LOADCASE "water tank"  TYPE  "Linear Static"  INITCOND  "PRESET"  
+  LOADCASE "water tank"  LOADPAT  "water tank"  SF  1 
+  LOADCASE "LL storage"  TYPE  "Linear Static"  INITCOND  "PRESET"  
+  LOADCASE "LL storage"  LOADPAT  "LL storage"  SF  1 
+  LOADCASE "EQx ULS"  TYPE  "Linear Static"  INITCOND  "PRESET"  
+  LOADCASE "EQx ULS"  LOADPAT  "EQx ULS"  SF  1 
+  LOADCASE "EQy ULS"  TYPE  "Linear Static"  INITCOND  "PRESET"  
+  LOADCASE "EQy ULS"  LOADPAT  "EQy ULS"  SF  1 
+  LOADCASE "EQx SLS"  TYPE  "Linear Static"  INITCOND  "PRESET"  
+  LOADCASE "EQx SLS"  LOADPAT  "EQx SLS"  SF  1 
+  LOADCASE "EQy SLS"  TYPE  "Linear Static"  INITCOND  "PRESET"  
+  LOADCASE "EQy SLS"  LOADPAT  "EQy SLS"  SF  1 
 
 $ GENERAL DESIGN PREFERENCES
   GENERALPREFERENCE  STRUCTURALSYSTEM "FRAME ONLY"  STORYSTIFFNESSTYPE "STORY SHEAR/DISP"  OVERTURNTYPE "FROM STORY SHEAR"  GAMMA_0 1 GAMMA_L 1 
@@ -240,6 +286,9 @@ ETABS Ultimate C  22.7.0 File saved as G:\2082_2083\drg\krishna gosain bkt munic
 ETABS Ultimate C  22.7.0 File saved as G:\2082_2083\drg\krishna gosain bkt municipal\etabs file.EDB at 2/25/2026 12:55:23 PM
 ETABS Ultimate C  22.7.0 File saved as G:\2082_2083\drg\krishna gosain bkt municipal\etabs file.EDB at 2/25/2026 12:55:25 PM
 ETABS Ultimate C  22.7.0 File saved as G:\2082_2083\drg\krishna gosain bkt municipal\etabs file.EDB at 2/25/2026 3:00:45 PM
+ETABS Ultimate C  22.7.0 File saved as G:\2082_2083\drg\krishna gosain bkt municipal\etabs file.EDB at 2/26/2026 1:31:55 PM
+ETABS Ultimate C  22.7.0 File saved as G:\2082_2083\drg\krishna gosain bkt municipal\etabs file.EDB at 2/26/2026 2:28:51 PM
+ETABS Ultimate C  22.7.0 File saved as G:\2082_2083\drg\krishna gosain bkt municipal\etabs file.EDB at 2/26/2026 2:57:52 PM
   ENDCOMMENTS  
 
   END
