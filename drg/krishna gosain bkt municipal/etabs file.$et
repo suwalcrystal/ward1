@@ -1,4 +1,4 @@
-$ File G:\2082_2083\drg\krishna gosain bkt municipal\etabs file.$et saved 2/26/2026 2:57:53 PM
+$ File G:\2082_2083\drg\krishna gosain bkt municipal\etabs file.$et saved 2/27/2026 12:02:50 PM
  
 $ PROGRAM INFORMATION
   PROGRAM  "ETABS"  VERSION "22.7.0"  
@@ -212,6 +212,73 @@ $ LOAD CASES
   LOADCASE "EQy SLS"  TYPE  "Linear Static"  INITCOND  "PRESET"  
   LOADCASE "EQy SLS"  LOADPAT  "EQy SLS"  SF  1 
 
+$ LOAD COMBINATIONS
+  COMBO "1.2DL+1.5LL"  TYPE "Linear Add"  
+  COMBO "1.2DL+1.5LL"  LOADCASE "Dead"  SF 1.2 
+  COMBO "1.2DL+1.5LL"  LOADCASE "Live"  SF 1.5 
+  COMBO "1.2DL+1.5LL"  LOADCASE "Floor finish"  SF 1.2 
+  COMBO "1.2DL+1.5LL"  LOADCASE "partition wall"  SF 1.2 
+  COMBO "1.2DL+1.5LL"  LOADCASE "main wall"  SF 1.2 
+  COMBO "1.2DL+1.5LL"  LOADCASE "staircase steps"  SF 1.2 
+  COMBO "1.2DL+1.5LL"  LOADCASE "water tank"  SF 1.2 
+  COMBO "1.2DL+1.5LL"  LOADCASE "LL storage"  SF 1.5 
+  COMBO "DL+0.3LL+0.6LLstorage+EQx"  TYPE "Linear Add"  
+  COMBO "DL+0.3LL+0.6LLstorage+EQx"  LOADCASE "Dead"  SF 1 
+  COMBO "DL+0.3LL+0.6LLstorage+EQx"  LOADCASE "Live"  SF 0.3 
+  COMBO "DL+0.3LL+0.6LLstorage+EQx"  LOADCASE "Floor finish"  SF 1 
+  COMBO "DL+0.3LL+0.6LLstorage+EQx"  LOADCASE "partition wall"  SF 1 
+  COMBO "DL+0.3LL+0.6LLstorage+EQx"  LOADCASE "main wall"  SF 1 
+  COMBO "DL+0.3LL+0.6LLstorage+EQx"  LOADCASE "staircase steps"  SF 1 
+  COMBO "DL+0.3LL+0.6LLstorage+EQx"  LOADCASE "water tank"  SF 1 
+  COMBO "DL+0.3LL+0.6LLstorage+EQx"  LOADCASE "LL storage"  SF 0.6 
+  COMBO "DL+0.3LL+0.6LLstorage+EQx"  LOADCASE "EQx ULS"  SF 1 
+  COMBO "DL+0.3LL+0.6LLstorage-EQx"  TYPE "Linear Add"  
+  COMBO "DL+0.3LL+0.6LLstorage-EQx"  LOADCASE "Dead"  SF 1 
+  COMBO "DL+0.3LL+0.6LLstorage-EQx"  LOADCASE "Live"  SF 0.3 
+  COMBO "DL+0.3LL+0.6LLstorage-EQx"  LOADCASE "Floor finish"  SF 1 
+  COMBO "DL+0.3LL+0.6LLstorage-EQx"  LOADCASE "partition wall"  SF 1 
+  COMBO "DL+0.3LL+0.6LLstorage-EQx"  LOADCASE "main wall"  SF 1 
+  COMBO "DL+0.3LL+0.6LLstorage-EQx"  LOADCASE "staircase steps"  SF 1 
+  COMBO "DL+0.3LL+0.6LLstorage-EQx"  LOADCASE "water tank"  SF 1 
+  COMBO "DL+0.3LL+0.6LLstorage-EQx"  LOADCASE "LL storage"  SF 0.6 
+  COMBO "DL+0.3LL+0.6LLstorage-EQx"  LOADCASE "EQx ULS"  SF -1 
+  COMBO "DL+0.3LL+0.6LLstorage+EQy"  TYPE "Linear Add"  
+  COMBO "DL+0.3LL+0.6LLstorage+EQy"  LOADCASE "Dead"  SF 1 
+  COMBO "DL+0.3LL+0.6LLstorage+EQy"  LOADCASE "Live"  SF 0.3 
+  COMBO "DL+0.3LL+0.6LLstorage+EQy"  LOADCASE "Floor finish"  SF 1 
+  COMBO "DL+0.3LL+0.6LLstorage+EQy"  LOADCASE "partition wall"  SF 1 
+  COMBO "DL+0.3LL+0.6LLstorage+EQy"  LOADCASE "main wall"  SF 1 
+  COMBO "DL+0.3LL+0.6LLstorage+EQy"  LOADCASE "staircase steps"  SF 1 
+  COMBO "DL+0.3LL+0.6LLstorage+EQy"  LOADCASE "water tank"  SF 1 
+  COMBO "DL+0.3LL+0.6LLstorage+EQy"  LOADCASE "LL storage"  SF 0.6 
+  COMBO "DL+0.3LL+0.6LLstorage+EQy"  LOADCASE "EQy ULS"  SF 1 
+  COMBO "DL+0.3LL+0.6LLstorage-EQy"  TYPE "Linear Add"  
+  COMBO "DL+0.3LL+0.6LLstorage-EQy"  LOADCASE "Dead"  SF 1 
+  COMBO "DL+0.3LL+0.6LLstorage-EQy"  LOADCASE "Live"  SF 0.3 
+  COMBO "DL+0.3LL+0.6LLstorage-EQy"  LOADCASE "Floor finish"  SF 1 
+  COMBO "DL+0.3LL+0.6LLstorage-EQy"  LOADCASE "partition wall"  SF 1 
+  COMBO "DL+0.3LL+0.6LLstorage-EQy"  LOADCASE "main wall"  SF 1 
+  COMBO "DL+0.3LL+0.6LLstorage-EQy"  LOADCASE "staircase steps"  SF 1 
+  COMBO "DL+0.3LL+0.6LLstorage-EQy"  LOADCASE "water tank"  SF 1 
+  COMBO "DL+0.3LL+0.6LLstorage-EQy"  LOADCASE "LL storage"  SF 0.6 
+  COMBO "DL+0.3LL+0.6LLstorage-EQy"  LOADCASE "EQy ULS"  SF -1 
+  COMBO "Envelope"  TYPE "Envelope"  
+  COMBO "Envelope"  LOADCOMBO "1.2DL+1.5LL"  SF 1 
+  COMBO "Envelope"  LOADCOMBO "DL+0.3LL+0.6LLstorage+EQx"  SF 1 
+  COMBO "Envelope"  LOADCOMBO "DL+0.3LL+0.6LLstorage-EQx"  SF 1 
+  COMBO "Envelope"  LOADCOMBO "DL+0.3LL+0.6LLstorage+EQy"  SF 1 
+  COMBO "Envelope"  LOADCOMBO "DL+0.3LL+0.6LLstorage-EQy"  SF 1 
+  COMBO "Envelope"  LOADCOMBO "DL+LL"  SF 1 
+  COMBO "DL+LL"  TYPE "Linear Add"  
+  COMBO "DL+LL"  LOADCASE "Dead"  SF 1 
+  COMBO "DL+LL"  LOADCASE "Live"  SF 1 
+  COMBO "DL+LL"  LOADCASE "Floor finish"  SF 1 
+  COMBO "DL+LL"  LOADCASE "partition wall"  SF 1 
+  COMBO "DL+LL"  LOADCASE "main wall"  SF 1 
+  COMBO "DL+LL"  LOADCASE "staircase steps"  SF 1 
+  COMBO "DL+LL"  LOADCASE "water tank"  SF 1 
+  COMBO "DL+LL"  LOADCASE "LL storage"  SF 1 
+
 $ GENERAL DESIGN PREFERENCES
   GENERALPREFERENCE  STRUCTURALSYSTEM "FRAME ONLY"  STORYSTIFFNESSTYPE "STORY SHEAR/DISP"  OVERTURNTYPE "FROM STORY SHEAR"  GAMMA_0 1 GAMMA_L 1 
   GENERALPREFERENCE  OVERSTRENGTHFACTOR 1.1 SEISMICPERFORMANCECLASS "NORMAL"  AUTOBEAMSTIFFEN "NO"  TALLBUILDING "YES"  TALLBUILDINGCLASS "A"  
@@ -289,6 +356,7 @@ ETABS Ultimate C  22.7.0 File saved as G:\2082_2083\drg\krishna gosain bkt munic
 ETABS Ultimate C  22.7.0 File saved as G:\2082_2083\drg\krishna gosain bkt municipal\etabs file.EDB at 2/26/2026 1:31:55 PM
 ETABS Ultimate C  22.7.0 File saved as G:\2082_2083\drg\krishna gosain bkt municipal\etabs file.EDB at 2/26/2026 2:28:51 PM
 ETABS Ultimate C  22.7.0 File saved as G:\2082_2083\drg\krishna gosain bkt municipal\etabs file.EDB at 2/26/2026 2:57:52 PM
+ETABS Ultimate C  22.7.0 File saved as G:\2082_2083\drg\krishna gosain bkt municipal\etabs file.EDB at 2/27/2026 12:02:49 PM
   ENDCOMMENTS  
 
   END
