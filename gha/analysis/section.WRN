@@ -1,0 +1,17 @@
+Warning: Line load L5 from (1981.2 4724.4) to (1981.2 6019.8) At Story2 is not transferred.
+Warning: Line load transfer, Check Story2, L5. Total loss = 2.8602. For load pattern partition wall.
+Warning: Line load L4 from (101.6 4724.4) to (1981.2 4724.4) At Story2 is not transferred.
+Warning: Line load transfer, Check Story2, L4. Total loss = 4.1502. For load pattern partition wall.
+Warning: Line load L5 from (1981.2 4724.4) to (1981.2 6019.8) At Story5 is not transferred.
+Warning: Line load transfer, Check Story5, L5. Total loss = 2.8602. For load pattern partition wall.
+Warning: Line load L4 from (101.6 4724.4) to (1981.2 4724.4) At Story5 is not transferred.
+Warning: Line load transfer, Check Story5, L4. Total loss = 4.1502. For load pattern partition wall.
+Warning: Line load L5 from (1981.2 4724.4) to (1981.2 6019.8) At Story4 is not transferred.
+Warning: Line load transfer, Check Story4, L5. Total loss = 2.8602. For load pattern partition wall.
+Warning: Line load L4 from (101.6 4724.4) to (1981.2 4724.4) At Story4 is not transferred.
+Warning: Line load transfer, Check Story4, L4. Total loss = 4.1502. For load pattern partition wall.
+Warning: Line load L5 from (1981.2 4724.4) to (1981.2 6019.8) At Story3 is not transferred.
+Warning: Line load transfer, Check Story3, L5. Total loss = 2.8602. For load pattern partition wall.
+Warning: Line load L4 from (101.6 4724.4) to (1981.2 4724.4) At Story3 is not transferred.
+Warning: Line load transfer, Check Story3, L4. Total loss = 4.1502. For load pattern partition wall.
+
