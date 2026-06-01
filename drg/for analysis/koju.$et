@@ -1,4 +1,4 @@
-$ File H:\082_083\ward1\drg\for analysis\koju.$et saved 30/05/2026 16:14:29
+$ File H:\082_083\ward1\drg\for analysis\koju.$et saved 31/05/2026 16:28:43
  
 $ PROGRAM INFORMATION
   PROGRAM  "ETABS"  VERSION "22.7.0"  
@@ -1138,6 +1138,15 @@ $ LOAD COMBINATIONS
   COMBO "Envelope"  LOADCOMBO "0.9DL-EQy"  SF 1 
   COMBO "Envelope"  LOADCOMBO "0.9DL-EQy"  SF 1 
   COMBO "Envelope"  LOADCOMBO "0.9DL+EQy"  SF 1 
+  COMBO "DL+LL"  TYPE "Linear Add"  
+  COMBO "DL+LL"  LOADCASE "Dead"  SF 1 
+  COMBO "DL+LL"  LOADCASE "FF"  SF 1 
+  COMBO "DL+LL"  LOADCASE "9"" wall"  SF 1 
+  COMBO "DL+LL"  LOADCASE "partition wall"  SF 1 
+  COMBO "DL+LL"  LOADCASE "staircase steps"  SF 1 
+  COMBO "DL+LL"  LOADCASE "water tank"  SF 1 
+  COMBO "DL+LL"  LOADCASE "Live"  SF 1 
+  COMBO "DL+LL"  LOADCASE "stair live"  SF 1 
 
 $ GENERAL DESIGN PREFERENCES
   GENERALPREFERENCE  STRUCTURALSYSTEM "FRAME ONLY"  STORYSTIFFNESSTYPE "STORY SHEAR/DISP"  OVERTURNTYPE "FROM STORY SHEAR"  GAMMA_0 1 GAMMA_L 1 
@@ -1327,6 +1336,19 @@ ETABS Ultimate C  22.7.0 File saved as H:\082_083\ward1\drg\for analysis\koju.ED
 ETABS Ultimate C  22.7.0 File saved as H:\082_083\ward1\drg\for analysis\koju.EDB at 29/05/2026 20:29:19
 ETABS Ultimate C  22.7.0 File saved as H:\082_083\ward1\drg\for analysis\koju.EDB at 30/05/2026 07:22:03
 ETABS Ultimate C  22.7.0 File saved as H:\082_083\ward1\drg\for analysis\koju.EDB at 30/05/2026 16:14:29
+ETABS Ultimate C  22.7.0 File saved as H:\082_083\ward1\drg\for analysis\koju.EDB at 31/05/2026 13:54:13
+ETABS Ultimate C  22.7.0 File saved as H:\082_083\ward1\drg\for analysis\koju.EDB at 31/05/2026 13:55:02
+ETABS Ultimate C  22.7.0 File saved as H:\082_083\ward1\drg\for analysis\koju.EDB at 31/05/2026 13:55:05
+ETABS Ultimate C  22.7.0 File saved as H:\082_083\ward1\drg\for analysis\koju.EDB at 31/05/2026 13:55:06
+ETABS Ultimate C  22.7.0 File saved as H:\082_083\ward1\drg\for analysis\koju.EDB at 31/05/2026 13:55:15
+ETABS Ultimate C  22.7.0 File saved as H:\082_083\ward1\drg\for analysis\koju.EDB at 31/05/2026 13:55:20
+ETABS Ultimate C  22.7.0 File saved as H:\082_083\ward1\drg\for analysis\koju.EDB at 31/05/2026 14:21:19
+ETABS Ultimate C  22.7.0 File saved as H:\082_083\ward1\drg\for analysis\koju.EDB at 31/05/2026 14:21:26
+ETABS Ultimate C  22.7.0 File saved as H:\082_083\ward1\drg\for analysis\koju.EDB at 31/05/2026 14:21:29
+ETABS Ultimate C  22.7.0 File saved as H:\082_083\ward1\drg\for analysis\koju.EDB at 31/05/2026 14:21:30
+ETABS Ultimate C  22.7.0 File saved as H:\082_083\ward1\drg\for analysis\koju.EDB at 31/05/2026 14:21:33
+ETABS Ultimate C  22.7.0 File saved as H:\082_083\ward1\drg\for analysis\koju.EDB at 31/05/2026 14:21:37
+ETABS Ultimate C  22.7.0 File saved as H:\082_083\ward1\drg\for analysis\koju.EDB at 31/05/2026 16:28:42
   ENDCOMMENTS  
 
   END
