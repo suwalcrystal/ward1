@@ -1,0 +1,53 @@
+
+
+ ETABS Ultimate C 64-bit 22.7.0 Build 4095 (Analysis Build 9993/64)             
+ File: G:\2082_2083\drg\sansodhan of OK\analysis\kumar yonjan.OUT               
+                                                                     
+                                                                       
+
+ D I S P L A C E M E N T   D E G R E E S   O F   F R E E D O M
+
+         (A) = Active DOF, equilibrium equation
+         (-) = Restrained DOF, reaction computed
+         (+) = Constrained DOF
+         (>) = External substructure DOF
+         ( ) = Null DOF
+
+  JOINTS              UX  UY  UZ  RX  RY  RZ
+       1               A   A   A   A   A   A
+       2               -   -   -   -   -   -
+       3               A   A   A   A   A   A
+       4               -   -   -   -   -   -
+       5               A   A   A   A   A   A
+       6               -   -   -   -   -   -
+       7               A   A   A   A   A   A
+       8               -   -   -   -   -   -
+       9               A   A   A   A   A   A
+      10               -   -   -   -   -   -
+      11               A   A   A   A   A   A
+      12               -   -   -   -   -   -
+      13               A   A   A   A   A   A
+      14               -   -   -   -   -   -
+      15               A   A   A   A   A   A
+      16               -   -   -   -   -   -
+      17               A   A   A   A   A   A
+      18               -   -   -   -   -   -
+      19               A   A   A   A   A   A
+      20               -   -   -   -   -   -
+      21               A   A   A   A   A   A
+      22               -   -   -   -   -   -
+      23               A   A   A   A   A   A
+      24               -   -   -   -   -   -
+      25               A   A   A   A   A   A
+      26               -   -   -   -   -   -
+      27               A   A   A   A   A   A
+      28               -   -   -   -   -   -
+      29               A   A   A   A   A   A
+      30               -   -   -   -   -   -
+      31               A   A   A   A   A   A
+      32               -   -   -   -   -   -
+      33 TO     122    A   A   A   A   A   A
+     123                                    
+     124 TO     132    A   A   A   A   A   A
+     133                                    
+     134 TO    ~774    A   A   A   A   A   A
