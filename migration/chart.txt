@@ -1,0 +1,48 @@
+ethnic	
+
+family size 
+	
+main occupation
+	
+family economy status
+	
+literate
+	
+illeter
+	
+age
+	
+
+
+Pla:
+
+50 jana random data, including all varieties in all columns
+
+
+plan within plan,
+group by t get all distint values
+for now, just use like 4-5 not necessary all varieties needed
+
+
+as per data,how mnany households in which year
+
+
+
+76 5
+75 5
+74 9
+81 9
+80 13
+78 3
+
+
+new house max
+conflict victim
+business some
+job
+others rare
+new opportunity --some
+education
+
+
+
