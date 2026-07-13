@@ -1,4 +1,4 @@
-$ File G:\2082_2083\drg\sansodhan of OK\analysis\kumar yonjan.$et saved 6/25/2026 4:34:21 PM
+$ File G:\2082_2083\drg\sansodhan of OK\analysis\kumar yonjan.$et saved 7/13/2026 3:52:50 PM
  
 $ PROGRAM INFORMATION
   PROGRAM  "ETABS"  VERSION "22.7.0"  
@@ -641,6 +641,7 @@ $ AREA ASSIGNS
   AREAASSIGN  "F20"  "Story2"  SECTION "Slab1"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
   AREAASSIGN  "F21"  "Story2"  SECTION "Slab1"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
   AREAASSIGN  "F24"  "Story2"  SECTION "Slab1"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F19"  "Story3"  SECTION "Slab1"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
 
 $ LOAD PATTERNS
   LOADPATTERN "Dead"  TYPE  "Dead"  SELFWEIGHT  1
@@ -909,6 +910,7 @@ ETABS Ultimate C  22.7.0 File saved as G:\2082_2083\drg\sansodhan of OK\analysis
 ETABS Ultimate C  22.7.0 File saved as G:\2082_2083\drg\sansodhan of OK\analysis\kumar yonjan.EDB at 6/25/2026 1:14:24 PM
 ETABS Ultimate C  22.7.0 File saved as G:\2082_2083\drg\sansodhan of OK\analysis\kumar yonjan.EDB at 6/25/2026 1:14:29 PM
 ETABS Ultimate C  22.7.0 File saved as G:\2082_2083\drg\sansodhan of OK\analysis\kumar yonjan.EDB at 6/25/2026 4:34:21 PM
+ETABS Ultimate C  22.7.0 File saved as G:\2082_2083\drg\sansodhan of OK\analysis\kumar yonjan.EDB at 7/13/2026 3:52:50 PM
   ENDCOMMENTS  
 
   END
