@@ -1,4 +1,4 @@
-$ File G:\2082_2083\drg\sansodhan of OK\analysis\working file kumar yonjan.$et saved 7/16/2026 4:41:33 PM
+$ File G:\2082_2083\drg\sansodhan of OK\analysis\working file kumar yonjan.$et saved 7/17/2026 4:41:17 PM
  
 $ PROGRAM INFORMATION
   PROGRAM  "ETABS"  VERSION "22.7.0"  
@@ -422,7 +422,6 @@ $ AREA CONNECTIVITIES
   AREA "F48"  FLOOR  4  "3"  "7"  "8"  "4"  0  0  0  0  
   AREA "F50"  FLOOR  4  "11"  "15"  "16"  "12"  0  0  0  0  
   AREA "F51"  FLOOR  4  "10"  "14"  "15"  "11"  0  0  0  0  
-  AREA "F52"  FLOOR  4  "70"  "69"  "12"  "66"  0  0  0  0  
   AREA "F67"  FLOOR  8  "69"  "70"  "66"  "8"  "168"  "7"  "118"  "11"  0  0  0  0  0  0  0  0  
 
 $ POINT ASSIGNS
@@ -954,7 +953,6 @@ $ AREA ASSIGNS
   AREAASSIGN  "F48"  "Story5"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
   AREAASSIGN  "F50"  "Story5"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
   AREAASSIGN  "F51"  "Story5"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F52"  "Story5"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
   AREAASSIGN  "F67"  "Story5"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
 
 $ LOAD PATTERNS
@@ -978,6 +976,155 @@ $ LOAD PATTERNS
 $ POINT OBJECT LOADS
 
 $ FRAME OBJECT LOADS
+  LINELOAD  "B1"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B2"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B3"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B4"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
+  LINELOAD  "B6"  "Story1"  TYPE "TRAPF"  DIR "GRAV"  LC "9"" wall"  FSTART 7.69  FEND 7.69  RDSTART 0.32026145  RDEND 1  
+  LINELOAD  "B7"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B8"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
+  LINELOAD  "B9"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B10"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B11"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B12"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B13"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B14"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B15"  "Story1"  TYPE "TRAPF"  DIR "GRAV"  LC "9"" wall"  FSTART 7.69  FEND 7.69  RDSTART 0  RDEND 0.4140625  
+  LINELOAD  "B15"  "Story1"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 3.85  FEND 3.85  RDSTART 0.4140625  RDEND 1  
+  LINELOAD  "B16"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
+  LINELOAD  "B18"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 5.5
+  LINELOAD  "B19"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
+  LINELOAD  "B20"  "Story1"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 5.5  FEND 5.5  RDSTART 0  RDEND 0.7083333  
+  LINELOAD  "B21"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 5.5
+  LINELOAD  "B22"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.99
+  LINELOAD  "B23"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.99
+  LINELOAD  "B24"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.99
+  LINELOAD  "B1"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B2"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B3"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B4"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
+  LINELOAD  "B6"  "Story2"  TYPE "TRAPF"  DIR "GRAV"  LC "9"" wall"  FSTART 7.69  FEND 7.69  RDSTART 0.32026145  RDEND 1  
+  LINELOAD  "B7"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B8"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
+  LINELOAD  "B9"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B10"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B11"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B12"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B13"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B14"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B15"  "Story2"  TYPE "TRAPF"  DIR "GRAV"  LC "9"" wall"  FSTART 7.69  FEND 7.69  RDSTART 0  RDEND 0.4140625  
+  LINELOAD  "B15"  "Story2"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 3.85  FEND 3.85  RDSTART 0.4140625  RDEND 1  
+  LINELOAD  "B16"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
+  LINELOAD  "B19"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
+  LINELOAD  "B20"  "Story2"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 5.5  FEND 5.5  RDSTART 0  RDEND 0.7083333  
+  LINELOAD  "B22"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.99
+  LINELOAD  "B23"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.99
+  LINELOAD  "B24"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.99
+  LINELOAD  "B1"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B2"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B3"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B4"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
+  LINELOAD  "B6"  "Story3"  TYPE "TRAPF"  DIR "GRAV"  LC "9"" wall"  FSTART 7.69  FEND 7.69  RDSTART 0.32026145  RDEND 1  
+  LINELOAD  "B7"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B8"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
+  LINELOAD  "B9"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B10"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B11"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B12"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B13"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B14"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B15"  "Story3"  TYPE "TRAPF"  DIR "GRAV"  LC "9"" wall"  FSTART 7.69  FEND 7.69  RDSTART 0  RDEND 0.4140625  
+  LINELOAD  "B15"  "Story3"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 3.85  FEND 3.85  RDSTART 0.4140625  RDEND 1  
+  LINELOAD  "B19"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
+  LINELOAD  "B20"  "Story3"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 5.5  FEND 5.5  RDSTART 0  RDEND 0.7083333  
+  LINELOAD  "B22"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.99
+  LINELOAD  "B23"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.99
+  LINELOAD  "B24"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.99
+  LINELOAD  "B1"  "Story4"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 2.02  FEND 2.02  RDSTART 0  RDEND 0.6787879  
+  LINELOAD  "B1"  "Story4"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 7.69  FEND 7.69  RDSTART 0.6787879  RDEND 1  
+  LINELOAD  "B2"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "B3"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B6"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.99
+  LINELOAD  "B6"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
+  LINELOAD  "B7"  "Story4"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 3.85  FEND 3.85  RDSTART 0.6787879  RDEND 1  
+  LINELOAD  "B8"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
+  LINELOAD  "B10"  "Story4"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 2.02  FEND 2.02  RDSTART 0  RDEND 0.6787879  
+  LINELOAD  "B10"  "Story4"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 3.85  FEND 3.85  RDSTART 0.6787879  RDEND 1  
+  LINELOAD  "B11"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B12"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B13"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "B14"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "B15"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "B19"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
+  LINELOAD  "B20"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
+  LINELOAD  "B22"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.99
+  LINELOAD  "B23"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.99
+  LINELOAD  "B24"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.99
+  LINELOAD  "B3"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "B12"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "B22"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "B23"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "B24"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "B11"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "B29"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "B32"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "B33"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "B34"  "Story1"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 2.02  FEND 2.02  RDSTART 0.24489796  RDEND 0.75510204  
+  LINELOAD  "B35"  "Story1"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 5.5  FEND 5.5  RDSTART 0.24489796  RDEND 1  
+  LINELOAD  "L1"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L2"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L3"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L6"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 4.2
+  LINELOAD  "L10"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L12"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 4.2
+  LINELOAD  "L15"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L16"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 4.2
+  LINELOAD  "L20"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 4.2
+  LINELOAD  "L21"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L24"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L25"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L26"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L4"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L28"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L29"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 4.2
+  LINELOAD  "L30"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L31"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L34"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 4.2
+  LINELOAD  "L37"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "B32"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "B33"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "B34"  "Story2"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 2.02  FEND 2.02  RDSTART 0.24489796  RDEND 0.75510204  
+  LINELOAD  "B35"  "Story2"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 5.5  FEND 5.5  RDSTART 0.24489796  RDEND 1  
+  LINELOAD  "L1"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L2"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L3"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L24"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L25"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L26"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L37"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "B32"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "B33"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "B34"  "Story3"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 2.02  FEND 2.02  RDSTART 0.24489796  RDEND 0.75510204  
+  LINELOAD  "B35"  "Story3"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 5.5  FEND 5.5  RDSTART 0.24489796  RDEND 1  
+  LINELOAD  "L1"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L2"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L3"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L24"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L25"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L26"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L37"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L8"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 4.2
+  LINELOAD  "L9"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L18"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L32"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L33"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L7"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L27"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L43"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L44"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L47"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L12"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L50"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
 
 $ SHELL OBJECT LOADS
 
@@ -1246,6 +1393,9 @@ ETABS Ultimate C  22.7.0 File saved as G:\2082_2083\drg\sansodhan of OK\analysis
 ETABS Ultimate C  22.7.0 File saved as G:\2082_2083\drg\sansodhan of OK\analysis\working file kumar yonjan.EDB at 7/16/2026 11:31:37 AM
 ETABS Ultimate C  22.7.0 File saved as G:\2082_2083\drg\sansodhan of OK\analysis\working file kumar yonjan.EDB at 7/16/2026 11:32:51 AM
 ETABS Ultimate C  22.7.0 File saved as G:\2082_2083\drg\sansodhan of OK\analysis\working file kumar yonjan.EDB at 7/16/2026 4:41:33 PM
+ETABS Ultimate C  22.7.0 File saved as G:\2082_2083\drg\sansodhan of OK\analysis\working file kumar yonjan.EDB at 7/17/2026 10:15:49 AM
+ETABS Ultimate C  22.7.0 File saved as G:\2082_2083\drg\sansodhan of OK\analysis\working file kumar yonjan.EDB at 7/17/2026 4:19:57 PM
+ETABS Ultimate C  22.7.0 File saved as G:\2082_2083\drg\sansodhan of OK\analysis\working file kumar yonjan.EDB at 7/17/2026 4:41:17 PM
   ENDCOMMENTS  
 
   END
