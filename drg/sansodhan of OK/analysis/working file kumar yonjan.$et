@@ -1,4 +1,4 @@
-$ File G:\2082_2083\drg\sansodhan of OK\analysis\working file kumar yonjan.$et saved 7/20/2026 3:09:06 PM
+$ File G:\2082_2083\drg\sansodhan of OK\analysis\working file kumar yonjan.$et saved 7/21/2026 4:48:35 PM
  
 $ PROGRAM INFORMATION
   PROGRAM  "ETABS"  VERSION "22.7.0"  
@@ -33,6 +33,10 @@ $ GRIDS
 
 $ DIAPHRAGM NAMES
   DIAPHRAGM "D1"    TYPE RIGID
+  DIAPHRAGM "D2"    TYPE RIGID
+  DIAPHRAGM "D3"    TYPE RIGID
+  DIAPHRAGM "D4"    TYPE RIGID
+  DIAPHRAGM "D5"    TYPE RIGID
 
 $ MATERIAL PROPERTIES
   MATERIAL  "Fe345"    TYPE "Steel"    GRADE "Fe345"    WEIGHTPERVOLUME 7.6972865E-05
@@ -98,8 +102,6 @@ $ CONCRETE SECTIONS
 $ TENDON SECTIONS
   TENDONSECTION  "Tendon1"  MATERIAL  "Tendon"  STRANDAREA  98.70948
 
-$ SECTION DESIGNER SECTIONS
-
 $ SLAB PROPERTIES
   SHELLPROP  "Slab1"  PROPTYPE  "Slab"  MATERIAL "M20"  MODELINGTYPE "ShellThin"  SLABTYPE "Slab"  SLABTHICKNESS 127 
   SHELLPROP  "waist slab"  PROPTYPE  "Slab"  MATERIAL "M20"  MODELINGTYPE "ShellThin"  SLABTYPE "Slab"  SLABTHICKNESS 127 
@@ -124,836 +126,838 @@ $ PIER/SPANDREL NAMES
   SPANDRELNAME  "S1"  
 
 $ POINT COORDINATES
-  POINT "1"  0 0 
-  POINT "2"  0 4191 
-  POINT "3"  0 7442.2 
-  POINT "4"  0 11328.4 
-  POINT "5"  3810 0 
-  POINT "6"  3810 4191 
-  POINT "7"  3810 7442.2 
-  POINT "8"  3810 11328.4 
-  POINT "9"  8077.2 0 
-  POINT "10"  8077.2 4191 
-  POINT "11"  8077.2 7442.2 
-  POINT "12"  8077.2 11328.4 
-  POINT "13"  11328.4 0 
-  POINT "14"  11328.4 4191 
-  POINT "15"  11328.4 7442.2 
-  POINT "16"  11328.4 11328.4 
-  POINT "21"  0 6502.4 
-  POINT "23"  3810 6502.4 
-  POINT "25"  7137.4 4191 
-  POINT "27"  8077.2 2794 
-  POINT "29"  11328.4 2794 
-  POINT "19"  -1320.8 7442.2 
-  POINT "20"  -1320.8 4191 
-  POINT "22"  -787.4 7848.6 
-  POINT "28"  -787.4 9423.4 
-  POINT "32"  -1320.8 7848.6 
-  POINT "33"  -584.2 -584.2 
-  POINT "35"  -584.2 0 
-  POINT "34"  6400.8 -584.2 
-  POINT "41"  6400.8 -711.2 
-  POINT "42"  7594.6 -711.2 
-  POINT "43"  7594.6 0 
-  POINT "44"  7594.6 -1244.6 
-  POINT "45"  11328.4 -1244.6 
-  POINT "46"  8077.2 -1244.6 
-  POINT "17"  -1320.8 3784.6 
-  POINT "36"  0 3378.2 
-  POINT "37"  -482.6 3378.2 
-  POINT "38"  -482.6 787.4 
-  POINT "39"  0 787.4 
-  POINT "54"  -482.6 3784.6 
-  POINT "59"  -924.4098 1098.5769 
-  POINT "60"  -1217.9802 1552.2766 
-  POINT "61"  -1217.9802 2613.3235 
-  POINT "62"  -924.4098 3067.0232 
-  POINT "57"  3810 8686.8 
-  POINT "58"  8077.2 8686.8 
-  POINT "66"  6731 11328.4 
-  POINT "67"  6731 8686.8 
-  POINT "69"  8077.2 10337.8 
-  POINT "70"  6731 10337.8 
-  POINT "72"  11328.4 8534.4 
-  POINT "73"  9550.4 7442.2 
-  POINT "75"  9550.4 8534.4 
-  POINT "79"  11328.4 6477 
-  POINT "81"  9550.4 6477 
-  POINT "82"  8077.2 -939.8 
-  POINT "83"  11328.4 -939.8 
-  POINT "84"  9423.4 0 
-  POINT "86"  9423.4 -939.8 
-  POINT "24"  6400.8 0 
-  POINT "64"  -583.213 838.2 
-  POINT "18"  6832.6 4191 
-  POINT "26"  6832.6 7442.2 
-  POINT "48"  3810 1651 
-  POINT "50"  3810 3378.2 
-  POINT "56"  8077.2 2870.2 
-  POINT "63"  4826 0 
-  POINT "71"  6832.6 2870.2 
-  POINT "74"  6832.6 3378.2 
-  POINT "76"  4826 1651 
-  POINT "77"  4826 3378.2 
-  POINT "78"  0 9601.2 
-  POINT "85"  -787.4 9601.2 
-  POINT "31"  11328.4 1930.4 
-  POINT "51"  11811 11328.4 
-  POINT "52"  11811 1930.4 
-  POINT "30"  0 9093.2 
-  POINT "40"  3810 9093.2 
-  POINT "94"  1117.6 9093.2 
-  POINT "95"  0 10210.8 1955.8
-  POINT "96"  1117.6 10210.8 1955.8
-  POINT "97"  1143 10210.8 1955.8
-  POINT "98"  1143 11328.4 1955.8
-  POINT "99"  2540 11328.4 878
-  POINT "100"  2540 10210.8 878
-  POINT "101"  2616.2 10210.8 878
-  POINT "102"  3810 10210.8 878
-  POINT "103"  2616.2 9093.2 
-  POINT "123"  0 11150.6 1955.8
-  POINT "124"  177.8 11150.6 1955.8
-  POINT "125"  177.8 11328.4 1955.8
-  POINT "126"  3810 11150.6 878
-  POINT "127"  3632.2 11150.6 878
-  POINT "128"  3632.2 11328.4 878
-  POINT "132"  0 7620 
-  POINT "133"  177.8 7620 
-  POINT "134"  177.8 7442.2 
-  POINT "135"  3632.2 7442.2 
-  POINT "136"  3632.2 7620 
-  POINT "137"  3810 7620 
-  POINT "47"  9550.4 11328.4 
-  POINT "49"  8077.2 8534.4 
-  POINT "65"  8077.2 6477 
-  POINT "68"  9550.4 4191 
-  POINT "88"  8077.2 1651 
-  POINT "89"  4826 2870.2 
-  POINT "92"  6832.6 0 
-  POINT "108"  -1322.184 2082.8 
-  POINT "53"  7594.6 -584.2 
-  POINT "104"  11861.8 11328.4 
-  POINT "105"  11861.8 -1244.6 
-  POINT "87"  3810 1905 
-  POINT "90"  8077.2 1905 
-  POINT "91"  4826 4191 
-  POINT "93"  4826 1905 
-  POINT "106"  3810 10947.4 
-  POINT "107"  8077.2 10947.4 
-  POINT "109"  3810 10261.6 
-  POINT "110"  8077.2 10261.6 
-  POINT "111"  7188.2 7442.2 
-  POINT "113"  7188.2 10947.4 
-  POINT "114"  7188.2 10261.6 
-  POINT "115"  6731 10261.6 
-  POINT "116"  6731 10947.4 
-  POINT "117"  7188.2 8686.8 
-  POINT "118"  6731 7442.2 
-  POINT "80"  9982.2 4191 
-  POINT "112"  8077.2 2844.8 
-  POINT "119"  11328.4 2844.8 
-  POINT "120"  9982.2 2844.8 
-  POINT "55"  0 1270 
-  POINT "122"  0 2921 
-  POINT "139"  -863.6 2921 
-  POINT "141"  -863.6 1270 
-  POINT "150"  -1320.8 838.2 
-  POINT "153"  -1320.8 3352.8 
-  POINT "154"  -482.6 3352.8 
-  POINT "129"  -482.6 11328.4 
-  POINT "130"  -482.6 6502.4 
-  POINT "131"  0 6858 
-  POINT "138"  3810 6858 
-  POINT "140"  7620 4191 
-  POINT "142"  7620 7442.2 
-  POINT "144"  7620 6858 
-  POINT "145"  8077.2 3149.6 
-  POINT "156"  10414 3149.6 
-  POINT "158"  7620 3149.6 
-  POINT "160"  10414 2794 
-  POINT "161"  7620 6502.4 
-  POINT "162"  7137.4 6502.4 
-  POINT "163"  7137.4 3149.6 
-  POINT "164"  7137.4 2794 
-  POINT "167"  11861.8 2794 
-  POINT "168"  3810 10337.8 
+  POINT "1"  7594.6 -1244.6 
+  POINT "2"  8077.2 -1244.6 
+  POINT "3"  11328.4 -1244.6 
+  POINT "4"  11861.8 -1244.6 
+  POINT "5"  8077.2 -939.8 
+  POINT "6"  9423.4 -939.8 
+  POINT "7"  11328.4 -939.8 
+  POINT "8"  6400.8 -711.2 
+  POINT "9"  7594.6 -711.2 
+  POINT "10"  -584.2 -584.2 
+  POINT "11"  6400.8 -584.2 
+  POINT "12"  7594.6 -584.2 
+  POINT "13"  -584.2 0 
+  POINT "14"  0 0 
+  POINT "15"  3810 0 
+  POINT "16"  4826 0 
+  POINT "17"  6400.8 0 
+  POINT "18"  6832.6 0 
+  POINT "19"  7594.6 0 
+  POINT "20"  8077.2 0 
+  POINT "21"  9423.4 0 
+  POINT "22"  11328.4 0 
+  POINT "23"  -482.6 787.4 
+  POINT "24"  0 787.4 
+  POINT "25"  -1320.8 838.2 
+  POINT "26"  -583.213 838.2 
+  POINT "27"  -924.4098 1098.5769 
+  POINT "28"  -863.6 1270 
+  POINT "29"  0 1270 
+  POINT "30"  -1217.9802 1552.2766 
+  POINT "31"  3810 1651 
+  POINT "32"  4826 1651 
+  POINT "33"  8077.2 1651 
+  POINT "34"  3810 1905 
+  POINT "35"  4826 1905 
+  POINT "36"  8077.2 1905 
+  POINT "37"  11328.4 1930.4 
+  POINT "38"  11811 1930.4 
+  POINT "39"  -1322.184 2082.8 
+  POINT "40"  -1217.9802 2613.3235 
+  POINT "41"  7137.4 2794 
+  POINT "42"  8077.2 2794 
+  POINT "43"  10414 2794 
+  POINT "44"  11328.4 2794 
+  POINT "45"  11861.8 2794 
+  POINT "46"  8077.2 2844.8 
+  POINT "47"  9982.2 2844.8 
+  POINT "48"  11328.4 2844.8 
+  POINT "49"  4826 2870.2 
+  POINT "50"  6832.6 2870.2 
+  POINT "51"  8077.2 2870.2 
+  POINT "52"  -863.6 2921 
+  POINT "53"  0 2921 
+  POINT "54"  -924.4098 3067.0232 
+  POINT "55"  7137.4 3149.6 
+  POINT "56"  7620 3149.6 
+  POINT "57"  8077.2 3149.6 
+  POINT "58"  10414 3149.6 
+  POINT "59"  -1320.8 3352.8 
+  POINT "60"  -482.6 3352.8 
+  POINT "61"  -482.6 3378.2 
+  POINT "62"  0 3378.2 
+  POINT "63"  3810 3378.2 
+  POINT "64"  4826 3378.2 
+  POINT "65"  6832.6 3378.2 
+  POINT "66"  -1320.8 3784.6 
+  POINT "67"  -482.6 3784.6 
+  POINT "68"  -1320.8 4191 
+  POINT "69"  0 4191 
+  POINT "70"  3810 4191 
+  POINT "71"  4826 4191 
+  POINT "72"  6832.6 4191 
+  POINT "73"  7137.4 4191 
+  POINT "74"  7620 4191 
+  POINT "75"  8077.2 4191 
+  POINT "76"  9550.4 4191 
+  POINT "77"  9982.2 4191 
+  POINT "78"  11328.4 4191 
+  POINT "83"  8077.2 6477 
+  POINT "84"  9550.4 6477 
+  POINT "85"  11328.4 6477 
+  POINT "86"  -482.6 6502.4 
+  POINT "87"  0 6502.4 
+  POINT "88"  3810 6502.4 
+  POINT "89"  7137.4 6502.4 
+  POINT "90"  7620 6502.4 
+  POINT "91"  0 6858 
+  POINT "92"  7620 6858 
+  POINT "93"  -1320.8 7442.2 
+  POINT "94"  0 7442.2 
+  POINT "95"  177.8 7442.2 
+  POINT "96"  1117.6 7442.2 
+  POINT "97"  3632.2 7442.2 
+  POINT "98"  3810 7442.2 
+  POINT "99"  6731 7442.2 
+  POINT "100"  6832.6 7442.2 
+  POINT "101"  7188.2 7442.2 
+  POINT "102"  7620 7442.2 
+  POINT "103"  8077.2 7442.2 
+  POINT "104"  9550.4 7442.2 
+  POINT "105"  11328.4 7442.2 
+  POINT "106"  0 7620 
+  POINT "107"  177.8 7620 
+  POINT "108"  3632.2 7620 
+  POINT "109"  3810 7620 
+  POINT "110"  -1320.8 7848.6 
+  POINT "111"  -787.4 7848.6 
+  POINT "113"  8077.2 8534.4 
+  POINT "114"  9550.4 8534.4 
+  POINT "115"  11328.4 8534.4 
+  POINT "116"  3810 8686.8 
+  POINT "117"  6731 8686.8 
+  POINT "118"  7188.2 8686.8 
+  POINT "119"  8077.2 8686.8 
+  POINT "120"  0 9093.2 
+  POINT "121"  1117.6 9093.2 
+  POINT "122"  2616.2 9093.2 
+  POINT "123"  3810 9093.2 
+  POINT "124"  -787.4 9423.4 
+  POINT "125"  -787.4 9601.2 
+  POINT "126"  0 9601.2 
+  POINT "126-1"  0 10210.8 1955.8
+  POINT "126-2"  1117.6 10210.8 1955.8
+  POINT "126-3"  1143 10210.8 1955.8
+  POINT "126-4"  2540 10210.8 878
+  POINT "126-5"  2616.2 10210.8 878
+  POINT "126-6"  3810 10210.8 878
+  POINT "127"  3810 10261.6 
+  POINT "128"  6731 10261.6 
+  POINT "129"  7188.2 10261.6 
+  POINT "130"  8077.2 10261.6 
+  POINT "131"  3810 10337.8 
+  POINT "132"  6731 10337.8 
+  POINT "133"  8077.2 10337.8 
+  POINT "134"  3810 10947.4 
+  POINT "135"  6731 10947.4 
+  POINT "136"  7188.2 10947.4 
+  POINT "137"  8077.2 10947.4 
+  POINT "137-1"  0 11150.6 1955.8
+  POINT "137-2"  177.8 11150.6 1955.8
+  POINT "137-3"  3632.2 11150.6 878
+  POINT "137-4"  3810 11150.6 878
+  POINT "138"  -482.6 11328.4 
+  POINT "139"  0 11328.4 
+  POINT "139-1"  177.8 11328.4 1955.8
+  POINT "139-2"  1143 11328.4 1955.8
+  POINT "139-3"  2540 11328.4 878
+  POINT "139-4"  3632.2 11328.4 878
+  POINT "140"  3810 11328.4 
+  POINT "141"  6731 11328.4 
+  POINT "142"  8077.2 11328.4 
+  POINT "143"  9550.4 11328.4 
+  POINT "144"  11328.4 11328.4 
+  POINT "145"  11811 11328.4 
+  POINT "146"  11861.8 11328.4 
 
 $ LINE CONNECTIVITIES
-  LINE  "C1"  COLUMN  "1"  "1"  1
-  LINE  "C2"  COLUMN  "2"  "2"  1
-  LINE  "C3"  COLUMN  "3"  "3"  1
-  LINE  "C4"  COLUMN  "4"  "4"  1
-  LINE  "C5"  COLUMN  "5"  "5"  1
-  LINE  "C6"  COLUMN  "6"  "6"  1
-  LINE  "C7"  COLUMN  "7"  "7"  1
-  LINE  "C8"  COLUMN  "8"  "8"  1
-  LINE  "C9"  COLUMN  "9"  "9"  1
-  LINE  "C10"  COLUMN  "10"  "10"  1
-  LINE  "C11"  COLUMN  "11"  "11"  1
-  LINE  "C12"  COLUMN  "12"  "12"  1
-  LINE  "C13"  COLUMN  "13"  "13"  1
-  LINE  "C14"  COLUMN  "14"  "14"  1
-  LINE  "C15"  COLUMN  "15"  "15"  1
-  LINE  "C16"  COLUMN  "16"  "16"  1
-  LINE  "B1"  BEAM  "1"  "2"  0
-  LINE  "B2"  BEAM  "2"  "3"  0
-  LINE  "B3"  BEAM  "3"  "4"  0
-  LINE  "B4"  BEAM  "5"  "6"  0
-  LINE  "B5"  BEAM  "6"  "7"  0
-  LINE  "B6"  BEAM  "7"  "8"  0
-  LINE  "B7"  BEAM  "9"  "10"  0
-  LINE  "B8"  BEAM  "10"  "11"  0
-  LINE  "B9"  BEAM  "11"  "12"  0
-  LINE  "B10"  BEAM  "13"  "14"  0
-  LINE  "B11"  BEAM  "14"  "15"  0
-  LINE  "B12"  BEAM  "15"  "16"  0
-  LINE  "B13"  BEAM  "1"  "5"  0
-  LINE  "B14"  BEAM  "5"  "9"  0
-  LINE  "B15"  BEAM  "9"  "13"  0
-  LINE  "B16"  BEAM  "2"  "6"  0
-  LINE  "B17"  BEAM  "6"  "10"  0
-  LINE  "B18"  BEAM  "10"  "14"  0
-  LINE  "B19"  BEAM  "3"  "7"  0
-  LINE  "B20"  BEAM  "7"  "11"  0
-  LINE  "B21"  BEAM  "11"  "15"  0
-  LINE  "B22"  BEAM  "4"  "8"  0
-  LINE  "B23"  BEAM  "8"  "12"  0
-  LINE  "B24"  BEAM  "12"  "16"  0
-  LINE  "B25"  BEAM  "21"  "3"  0
-  LINE  "B26"  BEAM  "23"  "7"  0
-  LINE  "B27"  BEAM  "25"  "10"  0
-  LINE  "B28"  BEAM  "27"  "10"  0
-  LINE  "B29"  BEAM  "29"  "14"  0
-  LINE  "B32"  BEAM  "19"  "3"  0
-  LINE  "B33"  BEAM  "20"  "2"  0
-  LINE  "B34"  BEAM  "46"  "9"  0
-  LINE  "B35"  BEAM  "45"  "13"  0
-  LINE  "L1"  LINE  "37"  "36"  0
-  LINE  "L2"  LINE  "38"  "39"  0
-  LINE  "L3"  LINE  "38"  "37"  0
-  LINE  "L6"  LINE  "57"  "58"  0
-  LINE  "L10"  LINE  "67"  "66"  0
-  LINE  "L12"  LINE  "70"  "69"  0
-  LINE  "L15"  LINE  "75"  "72"  0
-  LINE  "L16"  LINE  "73"  "75"  0
-  LINE  "L20"  LINE  "81"  "73"  0
-  LINE  "L21"  LINE  "81"  "79"  0
-  LINE  "L24"  LINE  "86"  "84"  0
-  LINE  "L25"  LINE  "86"  "83"  0
-  LINE  "L26"  LINE  "82"  "86"  0
-  LINE  "L4"  LINE  "18"  "26"  0
-  LINE  "L28"  LINE  "71"  "18"  0
-  LINE  "L29"  LINE  "71"  "56"  0
-  LINE  "L30"  LINE  "50"  "74"  0
-  LINE  "L31"  LINE  "48"  "76"  0
-  LINE  "L34"  LINE  "63"  "77"  0
-  LINE  "L37"  LINE  "20"  "19"  0
-  LINE  "L11"  LINE  "87"  "93"  0
-  LINE  "L13"  LINE  "63"  "93"  0
-  LINE  "L19"  LINE  "113"  "107"  0
-  LINE  "L22"  LINE  "114"  "113"  0
-  LINE  "L23"  LINE  "115"  "114"  0
-  LINE  "L8"  LINE  "112"  "119"  0
-  LINE  "L9"  LINE  "120"  "80"  0
-  LINE  "L18"  LINE  "139"  "122"  0
-  LINE  "L32"  LINE  "141"  "55"  0
-  LINE  "L33"  LINE  "141"  "139"  0
-  LINE  "L7"  LINE  "131"  "138"  0
-  LINE  "L27"  LINE  "131"  "144"  0
-  LINE  "L43"  LINE  "158"  "144"  0
-  LINE  "L44"  LINE  "158"  "156"  0
-  LINE  "L47"  LINE  "160"  "156"  0
-  LINE  "L50"  LINE  "70"  "66"  0
-  LINE  "L5"  LINE  "115"  "66"  0
-  LINE  "L14"  LINE  "115"  "110"  0
+  LINE  "C1"  COLUMN  "14"  "14"  1
+  LINE  "C2"  COLUMN  "15"  "15"  1
+  LINE  "C3"  COLUMN  "20"  "20"  1
+  LINE  "C4"  COLUMN  "22"  "22"  1
+  LINE  "C5"  COLUMN  "69"  "69"  1
+  LINE  "C6"  COLUMN  "70"  "70"  1
+  LINE  "C7"  COLUMN  "75"  "75"  1
+  LINE  "C8"  COLUMN  "78"  "78"  1
+  LINE  "C9"  COLUMN  "94"  "94"  1
+  LINE  "C10"  COLUMN  "98"  "98"  1
+  LINE  "C11"  COLUMN  "103"  "103"  1
+  LINE  "C12"  COLUMN  "105"  "105"  1
+  LINE  "C13"  COLUMN  "139"  "139"  1
+  LINE  "C14"  COLUMN  "140"  "140"  1
+  LINE  "C15"  COLUMN  "142"  "142"  1
+  LINE  "C16"  COLUMN  "144"  "144"  1
+  LINE  "B1"  BEAM  "2"  "20"  0
+  LINE  "B2"  BEAM  "3"  "22"  0
+  LINE  "B3"  BEAM  "14"  "15"  0
+  LINE  "B4"  BEAM  "15"  "20"  0
+  LINE  "B5"  BEAM  "20"  "22"  0
+  LINE  "B6"  BEAM  "14"  "69"  0
+  LINE  "B7"  BEAM  "15"  "70"  0
+  LINE  "B8"  BEAM  "20"  "75"  0
+  LINE  "B9"  BEAM  "22"  "78"  0
+  LINE  "B10"  BEAM  "42"  "75"  0
+  LINE  "B11"  BEAM  "44"  "78"  0
+  LINE  "B12"  BEAM  "68"  "69"  0
+  LINE  "B13"  BEAM  "69"  "70"  0
+  LINE  "B14"  BEAM  "70"  "75"  0
+  LINE  "B15"  BEAM  "73"  "75"  0
+  LINE  "B16"  BEAM  "75"  "78"  0
+  LINE  "B17"  BEAM  "69"  "94"  0
+  LINE  "B18"  BEAM  "70"  "98"  0
+  LINE  "B19"  BEAM  "75"  "103"  0
+  LINE  "B20"  BEAM  "78"  "105"  0
+  LINE  "B21"  BEAM  "87"  "94"  0
+  LINE  "B22"  BEAM  "88"  "98"  0
+  LINE  "B23"  BEAM  "93"  "94"  0
+  LINE  "B24"  BEAM  "94"  "98"  0
+  LINE  "B25"  BEAM  "98"  "103"  0
+  LINE  "B26"  BEAM  "103"  "105"  0
+  LINE  "B27"  BEAM  "94"  "139"  0
+  LINE  "B28"  BEAM  "98"  "140"  0
+  LINE  "B29"  BEAM  "103"  "142"  0
+  LINE  "B30"  BEAM  "105"  "144"  0
+  LINE  "B31"  BEAM  "139"  "140"  0
+  LINE  "B32"  BEAM  "140"  "142"  0
+  LINE  "B33"  BEAM  "142"  "144"  0
+  LINE  "L1"  LINE  "5"  "6"  0
+  LINE  "L2"  LINE  "6"  "7"  0
+  LINE  "L3"  LINE  "6"  "21"  0
+  LINE  "L4"  LINE  "23"  "24"  0
+  LINE  "L5"  LINE  "16"  "35"  0
+  LINE  "L6"  LINE  "28"  "29"  0
+  LINE  "L7"  LINE  "31"  "32"  0
+  LINE  "L8"  LINE  "16"  "64"  0
+  LINE  "L9"  LINE  "34"  "35"  0
+  LINE  "L10"  LINE  "23"  "61"  0
+  LINE  "L11"  LINE  "28"  "52"  0
+  LINE  "L12"  LINE  "46"  "48"  0
+  LINE  "L13"  LINE  "50"  "51"  0
+  LINE  "L14"  LINE  "52"  "53"  0
+  LINE  "L15"  LINE  "43"  "58"  0
+  LINE  "L16"  LINE  "56"  "58"  0
+  LINE  "L17"  LINE  "61"  "62"  0
+  LINE  "L18"  LINE  "63"  "65"  0
+  LINE  "L19"  LINE  "47"  "77"  0
+  LINE  "L20"  LINE  "50"  "72"  0
+  LINE  "L21"  LINE  "56"  "92"  0
+  LINE  "L22"  LINE  "68"  "93"  0
+  LINE  "L23"  LINE  "72"  "100"  0
+  LINE  "L24"  LINE  "84"  "85"  0
+  LINE  "L25"  LINE  "91"  "92"  0
+  LINE  "L26"  LINE  "84"  "104"  0
+  LINE  "L27"  LINE  "104"  "114"  0
+  LINE  "L28"  LINE  "114"  "115"  0
+  LINE  "L29"  LINE  "116"  "119"  0
+  LINE  "L30"  LINE  "117"  "141"  0
+  LINE  "L31"  LINE  "128"  "129"  0
+  LINE  "L32"  LINE  "128"  "130"  0
+  LINE  "L33"  LINE  "132"  "133"  0
+  LINE  "L34"  LINE  "129"  "136"  0
+  LINE  "L35"  LINE  "128"  "141"  0
+  LINE  "L36"  LINE  "132"  "141"  0
+  LINE  "L37"  LINE  "136"  "137"  0
 
 $ AREA CONNECTIVITIES
-  AREA "W1"  PANEL  4  "94"  "30"  "95"  "96"  1  1  0  0  
-  AREA "W2"  PANEL  4  "97"  "98"  "99"  "100"  0  0  0  0  
-  AREA "W3"  PANEL  4  "101"  "102"  "40"  "103"  0  0  0  0  
-  AREA "F22"  FLOOR  4  "69"  "70"  "67"  "58"  0  0  0  0  
-  AREA "F28"  FLOOR  4  "66"  "8"  "57"  "67"  0  0  0  0  
-  AREA "F29"  FLOOR  4  "11"  "58"  "57"  "7"  0  0  0  0  
-  AREA "F1"  FLOOR  6  "95"  "123"  "124"  "125"  "98"  "97"  0  0  0  0  0  0  
-  AREA "F4"  FLOOR  6  "99"  "128"  "127"  "126"  "102"  "100"  0  0  0  0  0  0  
-  AREA "F5"  FLOOR  8  "30"  "132"  "133"  "134"  "135"  "136"  "137"  "40"  0  0  0  0  0  0  0  0  
-  AREA "F6"  FLOOR  4  "72"  "75"  "73"  "15"  0  0  0  0  
-  AREA "F9"  FLOOR  8  "75"  "72"  "16"  "47"  "12"  "49"  "11"  "73"  0  0  0  0  0  0  0  0  
-  AREA "F10"  FLOOR  4  "2"  "6"  "7"  "3"  0  0  0  0  
-  AREA "F13"  FLOOR  4  "1"  "5"  "6"  "2"  0  0  0  0  
-  AREA "F15"  FLOOR  4  "9"  "13"  "14"  "10"  0  0  0  0  
-  AREA "F16"  FLOOR  4  "18"  "26"  "7"  "6"  0  0  0  0  
-  AREA "F17"  FLOOR  4  "26"  "18"  "10"  "11"  0  0  0  0  
-  AREA "F19"  FLOOR  4  "73"  "81"  "79"  "15"  0  0  0  0  
-  AREA "F26"  FLOOR  4  "76"  "48"  "5"  "63"  0  0  0  0  
-  AREA "F37"  FLOOR  8  "81"  "73"  "11"  "65"  "10"  "68"  "14"  "79"  0  0  0  0  0  0  0  0  
-  AREA "F38"  FLOOR  10  "56"  "71"  "74"  "77"  "89"  "76"  "63"  "92"  "9"  "88"  0  0  0  0  0  0  0  0  0  0  
-  AREA "F39"  FLOOR  4  "31"  "52"  "51"  "16"  0  0  0  0  
-  AREA "F53"  FLOOR  4  "20"  "2"  "3"  "19"  0  0  0  0  
-  AREA "F55"  FLOOR  4  "86"  "84"  "9"  "82"  0  0  0  0  
-  AREA "F56"  FLOOR  4  "84"  "86"  "83"  "13"  0  0  0  0  
-  AREA "F59"  FLOOR  14  "44"  "46"  "9"  "43"  "24"  "1"  "39"  "38"  "64"  "35"  "33"  "34"  "41"  "42"  0  0  0  0  0  0  0  0  0  0  0  0  0  0  
-  AREA "F60"  FLOOR  4  "10"  "18"  "71"  "56"  0  0  0  0  
-  AREA "F61"  FLOOR  4  "77"  "50"  "48"  "76"  0  0  0  0  
-  AREA "F62"  FLOOR  4  "6"  "50"  "74"  "18"  0  0  0  0  
-  AREA "F63"  FLOOR  6  "85"  "78"  "3"  "19"  "32"  "22"  0  0  0  0  0  0  
-  AREA "F64"  FLOOR  6  "36"  "37"  "54"  "17"  "20"  "2"  0  0  0  0  0  0  
-  AREA "F65"  FLOOR  9  "37"  "36"  "39"  "38"  "59"  "60"  "108"  "61"  "62"  0  0  0  0  0  0  0  0  0  
-  AREA "F66"  FLOOR  4  "83"  "82"  "46"  "45"  0  0  0  0  
-  AREA "F2"  FLOOR  9  "39"  "38"  "64"  "33"  "53"  "44"  "46"  "9"  "1"  0  0  0  0  0  0  0  0  0  
-  AREA "F3"  FLOOR  4  "45"  "105"  "104"  "16"  0  0  0  0  
-  AREA "F11"  FLOOR  4  "93"  "87"  "5"  "63"  0  0  0  0  
-  AREA "F18"  FLOOR  10  "87"  "93"  "63"  "9"  "90"  "56"  "71"  "18"  "91"  "6"  0  0  0  0  0  0  0  0  0  0  
-  AREA "F40"  FLOOR  8  "107"  "113"  "114"  "115"  "67"  "117"  "58"  "110"  0  0  0  0  0  0  0  0  
-  AREA "F41"  FLOOR  8  "67"  "57"  "7"  "118"  "111"  "11"  "58"  "117"  0  0  0  0  0  0  0  0  
-  AREA "F42"  FLOOR  8  "57"  "67"  "115"  "116"  "66"  "8"  "106"  "109"  0  0  0  0  0  0  0  0  
-  AREA "F43"  FLOOR  4  "16"  "12"  "11"  "15"  0  0  0  0  
-  AREA "F44"  FLOOR  4  "11"  "10"  "14"  "15"  0  0  0  0  
-  AREA "F7"  FLOOR  11  "10"  "18"  "6"  "50"  "48"  "5"  "63"  "92"  "9"  "88"  "56"  0  0  0  0  0  0  0  0  0  0  0  
-  AREA "F8"  FLOOR  4  "120"  "80"  "10"  "112"  0  0  0  0  
-  AREA "F12"  FLOOR  4  "80"  "120"  "119"  "14"  0  0  0  0  
-  AREA "F21"  FLOOR  4  "10"  "11"  "7"  "6"  0  0  0  0  
-  AREA "F23"  FLOOR  4  "13"  "119"  "112"  "9"  0  0  0  0  
-  AREA "F36"  FLOOR  18  "122"  "139"  "141"  "55"  "1"  "13"  "45"  "44"  "53"  "33"  "64"  "150"  "153"  "154"  "54"  "17"  "20"  "2"  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  
-  AREA "F14"  FLOOR  4  "141"  "55"  "122"  "139"  0  0  0  0  
-  AREA "F45"  FLOOR  12  "131"  "144"  "158"  "145"  "156"  "160"  "29"  "14"  "10"  "11"  "142"  "3"  0  0  0  0  0  0  0  0  0  0  0  0  
-  AREA "F46"  FLOOR  17  "130"  "21"  "162"  "25"  "163"  "164"  "27"  "160"  "156"  "145"  "158"  "140"  "161"  "144"  "131"  "4"  "129"  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  
-  AREA "F47"  FLOOR  4  "29"  "167"  "104"  "16"  0  0  0  0  
-  AREA "F48"  FLOOR  4  "3"  "7"  "8"  "4"  0  0  0  0  
-  AREA "F50"  FLOOR  4  "11"  "15"  "16"  "12"  0  0  0  0  
-  AREA "F51"  FLOOR  4  "10"  "14"  "15"  "11"  0  0  0  0  
-  AREA "F67"  FLOOR  8  "69"  "70"  "66"  "8"  "168"  "7"  "118"  "11"  0  0  0  0  0  0  0  0  
-  AREA "F20"  FLOOR  11  "66"  "8"  "57"  "7"  "11"  "58"  "110"  "107"  "113"  "114"  "115"  0  0  0  0  0  0  0  0  0  0  0  
+  AREA "W1"  PANEL  4  "121"  "120"  "126-1"  "126-2"  1  1  0  0  
+  AREA "W2"  PANEL  4  "126-5"  "126-6"  "123"  "122"  0  0  0  0  
+  AREA "W3"  PANEL  4  "126-3"  "139-2"  "139-3"  "126-4"  0  0  0  0  
+  AREA "F1"  FLOOR  4  "7"  "5"  "2"  "3"  0  0  0  0  
+  AREA "F2"  FLOOR  4  "6"  "21"  "20"  "5"  0  0  0  0  
+  AREA "F3"  FLOOR  4  "21"  "6"  "7"  "22"  0  0  0  0  
+  AREA "F4"  FLOOR  14  "1"  "2"  "20"  "19"  "17"  "14"  "24"  "23"  "26"  "13"  "10"  "11"  "8"  "9"  0  0  0  0  0  0  0  0  0  0  0  0  0  0  
+  AREA "F5"  FLOOR  9  "24"  "23"  "26"  "10"  "12"  "1"  "2"  "20"  "14"  0  0  0  0  0  0  0  0  0  
+  AREA "F6"  FLOOR  4  "32"  "31"  "15"  "16"  0  0  0  0  
+  AREA "F7"  FLOOR  4  "35"  "34"  "15"  "16"  0  0  0  0  
+  AREA "F8"  FLOOR  4  "22"  "48"  "46"  "20"  0  0  0  0  
+  AREA "F9"  FLOOR  18  "53"  "52"  "28"  "29"  "14"  "22"  "3"  "1"  "12"  "10"  "26"  "25"  "59"  "60"  "67"  "66"  "68"  "69"  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  
+  AREA "F10"  FLOOR  10  "51"  "50"  "65"  "64"  "49"  "32"  "16"  "18"  "20"  "33"  0  0  0  0  0  0  0  0  0  0  
+  AREA "F11"  FLOOR  11  "75"  "72"  "70"  "63"  "31"  "15"  "16"  "18"  "20"  "33"  "51"  0  0  0  0  0  0  0  0  0  0  0  
+  AREA "F12"  FLOOR  9  "61"  "62"  "24"  "23"  "27"  "30"  "39"  "40"  "54"  0  0  0  0  0  0  0  0  0  
+  AREA "F13"  FLOOR  4  "28"  "29"  "53"  "52"  0  0  0  0  
+  AREA "F14"  FLOOR  4  "14"  "15"  "70"  "69"  0  0  0  0  
+  AREA "F15"  FLOOR  4  "20"  "22"  "78"  "75"  0  0  0  0  
+  AREA "F16"  FLOOR  10  "34"  "35"  "16"  "20"  "36"  "51"  "50"  "72"  "71"  "70"  0  0  0  0  0  0  0  0  0  0  
+  AREA "F17"  FLOOR  4  "64"  "63"  "31"  "32"  0  0  0  0  
+  AREA "F18"  FLOOR  4  "47"  "77"  "75"  "46"  0  0  0  0  
+  AREA "F19"  FLOOR  4  "77"  "47"  "48"  "78"  0  0  0  0  
+  AREA "F20"  FLOOR  4  "75"  "72"  "50"  "51"  0  0  0  0  
+  AREA "F21"  FLOOR  6  "62"  "61"  "67"  "66"  "68"  "69"  0  0  0  0  0  0  
+  AREA "F22"  FLOOR  4  "70"  "63"  "65"  "72"  0  0  0  0  
+  AREA "F23"  FLOOR  12  "91"  "92"  "56"  "57"  "58"  "43"  "44"  "78"  "75"  "103"  "102"  "94"  0  0  0  0  0  0  0  0  0  0  0  0  
+  AREA "F24"  FLOOR  4  "3"  "4"  "146"  "144"  0  0  0  0  
+  AREA "F25"  FLOOR  17  "86"  "87"  "89"  "73"  "55"  "41"  "42"  "43"  "58"  "57"  "56"  "74"  "90"  "92"  "91"  "139"  "138"  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  
+  AREA "F26"  FLOOR  4  "68"  "69"  "94"  "93"  0  0  0  0  
+  AREA "F27"  FLOOR  4  "69"  "70"  "98"  "94"  0  0  0  0  
+  AREA "F28"  FLOOR  4  "72"  "100"  "98"  "70"  0  0  0  0  
+  AREA "F29"  FLOOR  4  "75"  "103"  "98"  "70"  0  0  0  0  
+  AREA "F30"  FLOOR  4  "100"  "72"  "75"  "103"  0  0  0  0  
+  AREA "F31"  FLOOR  4  "103"  "75"  "78"  "105"  0  0  0  0  
+  AREA "F32"  FLOOR  4  "75"  "78"  "105"  "103"  0  0  0  0  
+  AREA "F33"  FLOOR  8  "84"  "104"  "103"  "83"  "75"  "76"  "78"  "85"  0  0  0  0  0  0  0  0  
+  AREA "F34"  FLOOR  4  "37"  "38"  "145"  "144"  0  0  0  0  
+  AREA "F35"  FLOOR  4  "104"  "84"  "85"  "105"  0  0  0  0  
+  AREA "F36"  FLOOR  4  "44"  "45"  "146"  "144"  0  0  0  0  
+  AREA "F37"  FLOOR  8  "120"  "106"  "107"  "95"  "97"  "108"  "109"  "123"  0  0  0  0  0  0  0  0  
+  AREA "F38"  FLOOR  4  "115"  "114"  "104"  "105"  0  0  0  0  
+  AREA "F39"  FLOOR  4  "103"  "119"  "116"  "98"  0  0  0  0  
+  AREA "F40"  FLOOR  8  "117"  "116"  "98"  "99"  "101"  "103"  "119"  "118"  0  0  0  0  0  0  0  0  
+  AREA "F41"  FLOOR  4  "94"  "96"  "121"  "120"  0  0  0  0  
+  AREA "F42"  FLOOR  6  "125"  "126"  "94"  "93"  "110"  "111"  0  0  0  0  0  0  
+  AREA "F43"  FLOOR  8  "114"  "115"  "144"  "143"  "142"  "113"  "103"  "104"  0  0  0  0  0  0  0  0  
+  AREA "F44"  FLOOR  4  "94"  "98"  "140"  "139"  0  0  0  0  
+  AREA "F45"  FLOOR  4  "144"  "142"  "103"  "105"  0  0  0  0  
+  AREA "F46"  FLOOR  4  "103"  "105"  "144"  "142"  0  0  0  0  
+  AREA "F47"  FLOOR  8  "133"  "132"  "141"  "140"  "131"  "98"  "99"  "103"  0  0  0  0  0  0  0  0  
+  AREA "F48"  FLOOR  4  "133"  "132"  "117"  "119"  0  0  0  0  
+  AREA "F49"  FLOOR  11  "141"  "140"  "116"  "98"  "103"  "119"  "130"  "137"  "136"  "129"  "128"  0  0  0  0  0  0  0  0  0  0  0  
+  AREA "F50"  FLOOR  8  "137"  "136"  "129"  "128"  "117"  "118"  "119"  "130"  0  0  0  0  0  0  0  0  
+  AREA "F51"  FLOOR  4  "141"  "140"  "116"  "117"  0  0  0  0  
+  AREA "F52"  FLOOR  8  "116"  "117"  "128"  "135"  "141"  "140"  "134"  "127"  0  0  0  0  0  0  0  0  
+  AREA "F53"  FLOOR  6  "126-1"  "137-1"  "137-2"  "139-1"  "139-2"  "126-3"  0  0  0  0  0  0  
+  AREA "F54"  FLOOR  6  "139-3"  "139-4"  "137-3"  "137-4"  "126-6"  "126-4"  0  0  0  0  0  0  
 
 $ POINT ASSIGNS
-  POINTASSIGN  "1"  "Base"  RESTRAINT "UX UY UZ RX RY RZ"  
-  POINTASSIGN  "2"  "Base"  RESTRAINT "UX UY UZ RX RY RZ"  
-  POINTASSIGN  "3"  "Base"  RESTRAINT "UX UY UZ RX RY RZ"  
-  POINTASSIGN  "4"  "Base"  RESTRAINT "UX UY UZ RX RY RZ"  
-  POINTASSIGN  "5"  "Base"  RESTRAINT "UX UY UZ RX RY RZ"  
-  POINTASSIGN  "6"  "Base"  RESTRAINT "UX UY UZ RX RY RZ"  
-  POINTASSIGN  "7"  "Base"  RESTRAINT "UX UY UZ RX RY RZ"  
-  POINTASSIGN  "8"  "Base"  RESTRAINT "UX UY UZ RX RY RZ"  
-  POINTASSIGN  "9"  "Base"  RESTRAINT "UX UY UZ RX RY RZ"  
-  POINTASSIGN  "10"  "Base"  RESTRAINT "UX UY UZ RX RY RZ"  
-  POINTASSIGN  "11"  "Base"  RESTRAINT "UX UY UZ RX RY RZ"  
-  POINTASSIGN  "12"  "Base"  RESTRAINT "UX UY UZ RX RY RZ"  
-  POINTASSIGN  "13"  "Base"  RESTRAINT "UX UY UZ RX RY RZ"  
   POINTASSIGN  "14"  "Base"  RESTRAINT "UX UY UZ RX RY RZ"  
-  POINTASSIGN  "15"  "Base"  RESTRAINT "UX UY UZ RX RY RZ"  
-  POINTASSIGN  "16"  "Base"  RESTRAINT "UX UY UZ RX RY RZ"  
-  POINTASSIGN  "19"  "Story2"  USERJOINT  "Yes"  
-  POINTASSIGN  "34"  "Story3"  USERJOINT  "Yes"  
-  POINTASSIGN  "41"  "Story3"  USERJOINT  "Yes"  
-  POINTASSIGN  "42"  "Story3"  USERJOINT  "Yes"  
-  POINTASSIGN  "33"  "Story2"  USERJOINT  "Yes"  
-  POINTASSIGN  "34"  "Story2"  USERJOINT  "Yes"  
-  POINTASSIGN  "41"  "Story2"  USERJOINT  "Yes"  
-  POINTASSIGN  "42"  "Story1"  USERJOINT  "Yes"  
-  POINTASSIGN  "44"  "Story1"  USERJOINT  "Yes"  
-  POINTASSIGN  "45"  "Story1"  USERJOINT  "Yes"  
-  POINTASSIGN  "46"  "Story1"  USERJOINT  "Yes"  
-  POINTASSIGN  "28"  "Story3"  USERJOINT  "Yes"  
-  POINTASSIGN  "22"  "Story2"  USERJOINT  "Yes"  
-  POINTASSIGN  "28"  "Story2"  USERJOINT  "Yes"  
-  POINTASSIGN  "32"  "Story2"  USERJOINT  "Yes"  
-  POINTASSIGN  "30"  "Base"  RESTRAINT "UX UY UZ RX RY RZ"  
+  POINTASSIGN  "69"  "Base"  RESTRAINT "UX UY UZ RX RY RZ"  
   POINTASSIGN  "94"  "Base"  RESTRAINT "UX UY UZ RX RY RZ"  
-  POINTASSIGN  "42"  "Story2"  USERJOINT  "Yes"  
-  POINTASSIGN  "44"  "Story2"  USERJOINT  "Yes"  
-  POINTASSIGN  "45"  "Story2"  USERJOINT  "Yes"  
-  POINTASSIGN  "46"  "Story2"  USERJOINT  "Yes"  
-  POINTASSIGN  "37"  "Story2"  USERJOINT  "Yes"  
-  POINTASSIGN  "38"  "Story2"  USERJOINT  "Yes"  
-  POINTASSIGN  "67"  "Story2"  USERJOINT  "Yes"  
-  POINTASSIGN  "70"  "Story2"  USERJOINT  "Yes"  
-  POINTASSIGN  "75"  "Story2"  USERJOINT  "Yes"  
-  POINTASSIGN  "81"  "Story2"  USERJOINT  "Yes"  
-  POINTASSIGN  "83"  "Story2"  USERJOINT  "Yes"  
-  POINTASSIGN  "86"  "Story2"  USERJOINT  "Yes"  
-  POINTASSIGN  "82"  "Story2"  USERJOINT  "Yes"  
+  POINTASSIGN  "139"  "Base"  RESTRAINT "UX UY UZ RX RY RZ"  
+  POINTASSIGN  "15"  "Base"  RESTRAINT "UX UY UZ RX RY RZ"  
+  POINTASSIGN  "70"  "Base"  RESTRAINT "UX UY UZ RX RY RZ"  
+  POINTASSIGN  "98"  "Base"  RESTRAINT "UX UY UZ RX RY RZ"  
+  POINTASSIGN  "140"  "Base"  RESTRAINT "UX UY UZ RX RY RZ"  
+  POINTASSIGN  "20"  "Base"  RESTRAINT "UX UY UZ RX RY RZ"  
+  POINTASSIGN  "75"  "Base"  RESTRAINT "UX UY UZ RX RY RZ"  
+  POINTASSIGN  "103"  "Base"  RESTRAINT "UX UY UZ RX RY RZ"  
+  POINTASSIGN  "142"  "Base"  RESTRAINT "UX UY UZ RX RY RZ"  
+  POINTASSIGN  "22"  "Base"  RESTRAINT "UX UY UZ RX RY RZ"  
+  POINTASSIGN  "78"  "Base"  RESTRAINT "UX UY UZ RX RY RZ"  
+  POINTASSIGN  "105"  "Base"  RESTRAINT "UX UY UZ RX RY RZ"  
+  POINTASSIGN  "144"  "Base"  RESTRAINT "UX UY UZ RX RY RZ"  
+  POINTASSIGN  "93"  "Story2"  USERJOINT  "Yes"  
+  POINTASSIGN  "11"  "Story3"  USERJOINT  "Yes"  
+  POINTASSIGN  "8"  "Story3"  USERJOINT  "Yes"  
+  POINTASSIGN  "9"  "Story3"  USERJOINT  "Yes"  
+  POINTASSIGN  "10"  "Story2"  USERJOINT  "Yes"  
+  POINTASSIGN  "11"  "Story2"  USERJOINT  "Yes"  
+  POINTASSIGN  "8"  "Story2"  USERJOINT  "Yes"  
+  POINTASSIGN  "9"  "Story1"  USERJOINT  "Yes"  
+  POINTASSIGN  "1"  "Story1"  USERJOINT  "Yes"  
+  POINTASSIGN  "3"  "Story1"  USERJOINT  "Yes"  
+  POINTASSIGN  "2"  "Story1"  USERJOINT  "Yes"  
+  POINTASSIGN  "124"  "Story3"  USERJOINT  "Yes"  
+  POINTASSIGN  "111"  "Story2"  USERJOINT  "Yes"  
+  POINTASSIGN  "124"  "Story2"  USERJOINT  "Yes"  
+  POINTASSIGN  "110"  "Story2"  USERJOINT  "Yes"  
+  POINTASSIGN  "120"  "Base"  RESTRAINT "UX UY UZ RX RY RZ"  
+  POINTASSIGN  "121"  "Base"  RESTRAINT "UX UY UZ RX RY RZ"  
+  POINTASSIGN  "9"  "Story2"  USERJOINT  "Yes"  
+  POINTASSIGN  "1"  "Story2"  USERJOINT  "Yes"  
+  POINTASSIGN  "3"  "Story2"  USERJOINT  "Yes"  
+  POINTASSIGN  "2"  "Story2"  USERJOINT  "Yes"  
+  POINTASSIGN  "61"  "Story2"  USERJOINT  "Yes"  
+  POINTASSIGN  "23"  "Story2"  USERJOINT  "Yes"  
+  POINTASSIGN  "117"  "Story2"  USERJOINT  "Yes"  
+  POINTASSIGN  "132"  "Story2"  USERJOINT  "Yes"  
+  POINTASSIGN  "114"  "Story2"  USERJOINT  "Yes"  
+  POINTASSIGN  "84"  "Story2"  USERJOINT  "Yes"  
+  POINTASSIGN  "7"  "Story2"  USERJOINT  "Yes"  
+  POINTASSIGN  "6"  "Story2"  USERJOINT  "Yes"  
+  POINTASSIGN  "5"  "Story2"  USERJOINT  "Yes"  
+  POINTASSIGN  "26"  "Story2"  USERJOINT  "Yes"  
+  POINTASSIGN  "50"  "Story2"  USERJOINT  "Yes"  
+  POINTASSIGN  "65"  "Story2"  USERJOINT  "Yes"  
+  POINTASSIGN  "32"  "Story2"  USERJOINT  "Yes"  
   POINTASSIGN  "64"  "Story2"  USERJOINT  "Yes"  
-  POINTASSIGN  "71"  "Story2"  USERJOINT  "Yes"  
-  POINTASSIGN  "74"  "Story2"  USERJOINT  "Yes"  
-  POINTASSIGN  "76"  "Story2"  USERJOINT  "Yes"  
-  POINTASSIGN  "77"  "Story2"  USERJOINT  "Yes"  
-  POINTASSIGN  "54"  "Story2"  USERJOINT  "Yes"  
-  POINTASSIGN  "85"  "Story2"  USERJOINT  "Yes"  
-  POINTASSIGN  "103"  "Story2"  USERJOINT  "Yes"  
-  POINTASSIGN  "89"  "Story2"  USERJOINT  "Yes"  
-  POINTASSIGN  "108"  "Story2"  USERJOINT  "Yes"  
-  POINTASSIGN  "19"  "Story4"  USERJOINT  "Yes"  
-  POINTASSIGN  "33"  "Story4"  USERJOINT  "Yes"  
-  POINTASSIGN  "34"  "Story4"  USERJOINT  "Yes"  
-  POINTASSIGN  "41"  "Story4"  USERJOINT  "Yes"  
-  POINTASSIGN  "22"  "Story4"  USERJOINT  "Yes"  
-  POINTASSIGN  "28"  "Story4"  USERJOINT  "Yes"  
-  POINTASSIGN  "32"  "Story4"  USERJOINT  "Yes"  
-  POINTASSIGN  "42"  "Story4"  USERJOINT  "Yes"  
-  POINTASSIGN  "45"  "Story4"  USERJOINT  "Yes"  
-  POINTASSIGN  "46"  "Story4"  USERJOINT  "Yes"  
-  POINTASSIGN  "38"  "Story4"  USERJOINT  "Yes"  
-  POINTASSIGN  "83"  "Story4"  USERJOINT  "Yes"  
-  POINTASSIGN  "86"  "Story4"  USERJOINT  "Yes"  
-  POINTASSIGN  "82"  "Story4"  USERJOINT  "Yes"  
-  POINTASSIGN  "64"  "Story4"  USERJOINT  "Yes"  
-  POINTASSIGN  "85"  "Story4"  USERJOINT  "Yes"  
-  POINTASSIGN  "103"  "Story4"  USERJOINT  "Yes"  
-  POINTASSIGN  "108"  "Story4"  USERJOINT  "Yes"  
-  POINTASSIGN  "20"  "Story4"  USERJOINT  "Yes"  
-  POINTASSIGN  "17"  "Story4"  USERJOINT  "Yes"  
-  POINTASSIGN  "59"  "Story4"  USERJOINT  "Yes"  
-  POINTASSIGN  "60"  "Story4"  USERJOINT  "Yes"  
-  POINTASSIGN  "61"  "Story4"  USERJOINT  "Yes"  
-  POINTASSIGN  "62"  "Story4"  USERJOINT  "Yes"  
-  POINTASSIGN  "53"  "Story4"  USERJOINT  "Yes"  
-  POINTASSIGN  "104"  "Story4"  USERJOINT  "Yes"  
-  POINTASSIGN  "105"  "Story4"  USERJOINT  "Yes"  
-  POINTASSIGN  "19"  "Story3"  USERJOINT  "Yes"  
-  POINTASSIGN  "33"  "Story3"  USERJOINT  "Yes"  
-  POINTASSIGN  "22"  "Story3"  USERJOINT  "Yes"  
-  POINTASSIGN  "32"  "Story3"  USERJOINT  "Yes"  
-  POINTASSIGN  "44"  "Story3"  USERJOINT  "Yes"  
-  POINTASSIGN  "45"  "Story3"  USERJOINT  "Yes"  
-  POINTASSIGN  "46"  "Story3"  USERJOINT  "Yes"  
-  POINTASSIGN  "37"  "Story3"  USERJOINT  "Yes"  
-  POINTASSIGN  "38"  "Story3"  USERJOINT  "Yes"  
-  POINTASSIGN  "83"  "Story3"  USERJOINT  "Yes"  
-  POINTASSIGN  "86"  "Story3"  USERJOINT  "Yes"  
-  POINTASSIGN  "82"  "Story3"  USERJOINT  "Yes"  
-  POINTASSIGN  "64"  "Story3"  USERJOINT  "Yes"  
-  POINTASSIGN  "54"  "Story3"  USERJOINT  "Yes"  
-  POINTASSIGN  "85"  "Story3"  USERJOINT  "Yes"  
-  POINTASSIGN  "103"  "Story3"  USERJOINT  "Yes"  
-  POINTASSIGN  "108"  "Story3"  USERJOINT  "Yes"  
-  POINTASSIGN  "20"  "Story3"  USERJOINT  "Yes"  
-  POINTASSIGN  "17"  "Story3"  USERJOINT  "Yes"  
-  POINTASSIGN  "59"  "Story3"  USERJOINT  "Yes"  
-  POINTASSIGN  "60"  "Story3"  USERJOINT  "Yes"  
+  POINTASSIGN  "67"  "Story2"  USERJOINT  "Yes"  
+  POINTASSIGN  "125"  "Story2"  USERJOINT  "Yes"  
+  POINTASSIGN  "122"  "Story2"  USERJOINT  "Yes"  
+  POINTASSIGN  "49"  "Story2"  USERJOINT  "Yes"  
+  POINTASSIGN  "39"  "Story2"  USERJOINT  "Yes"  
+  POINTASSIGN  "93"  "Story4"  USERJOINT  "Yes"  
+  POINTASSIGN  "10"  "Story4"  USERJOINT  "Yes"  
+  POINTASSIGN  "11"  "Story4"  USERJOINT  "Yes"  
+  POINTASSIGN  "8"  "Story4"  USERJOINT  "Yes"  
+  POINTASSIGN  "111"  "Story4"  USERJOINT  "Yes"  
+  POINTASSIGN  "124"  "Story4"  USERJOINT  "Yes"  
+  POINTASSIGN  "110"  "Story4"  USERJOINT  "Yes"  
+  POINTASSIGN  "9"  "Story4"  USERJOINT  "Yes"  
+  POINTASSIGN  "3"  "Story4"  USERJOINT  "Yes"  
+  POINTASSIGN  "2"  "Story4"  USERJOINT  "Yes"  
+  POINTASSIGN  "23"  "Story4"  USERJOINT  "Yes"  
+  POINTASSIGN  "7"  "Story4"  USERJOINT  "Yes"  
+  POINTASSIGN  "6"  "Story4"  USERJOINT  "Yes"  
+  POINTASSIGN  "5"  "Story4"  USERJOINT  "Yes"  
+  POINTASSIGN  "26"  "Story4"  USERJOINT  "Yes"  
+  POINTASSIGN  "125"  "Story4"  USERJOINT  "Yes"  
+  POINTASSIGN  "122"  "Story4"  USERJOINT  "Yes"  
+  POINTASSIGN  "39"  "Story4"  USERJOINT  "Yes"  
+  POINTASSIGN  "68"  "Story4"  USERJOINT  "Yes"  
+  POINTASSIGN  "66"  "Story4"  USERJOINT  "Yes"  
+  POINTASSIGN  "27"  "Story4"  USERJOINT  "Yes"  
+  POINTASSIGN  "30"  "Story4"  USERJOINT  "Yes"  
+  POINTASSIGN  "40"  "Story4"  USERJOINT  "Yes"  
+  POINTASSIGN  "54"  "Story4"  USERJOINT  "Yes"  
+  POINTASSIGN  "12"  "Story4"  USERJOINT  "Yes"  
+  POINTASSIGN  "146"  "Story4"  USERJOINT  "Yes"  
+  POINTASSIGN  "4"  "Story4"  USERJOINT  "Yes"  
+  POINTASSIGN  "93"  "Story3"  USERJOINT  "Yes"  
+  POINTASSIGN  "10"  "Story3"  USERJOINT  "Yes"  
+  POINTASSIGN  "111"  "Story3"  USERJOINT  "Yes"  
+  POINTASSIGN  "110"  "Story3"  USERJOINT  "Yes"  
+  POINTASSIGN  "1"  "Story3"  USERJOINT  "Yes"  
+  POINTASSIGN  "3"  "Story3"  USERJOINT  "Yes"  
+  POINTASSIGN  "2"  "Story3"  USERJOINT  "Yes"  
   POINTASSIGN  "61"  "Story3"  USERJOINT  "Yes"  
-  POINTASSIGN  "62"  "Story3"  USERJOINT  "Yes"  
-  POINTASSIGN  "53"  "Story3"  USERJOINT  "Yes"  
-  POINTASSIGN  "104"  "Story3"  USERJOINT  "Yes"  
-  POINTASSIGN  "105"  "Story3"  USERJOINT  "Yes"  
-  POINTASSIGN  "113"  "Story4"  USERJOINT  "Yes"  
-  POINTASSIGN  "114"  "Story4"  USERJOINT  "Yes"  
+  POINTASSIGN  "23"  "Story3"  USERJOINT  "Yes"  
+  POINTASSIGN  "7"  "Story3"  USERJOINT  "Yes"  
+  POINTASSIGN  "6"  "Story3"  USERJOINT  "Yes"  
+  POINTASSIGN  "5"  "Story3"  USERJOINT  "Yes"  
+  POINTASSIGN  "26"  "Story3"  USERJOINT  "Yes"  
+  POINTASSIGN  "67"  "Story3"  USERJOINT  "Yes"  
+  POINTASSIGN  "125"  "Story3"  USERJOINT  "Yes"  
+  POINTASSIGN  "122"  "Story3"  USERJOINT  "Yes"  
+  POINTASSIGN  "39"  "Story3"  USERJOINT  "Yes"  
+  POINTASSIGN  "68"  "Story3"  USERJOINT  "Yes"  
+  POINTASSIGN  "66"  "Story3"  USERJOINT  "Yes"  
+  POINTASSIGN  "27"  "Story3"  USERJOINT  "Yes"  
+  POINTASSIGN  "30"  "Story3"  USERJOINT  "Yes"  
+  POINTASSIGN  "40"  "Story3"  USERJOINT  "Yes"  
+  POINTASSIGN  "54"  "Story3"  USERJOINT  "Yes"  
+  POINTASSIGN  "12"  "Story3"  USERJOINT  "Yes"  
+  POINTASSIGN  "146"  "Story3"  USERJOINT  "Yes"  
+  POINTASSIGN  "4"  "Story3"  USERJOINT  "Yes"  
+  POINTASSIGN  "136"  "Story4"  USERJOINT  "Yes"  
+  POINTASSIGN  "129"  "Story4"  USERJOINT  "Yes"  
+  POINTASSIGN  "96"  "Base"  RESTRAINT "UX UY UZ RX RY RZ"  
 
 $ LINE ASSIGNS
   LINEASSIGN  "C1"  "Story1"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C2"  "Story1"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C3"  "Story1"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C4"  "Story1"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "C5"  "Story1"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C6"  "Story1"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C7"  "Story1"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C8"  "Story1"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "C9"  "Story1"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C10"  "Story1"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C11"  "Story1"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C12"  "Story1"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "C13"  "Story1"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C2"  "Story1"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C6"  "Story1"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C10"  "Story1"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "C14"  "Story1"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C3"  "Story1"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C7"  "Story1"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C11"  "Story1"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "C15"  "Story1"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C4"  "Story1"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C8"  "Story1"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C12"  "Story1"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "C16"  "Story1"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "C1"  "Story2"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C2"  "Story2"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C3"  "Story2"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C4"  "Story2"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "C5"  "Story2"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C6"  "Story2"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C7"  "Story2"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C8"  "Story2"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "C9"  "Story2"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C10"  "Story2"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C11"  "Story2"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C12"  "Story2"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "C13"  "Story2"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C2"  "Story2"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C6"  "Story2"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C10"  "Story2"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "C14"  "Story2"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C3"  "Story2"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C7"  "Story2"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C11"  "Story2"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "C15"  "Story2"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C4"  "Story2"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C8"  "Story2"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C12"  "Story2"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "C16"  "Story2"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "C1"  "Story3"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C2"  "Story3"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C3"  "Story3"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C4"  "Story3"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "C5"  "Story3"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C6"  "Story3"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C7"  "Story3"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C8"  "Story3"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "C9"  "Story3"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C10"  "Story3"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C11"  "Story3"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C12"  "Story3"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "C13"  "Story3"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C2"  "Story3"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C6"  "Story3"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C10"  "Story3"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "C14"  "Story3"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C3"  "Story3"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C7"  "Story3"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C11"  "Story3"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "C15"  "Story3"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C4"  "Story3"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C8"  "Story3"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C12"  "Story3"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "C16"  "Story3"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C3"  "Story4"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C4"  "Story4"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C7"  "Story4"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C8"  "Story4"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C11"  "Story4"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C12"  "Story4"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C15"  "Story4"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C16"  "Story4"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C10"  "Story4"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C14"  "Story4"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C1"  "Story4"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C2"  "Story4"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C5"  "Story4"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C6"  "Story4"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "C9"  "Story4"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "C13"  "Story4"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C3"  "Story5"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C4"  "Story5"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C7"  "Story5"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C8"  "Story5"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C11"  "Story5"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C12"  "Story5"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C15"  "Story5"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "C16"  "Story5"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C10"  "Story4"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C14"  "Story4"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C11"  "Story4"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C15"  "Story4"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C12"  "Story4"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C16"  "Story4"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C7"  "Story4"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C8"  "Story4"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C1"  "Story4"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C5"  "Story4"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C2"  "Story4"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C6"  "Story4"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C3"  "Story4"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C4"  "Story4"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C9"  "Story5"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C13"  "Story5"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "C10"  "Story5"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "C14"  "Story5"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B1"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B2"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C11"  "Story5"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C15"  "Story5"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C12"  "Story5"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C16"  "Story5"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C7"  "Story5"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "C8"  "Story5"  SECTION "C 14""*14"""  MINNUMSTA 3 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B6"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B17"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B27"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B7"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B18"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B28"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B8"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B19"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B29"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B9"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B20"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B30"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "B3"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "B4"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "B5"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B6"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B7"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B8"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B9"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B10"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B11"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B12"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "B13"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "B14"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B15"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "B16"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B17"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B18"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B19"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B20"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B21"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B22"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B23"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "B24"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B1"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B2"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B25"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B26"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B31"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B32"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B33"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B6"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B17"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B27"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B7"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B18"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B28"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B8"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B19"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B29"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B9"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B20"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B30"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "B3"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "B4"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "B5"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B6"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B7"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B8"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B9"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B10"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B11"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B12"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "B13"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "B14"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B15"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "B16"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B17"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B18"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B19"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B20"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B21"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B22"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B23"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "B24"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B1"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B2"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B25"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B26"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B31"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B32"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B33"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B6"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B17"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B27"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B7"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B18"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B28"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B8"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B19"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B29"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B9"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B20"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B30"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "B3"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "B4"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "B5"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B6"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B7"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B8"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B9"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B10"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B11"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B12"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "B13"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "B14"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B15"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "B16"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B17"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B18"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B19"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B20"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B21"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B22"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B23"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "B24"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B1"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B2"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B25"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B26"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B31"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B32"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B33"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B6"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B17"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B27"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B7"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B18"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B28"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B8"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B19"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B29"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B9"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B20"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B30"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "B3"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "B4"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "B5"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B6"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B7"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B8"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B9"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B10"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B11"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B12"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "B13"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "B14"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B15"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "B16"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B17"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B18"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B19"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B20"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B21"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B22"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B23"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "B24"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B3"  "Story5"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B6"  "Story5"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B9"  "Story5"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B12"  "Story5"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B19"  "Story5"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B20"  "Story5"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B22"  "Story5"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B23"  "Story5"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B24"  "Story5"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B8"  "Story5"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B11"  "Story5"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B18"  "Story5"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B21"  "Story5"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B25"  "Story5"  SECTION "B 9""*14"""  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B26"  "Story5"  SECTION "B 9""*14"""  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B27"  "Story5"  SECTION "B 9""*14"""  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B28"  "Story5"  SECTION "B 9""*14"""  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B29"  "Story5"  SECTION "B 9""*14"""  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B32"  "Story1"  SECTION "B 9""*14"""  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B33"  "Story1"  SECTION "B 9""*14"""  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B34"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B35"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L1"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L2"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L3"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L6"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L10"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L12"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L15"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L16"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L20"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L21"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L24"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L25"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L26"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L4"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L28"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L29"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L30"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L31"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L34"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L37"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B32"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B33"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B34"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B35"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L1"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L2"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L3"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L6"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L10"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L12"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L15"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L16"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L20"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L21"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L24"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L25"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L26"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L4"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L28"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L29"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L30"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L31"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L34"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L37"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B25"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B26"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B31"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "B32"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "B33"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B34"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B35"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B32"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B33"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B34"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B35"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L1"  "Story3"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L2"  "Story3"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L3"  "Story3"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L6"  "Story3"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L24"  "Story3"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L25"  "Story3"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L26"  "Story3"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B27"  "Story5"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B28"  "Story5"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B29"  "Story5"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B30"  "Story5"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B24"  "Story5"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B25"  "Story5"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B31"  "Story5"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B32"  "Story5"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B33"  "Story5"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B19"  "Story5"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B20"  "Story5"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B16"  "Story5"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B26"  "Story5"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B21"  "Story5"  SECTION "B 9""*14"""  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B22"  "Story5"  SECTION "B 9""*14"""  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B15"  "Story5"  SECTION "B 9""*14"""  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B10"  "Story5"  SECTION "B 9""*14"""  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B11"  "Story5"  SECTION "B 9""*14"""  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B23"  "Story1"  SECTION "B 9""*14"""  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B12"  "Story1"  SECTION "B 9""*14"""  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B1"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B2"  "Story1"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L17"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L4"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L29"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L30"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L33"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L28"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L27"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L26"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L24"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L3"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L2"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L1"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L23"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L20"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L13"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L18"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L7"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L8"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L22"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B23"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B12"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B1"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B2"  "Story2"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L17"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L4"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L29"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L30"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L33"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L28"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L27"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L26"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L24"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L3"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L2"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L1"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L23"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L20"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L13"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L18"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L7"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L8"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L22"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B23"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B12"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B1"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B2"  "Story4"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B23"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B12"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B1"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B2"  "Story3"  SECTION "B 9""*14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L17"  "Story3"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "L4"  "Story3"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L37"  "Story3"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L28"  "Story3"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "L29"  "Story3"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L11"  "Story3"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L13"  "Story3"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L10"  "Story3"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L19"  "Story3"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L22"  "Story3"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L3"  "Story3"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L2"  "Story3"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L1"  "Story3"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "L23"  "Story3"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L22"  "Story3"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L20"  "Story3"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L13"  "Story3"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L9"  "Story3"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L5"  "Story3"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L37"  "Story3"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L31"  "Story3"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L37"  "Story4"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L34"  "Story4"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L12"  "Story4"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "L19"  "Story4"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L22"  "Story4"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L8"  "Story4"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L9"  "Story4"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L18"  "Story4"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L32"  "Story4"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L33"  "Story4"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L7"  "Story5"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L27"  "Story5"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L43"  "Story5"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L44"  "Story5"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L47"  "Story5"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L12"  "Story5"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L50"  "Story5"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "L5"  "Story4"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "L14"  "Story4"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L6"  "Story4"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L11"  "Story4"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L25"  "Story5"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L21"  "Story5"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L16"  "Story5"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L15"  "Story5"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L33"  "Story5"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L36"  "Story5"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L35"  "Story4"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L32"  "Story4"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L30"  "Story3"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L34"  "Story3"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L10"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L10"  "Story1"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L10"  "Story3"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "L10"  "Story2"  SECTION "NONE"  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
 
 $ LINE CURVE DATA
-  LINECURVEDATA  "L3"  "Story1"  CURVETYPE "Circular Curve"  NUMCURVEPTS 3  
-  LINECURVEDATA  "L3"  "Story1"  POINT 1  GLOBALX -482.6  GLOBALY 787.4  GLOBALZ 2844.8
-  LINECURVEDATA  "L3"  "Story1"  POINT 2  GLOBALX -482.6  GLOBALY 3378.2  GLOBALZ 2844.8
-  LINECURVEDATA  "L3"  "Story1"  POINT 3  GLOBALX -1320.8  GLOBALY 2082.8  GLOBALZ 2844.8
-  LINECURVEDATA  "L3"  "Story2"  CURVETYPE "Circular Curve"  NUMCURVEPTS 3  
-  LINECURVEDATA  "L3"  "Story2"  POINT 1  GLOBALX -482.6  GLOBALY 787.4  GLOBALZ 5689.6
-  LINECURVEDATA  "L3"  "Story2"  POINT 2  GLOBALX -482.6  GLOBALY 3378.2  GLOBALZ 5689.6
-  LINECURVEDATA  "L3"  "Story2"  POINT 3  GLOBALX -1320.8  GLOBALY 2082.8  GLOBALZ 5689.6
-  LINECURVEDATA  "L3"  "Story3"  CURVETYPE "Circular Curve"  NUMCURVEPTS 3  
-  LINECURVEDATA  "L3"  "Story3"  POINT 1  GLOBALX -482.6  GLOBALY 787.4  GLOBALZ 8534.4
-  LINECURVEDATA  "L3"  "Story3"  POINT 2  GLOBALX -482.6  GLOBALY 3378.2  GLOBALZ 8534.4
-  LINECURVEDATA  "L3"  "Story3"  POINT 3  GLOBALX -1320.8  GLOBALY 2082.8  GLOBALZ 8534.4
+  LINECURVEDATA  "L10"  "Story1"  CURVETYPE "Circular Curve"  NUMCURVEPTS 3  
+  LINECURVEDATA  "L10"  "Story1"  POINT 1  GLOBALX -482.6  GLOBALY 787.4  GLOBALZ 2844.8
+  LINECURVEDATA  "L10"  "Story1"  POINT 2  GLOBALX -482.6  GLOBALY 3378.2  GLOBALZ 2844.8
+  LINECURVEDATA  "L10"  "Story1"  POINT 3  GLOBALX -1322.184  GLOBALY 2082.8  GLOBALZ 2844.8
+  LINECURVEDATA  "L10"  "Story3"  CURVETYPE "Circular Curve"  NUMCURVEPTS 3  
+  LINECURVEDATA  "L10"  "Story3"  POINT 1  GLOBALX -482.6  GLOBALY 787.4  GLOBALZ 8534.4
+  LINECURVEDATA  "L10"  "Story3"  POINT 2  GLOBALX -482.6  GLOBALY 3378.2  GLOBALZ 8534.4
+  LINECURVEDATA  "L10"  "Story3"  POINT 3  GLOBALX -1322.184  GLOBALY 2082.8  GLOBALZ 8534.4
+  LINECURVEDATA  "L10"  "Story2"  CURVETYPE "Circular Curve"  NUMCURVEPTS 3  
+  LINECURVEDATA  "L10"  "Story2"  POINT 1  GLOBALX -482.6  GLOBALY 787.4  GLOBALZ 5689.6
+  LINECURVEDATA  "L10"  "Story2"  POINT 2  GLOBALX -482.6  GLOBALY 3378.2  GLOBALZ 5689.6
+  LINECURVEDATA  "L10"  "Story2"  POINT 3  GLOBALX -1322.184  GLOBALY 2082.8  GLOBALZ 5689.6
 
 $ AREA ASSIGNS
-  AREAASSIGN  "F22"  "Story1"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F28"  "Story1"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F29"  "Story1"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F48"  "Story1"  SECTION "Slab1"  DIAPH  "D1"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F51"  "Story1"  SECTION "Slab1"  DIAPH  "D1"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F39"  "Story1"  SECTION "Slab1"  DIAPH  "D1"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
   AREAASSIGN  "W1"  "Story1"  SECTION "waist slab"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "Yes"  CARDINALPOINT "MIDDLE"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "W2"  "Story1"  SECTION "waist slab"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "Yes"  CARDINALPOINT "MIDDLE"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
   AREAASSIGN  "W3"  "Story1"  SECTION "waist slab"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "Yes"  CARDINALPOINT "MIDDLE"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F1"  "Story1"  SECTION "waist slab"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F4"  "Story1"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F5"  "Story1"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F6"  "Story1"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F9"  "Story1"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F10"  "Story1"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F13"  "Story1"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F15"  "Story1"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F16"  "Story1"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F17"  "Story1"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F19"  "Story1"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F60"  "Story1"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F61"  "Story1"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F26"  "Story1"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F62"  "Story1"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F37"  "Story1"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F38"  "Story1"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F39"  "Story1"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F63"  "Story1"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F64"  "Story1"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F65"  "Story1"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F53"  "Story1"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F55"  "Story1"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F56"  "Story1"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F66"  "Story1"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F59"  "Story1"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F22"  "Story2"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F28"  "Story2"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F29"  "Story2"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "W2"  "Story1"  SECTION "waist slab"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "Yes"  CARDINALPOINT "MIDDLE"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F53"  "Story1"  SECTION "waist slab"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F54"  "Story1"  SECTION "Slab1"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F37"  "Story1"  SECTION "Slab1"  DIAPH  "D1"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F38"  "Story1"  SECTION "Slab1"  DIAPH  "D1"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F43"  "Story1"  SECTION "Slab1"  DIAPH  "D1"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F27"  "Story1"  SECTION "Slab1"  DIAPH  "D1"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F14"  "Story1"  SECTION "Slab1"  DIAPH  "D1"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F15"  "Story1"  SECTION "Slab1"  DIAPH  "D1"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F28"  "Story1"  SECTION "Slab1"  DIAPH  "D1"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F30"  "Story1"  SECTION "Slab1"  DIAPH  "D1"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F35"  "Story1"  SECTION "Slab1"  DIAPH  "D1"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F20"  "Story1"  SECTION "Slab1"  DIAPH  "D1"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F17"  "Story1"  SECTION "Slab1"  DIAPH  "D1"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F6"  "Story1"  SECTION "Slab1"  DIAPH  "D1"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F22"  "Story1"  SECTION "Slab1"  DIAPH  "D1"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F33"  "Story1"  SECTION "Slab1"  DIAPH  "D1"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F10"  "Story1"  SECTION "Slab1"  DIAPH  "D1"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F34"  "Story1"  SECTION "Slab1"  DIAPH  "D1"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F42"  "Story1"  SECTION "Slab1"  DIAPH  "D1"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F21"  "Story1"  SECTION "Slab1"  DIAPH  "D1"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F12"  "Story1"  SECTION "Slab1"  DIAPH  "D1"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F26"  "Story1"  SECTION "Slab1"  DIAPH  "D1"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F2"  "Story1"  SECTION "Slab1"  DIAPH  "D1"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F3"  "Story1"  SECTION "Slab1"  DIAPH  "D1"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F1"  "Story1"  SECTION "Slab1"  DIAPH  "D1"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F4"  "Story1"  SECTION "Slab1"  DIAPH  "D1"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F48"  "Story2"  SECTION "Slab1"  DIAPH  "D2"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F51"  "Story2"  SECTION "Slab1"  DIAPH  "D2"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F39"  "Story2"  SECTION "Slab1"  DIAPH  "D2"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
   AREAASSIGN  "W1"  "Story2"  SECTION "waist slab"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "Yes"  CARDINALPOINT "MIDDLE"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "W2"  "Story2"  SECTION "waist slab"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "Yes"  CARDINALPOINT "MIDDLE"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
   AREAASSIGN  "W3"  "Story2"  SECTION "waist slab"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "Yes"  CARDINALPOINT "MIDDLE"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F1"  "Story2"  SECTION "waist slab"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F4"  "Story2"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F5"  "Story2"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F6"  "Story2"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F9"  "Story2"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F10"  "Story2"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F13"  "Story2"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F15"  "Story2"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F16"  "Story2"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F17"  "Story2"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F19"  "Story2"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F60"  "Story2"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F61"  "Story2"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F26"  "Story2"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F62"  "Story2"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F37"  "Story2"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F38"  "Story2"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F63"  "Story2"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F64"  "Story2"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F65"  "Story2"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F53"  "Story2"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F55"  "Story2"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F56"  "Story2"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F66"  "Story2"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F2"  "Story2"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F3"  "Story2"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "W2"  "Story2"  SECTION "waist slab"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "Yes"  CARDINALPOINT "MIDDLE"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F53"  "Story2"  SECTION "waist slab"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F54"  "Story2"  SECTION "Slab1"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F37"  "Story2"  SECTION "Slab1"  DIAPH  "D2"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F38"  "Story2"  SECTION "Slab1"  DIAPH  "D2"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F43"  "Story2"  SECTION "Slab1"  DIAPH  "D2"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F27"  "Story2"  SECTION "Slab1"  DIAPH  "D2"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F14"  "Story2"  SECTION "Slab1"  DIAPH  "D2"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F15"  "Story2"  SECTION "Slab1"  DIAPH  "D2"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F28"  "Story2"  SECTION "Slab1"  DIAPH  "D2"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F30"  "Story2"  SECTION "Slab1"  DIAPH  "D2"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F35"  "Story2"  SECTION "Slab1"  DIAPH  "D2"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F20"  "Story2"  SECTION "Slab1"  DIAPH  "D2"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F17"  "Story2"  SECTION "Slab1"  DIAPH  "D2"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F6"  "Story2"  SECTION "Slab1"  DIAPH  "D2"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F22"  "Story2"  SECTION "Slab1"  DIAPH  "D2"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F33"  "Story2"  SECTION "Slab1"  DIAPH  "D2"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F10"  "Story2"  SECTION "Slab1"  DIAPH  "D2"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F42"  "Story2"  SECTION "Slab1"  DIAPH  "D2"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F21"  "Story2"  SECTION "Slab1"  DIAPH  "D2"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F12"  "Story2"  SECTION "Slab1"  DIAPH  "D2"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F26"  "Story2"  SECTION "Slab1"  DIAPH  "D2"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F2"  "Story2"  SECTION "Slab1"  DIAPH  "D2"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F3"  "Story2"  SECTION "Slab1"  DIAPH  "D2"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F1"  "Story2"  SECTION "Slab1"  DIAPH  "D2"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F5"  "Story2"  SECTION "Slab1"  DIAPH  "D2"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F24"  "Story2"  SECTION "Slab1"  DIAPH  "D2"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
   AREAASSIGN  "W1"  "Story4"  SECTION "waist slab"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "Yes"  CARDINALPOINT "MIDDLE"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "W2"  "Story4"  SECTION "waist slab"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "Yes"  CARDINALPOINT "MIDDLE"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
   AREAASSIGN  "W3"  "Story4"  SECTION "waist slab"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "Yes"  CARDINALPOINT "MIDDLE"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F1"  "Story4"  SECTION "waist slab"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F4"  "Story4"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F5"  "Story4"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F43"  "Story4"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F10"  "Story4"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F13"  "Story4"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F21"  "Story4"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F44"  "Story4"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F63"  "Story4"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F53"  "Story4"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F3"  "Story4"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "W2"  "Story4"  SECTION "waist slab"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "Yes"  CARDINALPOINT "MIDDLE"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F53"  "Story4"  SECTION "waist slab"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F54"  "Story4"  SECTION "Slab1"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F37"  "Story4"  SECTION "Slab1"  DIAPH  "D4"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F45"  "Story4"  SECTION "Slab1"  DIAPH  "D4"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F27"  "Story4"  SECTION "Slab1"  DIAPH  "D4"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F14"  "Story4"  SECTION "Slab1"  DIAPH  "D4"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F29"  "Story4"  SECTION "Slab1"  DIAPH  "D4"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F31"  "Story4"  SECTION "Slab1"  DIAPH  "D4"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F42"  "Story4"  SECTION "Slab1"  DIAPH  "D4"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F26"  "Story4"  SECTION "Slab1"  DIAPH  "D4"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F24"  "Story4"  SECTION "Slab1"  DIAPH  "D4"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
   AREAASSIGN  "W1"  "Story3"  SECTION "waist slab"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "Yes"  CARDINALPOINT "MIDDLE"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "W2"  "Story3"  SECTION "waist slab"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "Yes"  CARDINALPOINT "MIDDLE"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
   AREAASSIGN  "W3"  "Story3"  SECTION "waist slab"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "Yes"  CARDINALPOINT "MIDDLE"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F1"  "Story3"  SECTION "waist slab"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F4"  "Story3"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F5"  "Story3"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F43"  "Story3"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F10"  "Story3"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F13"  "Story3"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F15"  "Story3"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F16"  "Story3"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F17"  "Story3"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F44"  "Story3"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F60"  "Story3"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F63"  "Story3"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F64"  "Story3"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F65"  "Story3"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F53"  "Story3"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F55"  "Story3"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F56"  "Story3"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F66"  "Story3"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F2"  "Story3"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F3"  "Story3"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F11"  "Story3"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F18"  "Story3"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F40"  "Story3"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F41"  "Story3"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F42"  "Story3"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F7"  "Story4"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F8"  "Story4"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F12"  "Story4"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F23"  "Story4"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F36"  "Story4"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F14"  "Story4"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F45"  "Story5"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F46"  "Story5"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F47"  "Story5"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F48"  "Story5"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F50"  "Story5"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F51"  "Story5"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F67"  "Story5"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
-  AREAASSIGN  "F20"  "Story4"  SECTION "Slab1"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "W2"  "Story3"  SECTION "waist slab"  OBJMESHTYPE "DEFAULT"  ADDRESTRAINT "Yes"  CARDINALPOINT "MIDDLE"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F53"  "Story3"  SECTION "waist slab"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F54"  "Story3"  SECTION "Slab1"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F37"  "Story3"  SECTION "Slab1"  DIAPH  "D3"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F45"  "Story3"  SECTION "Slab1"  DIAPH  "D3"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F27"  "Story3"  SECTION "Slab1"  DIAPH  "D3"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F14"  "Story3"  SECTION "Slab1"  DIAPH  "D3"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F15"  "Story3"  SECTION "Slab1"  DIAPH  "D3"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F28"  "Story3"  SECTION "Slab1"  DIAPH  "D3"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F30"  "Story3"  SECTION "Slab1"  DIAPH  "D3"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F31"  "Story3"  SECTION "Slab1"  DIAPH  "D3"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F20"  "Story3"  SECTION "Slab1"  DIAPH  "D3"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F42"  "Story3"  SECTION "Slab1"  DIAPH  "D3"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F21"  "Story3"  SECTION "Slab1"  DIAPH  "D3"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F12"  "Story3"  SECTION "Slab1"  DIAPH  "D3"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F26"  "Story3"  SECTION "Slab1"  DIAPH  "D3"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F2"  "Story3"  SECTION "Slab1"  DIAPH  "D3"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F3"  "Story3"  SECTION "Slab1"  DIAPH  "D3"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F1"  "Story3"  SECTION "Slab1"  DIAPH  "D3"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F5"  "Story3"  SECTION "Slab1"  DIAPH  "D3"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F24"  "Story3"  SECTION "Slab1"  DIAPH  "D3"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F7"  "Story3"  SECTION "Slab1"  DIAPH  "D3"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F16"  "Story3"  SECTION "Slab1"  DIAPH  "D3"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F50"  "Story3"  SECTION "Slab1"  DIAPH  "D3"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F40"  "Story3"  SECTION "Slab1"  DIAPH  "D3"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F52"  "Story3"  SECTION "Slab1"  DIAPH  "D3"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F11"  "Story4"  SECTION "Slab1"  DIAPH  "D4"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F18"  "Story4"  SECTION "Slab1"  DIAPH  "D4"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F19"  "Story4"  SECTION "Slab1"  DIAPH  "D4"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F8"  "Story4"  SECTION "Slab1"  DIAPH  "D4"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F9"  "Story4"  SECTION "Slab1"  DIAPH  "D4"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F13"  "Story4"  SECTION "Slab1"  DIAPH  "D4"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F23"  "Story5"  SECTION "Slab1"  DIAPH  "D5"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F25"  "Story5"  SECTION "Slab1"  DIAPH  "D5"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F36"  "Story5"  SECTION "Slab1"  DIAPH  "D5"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F44"  "Story5"  SECTION "Slab1"  DIAPH  "D5"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F46"  "Story5"  SECTION "Slab1"  DIAPH  "D5"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F32"  "Story5"  SECTION "Slab1"  DIAPH  "D5"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F47"  "Story5"  SECTION "Slab1"  DIAPH  "D5"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F49"  "Story4"  SECTION "Slab1"  DIAPH  "D4"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
+  AREAASSIGN  "F41"  "Base"  SECTION "Slab1"  OBJMESHTYPE "MESHN1XN2"  MESHFLOORN1 4 MESHFLOORN2 4 ADDRESTRAINT "No"  CARDINALPOINT "TOP"  TRANSFORMSTIFFNESSFOROFFSETS "No"  
 
 $ LOAD PATTERNS
   LOADPATTERN "Dead"  TYPE  "Dead"  SELFWEIGHT  1
@@ -976,188 +980,441 @@ $ LOAD PATTERNS
 $ POINT OBJECT LOADS
 
 $ FRAME OBJECT LOADS
-  LINELOAD  "B1"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
-  LINELOAD  "B2"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
-  LINELOAD  "B3"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
-  LINELOAD  "B4"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
-  LINELOAD  "B6"  "Story1"  TYPE "TRAPF"  DIR "GRAV"  LC "9"" wall"  FSTART 7.69  FEND 7.69  RDSTART 0.32026145  RDEND 1  
-  LINELOAD  "B7"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
-  LINELOAD  "B8"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
-  LINELOAD  "B9"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
-  LINELOAD  "B10"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
-  LINELOAD  "B11"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
-  LINELOAD  "B12"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
-  LINELOAD  "B13"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
-  LINELOAD  "B14"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
-  LINELOAD  "B15"  "Story1"  TYPE "TRAPF"  DIR "GRAV"  LC "9"" wall"  FSTART 7.69  FEND 7.69  RDSTART 0  RDEND 0.4140625  
-  LINELOAD  "B15"  "Story1"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 3.85  FEND 3.85  RDSTART 0.4140625  RDEND 1  
-  LINELOAD  "B16"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
-  LINELOAD  "B18"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 5.5
+  LINELOAD  "B6"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B17"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B27"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B7"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
+  LINELOAD  "B28"  "Story1"  TYPE "TRAPF"  DIR "GRAV"  LC "9"" wall"  FSTART 7.69  FEND 7.69  RDSTART 0.32026145  RDEND 1  
+  LINELOAD  "B8"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
   LINELOAD  "B19"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
-  LINELOAD  "B20"  "Story1"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 5.5  FEND 5.5  RDSTART 0  RDEND 0.7083333  
-  LINELOAD  "B21"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 5.5
-  LINELOAD  "B22"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.99
-  LINELOAD  "B23"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.99
-  LINELOAD  "B24"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.99
-  LINELOAD  "B1"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
-  LINELOAD  "B2"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
-  LINELOAD  "B3"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
-  LINELOAD  "B4"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
-  LINELOAD  "B6"  "Story2"  TYPE "TRAPF"  DIR "GRAV"  LC "9"" wall"  FSTART 7.69  FEND 7.69  RDSTART 0.32026145  RDEND 1  
-  LINELOAD  "B7"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
-  LINELOAD  "B8"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
-  LINELOAD  "B9"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
-  LINELOAD  "B10"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
-  LINELOAD  "B11"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
-  LINELOAD  "B12"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
-  LINELOAD  "B13"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
-  LINELOAD  "B14"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
-  LINELOAD  "B15"  "Story2"  TYPE "TRAPF"  DIR "GRAV"  LC "9"" wall"  FSTART 7.69  FEND 7.69  RDSTART 0  RDEND 0.4140625  
-  LINELOAD  "B15"  "Story2"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 3.85  FEND 3.85  RDSTART 0.4140625  RDEND 1  
-  LINELOAD  "B16"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
+  LINELOAD  "B29"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B9"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B20"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B30"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B3"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B4"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B5"  "Story1"  TYPE "TRAPF"  DIR "GRAV"  LC "9"" wall"  FSTART 7.69  FEND 7.69  RDSTART 0  RDEND 0.4140625  
+  LINELOAD  "B5"  "Story1"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 3.85  FEND 3.85  RDSTART 0.4140625  RDEND 1  
+  LINELOAD  "B13"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
+  LINELOAD  "B16"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 5.5
+  LINELOAD  "B24"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
+  LINELOAD  "B25"  "Story1"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 5.5  FEND 5.5  RDSTART 0  RDEND 0.7083333  
+  LINELOAD  "B26"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 5.5
+  LINELOAD  "B31"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.99
+  LINELOAD  "B32"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.99
+  LINELOAD  "B33"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.99
+  LINELOAD  "B6"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B17"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B27"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B7"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
+  LINELOAD  "B28"  "Story2"  TYPE "TRAPF"  DIR "GRAV"  LC "9"" wall"  FSTART 7.69  FEND 7.69  RDSTART 0.32026145  RDEND 1  
+  LINELOAD  "B8"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
   LINELOAD  "B19"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
-  LINELOAD  "B20"  "Story2"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 5.5  FEND 5.5  RDSTART 0  RDEND 0.7083333  
-  LINELOAD  "B22"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.99
-  LINELOAD  "B23"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.99
-  LINELOAD  "B24"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.99
-  LINELOAD  "B1"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
-  LINELOAD  "B2"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
-  LINELOAD  "B3"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
-  LINELOAD  "B4"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
-  LINELOAD  "B6"  "Story3"  TYPE "TRAPF"  DIR "GRAV"  LC "9"" wall"  FSTART 7.69  FEND 7.69  RDSTART 0.32026145  RDEND 1  
-  LINELOAD  "B7"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
-  LINELOAD  "B8"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
-  LINELOAD  "B9"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
-  LINELOAD  "B10"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
-  LINELOAD  "B11"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
-  LINELOAD  "B12"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
-  LINELOAD  "B13"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
-  LINELOAD  "B14"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
-  LINELOAD  "B15"  "Story3"  TYPE "TRAPF"  DIR "GRAV"  LC "9"" wall"  FSTART 7.69  FEND 7.69  RDSTART 0  RDEND 0.4140625  
-  LINELOAD  "B15"  "Story3"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 3.85  FEND 3.85  RDSTART 0.4140625  RDEND 1  
-  LINELOAD  "B17"  "Story3"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 5.5  FEND 5.5  RDSTART 0  RDEND 0.7083333  
-  LINELOAD  "B18"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 5.5
+  LINELOAD  "B29"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B9"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B20"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B30"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B3"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B4"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B5"  "Story2"  TYPE "TRAPF"  DIR "GRAV"  LC "9"" wall"  FSTART 7.69  FEND 7.69  RDSTART 0  RDEND 0.4140625  
+  LINELOAD  "B5"  "Story2"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 3.85  FEND 3.85  RDSTART 0.4140625  RDEND 1  
+  LINELOAD  "B13"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
+  LINELOAD  "B24"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
+  LINELOAD  "B25"  "Story2"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 5.5  FEND 5.5  RDSTART 0  RDEND 0.7083333  
+  LINELOAD  "B31"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.99
+  LINELOAD  "B32"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.99
+  LINELOAD  "B33"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.99
+  LINELOAD  "B6"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B17"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B27"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B7"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
+  LINELOAD  "B28"  "Story3"  TYPE "TRAPF"  DIR "GRAV"  LC "9"" wall"  FSTART 7.69  FEND 7.69  RDSTART 0.32026145  RDEND 1  
+  LINELOAD  "B8"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
   LINELOAD  "B19"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
-  LINELOAD  "B20"  "Story3"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 5.5  FEND 5.5  RDSTART 0  RDEND 0.7083333  
-  LINELOAD  "B21"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 5.5
-  LINELOAD  "B22"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.99
-  LINELOAD  "B23"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.99
-  LINELOAD  "B24"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.99
-  LINELOAD  "B1"  "Story4"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 2.02  FEND 2.02  RDSTART 0  RDEND 0.3030303  
-  LINELOAD  "B1"  "Story4"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 2.02  FEND 2.02  RDSTART 0.6969697  RDEND 1  
-  LINELOAD  "B2"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "B3"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
-  LINELOAD  "B6"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.99
-  LINELOAD  "B6"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
-  LINELOAD  "B7"  "Story4"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 3.85  FEND 3.85  RDSTART 0.6787879  RDEND 1  
-  LINELOAD  "B8"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
-  LINELOAD  "B9"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 5.5
-  LINELOAD  "B10"  "Story4"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 2.02  FEND 2.02  RDSTART 0  RDEND 0.6787879  
-  LINELOAD  "B10"  "Story4"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 3.85  FEND 3.85  RDSTART 0.6787879  RDEND 1  
-  LINELOAD  "B11"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
-  LINELOAD  "B12"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
-  LINELOAD  "B13"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "B14"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "B15"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "B18"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 5.5
+  LINELOAD  "B29"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B9"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B20"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B30"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B3"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B4"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B5"  "Story3"  TYPE "TRAPF"  DIR "GRAV"  LC "9"" wall"  FSTART 7.69  FEND 7.69  RDSTART 0  RDEND 0.4140625  
+  LINELOAD  "B5"  "Story3"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 3.85  FEND 3.85  RDSTART 0.4140625  RDEND 1  
+  LINELOAD  "B14"  "Story3"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 5.5  FEND 5.5  RDSTART 0  RDEND 0.7083333  
+  LINELOAD  "B16"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 5.5
+  LINELOAD  "B24"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
+  LINELOAD  "B25"  "Story3"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 5.5  FEND 5.5  RDSTART 0  RDEND 0.7083333  
+  LINELOAD  "B26"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 5.5
+  LINELOAD  "B31"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.99
+  LINELOAD  "B32"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.99
+  LINELOAD  "B33"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.99
+  LINELOAD  "B6"  "Story4"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 2.02  FEND 2.02  RDSTART 0  RDEND 0.3030303  
+  LINELOAD  "B6"  "Story4"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 2.02  FEND 2.02  RDSTART 0.6969697  RDEND 1  
+  LINELOAD  "B17"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "B27"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B28"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.99
+  LINELOAD  "B28"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
+  LINELOAD  "B8"  "Story4"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 3.85  FEND 3.85  RDSTART 0.6787879  RDEND 1  
   LINELOAD  "B19"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
-  LINELOAD  "B20"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
-  LINELOAD  "B22"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.99
-  LINELOAD  "B23"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.99
-  LINELOAD  "B24"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.99
-  LINELOAD  "B3"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "B9"  "Story5"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 2.02  FEND 2.02  RDSTART 0.78431374  RDEND 1  
-  LINELOAD  "B12"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "B22"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "B23"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "B24"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "B29"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 5.5
+  LINELOAD  "B9"  "Story4"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 2.02  FEND 2.02  RDSTART 0  RDEND 0.6787879  
+  LINELOAD  "B9"  "Story4"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 3.85  FEND 3.85  RDSTART 0.6787879  RDEND 1  
+  LINELOAD  "B20"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B30"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.69
+  LINELOAD  "B3"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "B4"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "B5"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "B16"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 5.5
+  LINELOAD  "B24"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
+  LINELOAD  "B25"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 3.85
+  LINELOAD  "B31"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.99
+  LINELOAD  "B32"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.99
+  LINELOAD  "B33"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.99
+  LINELOAD  "B27"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "B29"  "Story5"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 2.02  FEND 2.02  RDSTART 0.78431374  RDEND 1  
+  LINELOAD  "B30"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "B31"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "B32"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "B33"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "B20"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
   LINELOAD  "B11"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "B29"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "B32"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "B33"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "B34"  "Story1"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 2.02  FEND 2.02  RDSTART 0.24489796  RDEND 0.75510204  
-  LINELOAD  "B35"  "Story1"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 5.5  FEND 5.5  RDSTART 0.24489796  RDEND 1  
-  LINELOAD  "L1"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "L2"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "L3"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "L6"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 4.2
-  LINELOAD  "L10"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
-  LINELOAD  "L12"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 4.2
-  LINELOAD  "L15"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
-  LINELOAD  "L16"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 4.2
-  LINELOAD  "L20"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 4.2
-  LINELOAD  "L21"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
-  LINELOAD  "L24"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
-  LINELOAD  "L25"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
-  LINELOAD  "L26"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "L4"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
-  LINELOAD  "L28"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "B23"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "B12"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "B1"  "Story1"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 2.02  FEND 2.02  RDSTART 0.24489796  RDEND 0.75510204  
+  LINELOAD  "B2"  "Story1"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 5.5  FEND 5.5  RDSTART 0.24489796  RDEND 1  
+  LINELOAD  "L17"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L4"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
   LINELOAD  "L29"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 4.2
   LINELOAD  "L30"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
-  LINELOAD  "L31"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
-  LINELOAD  "L34"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 4.2
-  LINELOAD  "L37"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "B32"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "B33"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "B34"  "Story2"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 2.02  FEND 2.02  RDSTART 0.24489796  RDEND 0.75510204  
-  LINELOAD  "B35"  "Story2"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 5.5  FEND 5.5  RDSTART 0.24489796  RDEND 1  
-  LINELOAD  "L1"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "L2"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "L3"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "L6"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 4.2
-  LINELOAD  "L10"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
-  LINELOAD  "L12"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 4.2
-  LINELOAD  "L15"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
-  LINELOAD  "L16"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 4.2
-  LINELOAD  "L20"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 4.2
-  LINELOAD  "L21"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
-  LINELOAD  "L24"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
-  LINELOAD  "L25"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
-  LINELOAD  "L26"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "L4"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
-  LINELOAD  "L28"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L33"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 4.2
+  LINELOAD  "L28"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L27"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 4.2
+  LINELOAD  "L26"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 4.2
+  LINELOAD  "L24"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L3"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L2"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L1"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L23"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L20"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L13"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 4.2
+  LINELOAD  "L18"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L7"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L8"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 4.2
+  LINELOAD  "L22"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "B23"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "B12"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "B1"  "Story2"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 2.02  FEND 2.02  RDSTART 0.24489796  RDEND 0.75510204  
+  LINELOAD  "B2"  "Story2"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 5.5  FEND 5.5  RDSTART 0.24489796  RDEND 1  
+  LINELOAD  "L17"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L4"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
   LINELOAD  "L29"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 4.2
   LINELOAD  "L30"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
-  LINELOAD  "L31"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
-  LINELOAD  "L34"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 4.2
-  LINELOAD  "L37"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "B32"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "B33"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "B34"  "Story3"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 2.02  FEND 2.02  RDSTART 0.24489796  RDEND 0.75510204  
-  LINELOAD  "B35"  "Story3"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 5.5  FEND 5.5  RDSTART 0.24489796  RDEND 1  
+  LINELOAD  "L33"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 4.2
+  LINELOAD  "L28"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L27"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 4.2
+  LINELOAD  "L26"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 4.2
+  LINELOAD  "L24"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L3"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L2"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L1"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L23"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L20"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L13"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 4.2
+  LINELOAD  "L18"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L7"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L8"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 4.2
+  LINELOAD  "L22"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "B23"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "B12"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "B1"  "Story3"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 2.02  FEND 2.02  RDSTART 0.24489796  RDEND 0.75510204  
+  LINELOAD  "B2"  "Story3"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 5.5  FEND 5.5  RDSTART 0.24489796  RDEND 1  
+  LINELOAD  "L17"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L4"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L29"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 4.2
+  LINELOAD  "L3"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L2"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
   LINELOAD  "L1"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "L2"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "L3"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "L6"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 4.2
-  LINELOAD  "L24"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
-  LINELOAD  "L25"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
-  LINELOAD  "L26"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "L4"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
-  LINELOAD  "L37"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "L28"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
-  LINELOAD  "L29"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
-  LINELOAD  "L11"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 4.2
-  LINELOAD  "L13"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
-  LINELOAD  "L10"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
-  LINELOAD  "L19"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 4.2
-  LINELOAD  "L22"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
   LINELOAD  "L23"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
-  LINELOAD  "L8"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 4.2
-  LINELOAD  "L9"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
-  LINELOAD  "L18"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "L32"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "L33"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "L7"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "L27"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "L43"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "L44"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "L47"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "L12"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "L50"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
-  LINELOAD  "L5"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
-  LINELOAD  "L14"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L22"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L20"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L13"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L9"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 4.2
+  LINELOAD  "L5"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L37"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 4.2
+  LINELOAD  "L31"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L12"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 4.2
+  LINELOAD  "L19"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L14"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L6"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L11"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L25"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L21"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L16"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L15"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L33"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L36"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L35"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L32"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L30"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L34"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 6
+  LINELOAD  "L10"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L10"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
+  LINELOAD  "L10"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.02
 
 $ SHELL OBJECT LOADS
+  AREALOAD  "F48"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F48"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F51"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F51"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F39"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.003
+  AREALOAD  "F39"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "W1"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "stair live"  FVAL 0.003
+  AREALOAD  "W1"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "W1"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "stair dead"  FVAL 0.001822
+  AREALOAD  "W3"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "stair live"  FVAL 0.003
+  AREALOAD  "W3"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "W3"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "stair dead"  FVAL 0.001822
+  AREALOAD  "W2"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "stair live"  FVAL 0.003
+  AREALOAD  "W2"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "W2"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "stair dead"  FVAL 0.001822
+  AREALOAD  "F53"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "stair live"  FVAL 0.003
+  AREALOAD  "F53"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F54"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "stair live"  FVAL 0.003
+  AREALOAD  "F54"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F37"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.003
+  AREALOAD  "F37"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F38"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F38"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F43"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F43"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F27"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F27"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F14"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F14"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F15"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F15"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F28"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F28"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F30"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.003
+  AREALOAD  "F30"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F35"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F35"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F20"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.003
+  AREALOAD  "F20"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F17"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F17"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F6"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F6"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F22"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F22"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F33"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F33"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F10"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F10"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F34"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.00075
+  AREALOAD  "F34"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F42"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.00075
+  AREALOAD  "F42"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F21"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.00075
+  AREALOAD  "F21"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F12"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.003
+  AREALOAD  "F12"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F26"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.003
+  AREALOAD  "F26"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F2"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.003
+  AREALOAD  "F2"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F3"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F3"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F1"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.00075
+  AREALOAD  "F1"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F4"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.00075
+  AREALOAD  "F4"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F48"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F48"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F51"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F51"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F39"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.003
+  AREALOAD  "F39"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "W1"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "stair live"  FVAL 0.003
+  AREALOAD  "W1"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "W1"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "stair dead"  FVAL 0.001822
+  AREALOAD  "W3"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "stair live"  FVAL 0.003
+  AREALOAD  "W3"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "W3"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "stair dead"  FVAL 0.001822
+  AREALOAD  "W2"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "stair live"  FVAL 0.003
+  AREALOAD  "W2"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "W2"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "stair dead"  FVAL 0.001822
+  AREALOAD  "F53"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "stair live"  FVAL 0.003
+  AREALOAD  "F53"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F54"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "stair live"  FVAL 0.003
+  AREALOAD  "F54"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F37"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.003
+  AREALOAD  "F37"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F38"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F38"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F43"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F43"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F27"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F27"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F14"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F14"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F15"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F15"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F28"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F28"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F30"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.003
+  AREALOAD  "F30"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F35"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F35"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F20"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.003
+  AREALOAD  "F20"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F17"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F17"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F6"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F6"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F22"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F22"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F33"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F33"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F10"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F10"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F42"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.00075
+  AREALOAD  "F42"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F21"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.00075
+  AREALOAD  "F21"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F12"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.003
+  AREALOAD  "F12"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F26"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.003
+  AREALOAD  "F26"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F2"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.003
+  AREALOAD  "F2"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F3"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F3"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F1"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.00075
+  AREALOAD  "F1"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F5"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.00075
+  AREALOAD  "F5"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F24"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.00075
+  AREALOAD  "F24"  "Story2"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "W1"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "stair live"  FVAL 0.003
+  AREALOAD  "W1"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "W1"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "stair dead"  FVAL 0.001822
+  AREALOAD  "W3"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "stair live"  FVAL 0.003
+  AREALOAD  "W3"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "W3"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "stair dead"  FVAL 0.001822
+  AREALOAD  "W2"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "stair live"  FVAL 0.003
+  AREALOAD  "W2"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "W2"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "stair dead"  FVAL 0.001822
+  AREALOAD  "F53"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "stair live"  FVAL 0.003
+  AREALOAD  "F53"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F54"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "stair live"  FVAL 0.003
+  AREALOAD  "F54"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F37"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.003
+  AREALOAD  "F37"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F45"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F45"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F27"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.0015
+  AREALOAD  "F27"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F14"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.0015
+  AREALOAD  "F14"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F29"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.0015
+  AREALOAD  "F29"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F31"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F31"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F42"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.00075
+  AREALOAD  "F42"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F26"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.00075
+  AREALOAD  "F26"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F24"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.00075
+  AREALOAD  "F24"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "W1"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "stair live"  FVAL 0.003
+  AREALOAD  "W1"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "W1"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "stair dead"  FVAL 0.001822
+  AREALOAD  "W3"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "stair live"  FVAL 0.003
+  AREALOAD  "W3"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "W3"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "stair dead"  FVAL 0.001822
+  AREALOAD  "W2"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "stair live"  FVAL 0.003
+  AREALOAD  "W2"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "W2"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "stair dead"  FVAL 0.001822
+  AREALOAD  "F53"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "stair live"  FVAL 0.003
+  AREALOAD  "F53"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F54"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "stair live"  FVAL 0.003
+  AREALOAD  "F54"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F37"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.003
+  AREALOAD  "F37"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F45"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F45"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F27"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F27"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F14"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F14"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F15"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F15"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F28"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F28"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F30"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.003
+  AREALOAD  "F30"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F31"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F31"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F20"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.003
+  AREALOAD  "F20"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F42"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.00075
+  AREALOAD  "F42"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F21"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.00075
+  AREALOAD  "F21"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F12"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.003
+  AREALOAD  "F12"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F26"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.003
+  AREALOAD  "F26"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F2"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.003
+  AREALOAD  "F2"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F3"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F3"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F1"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.00075
+  AREALOAD  "F1"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F5"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.00075
+  AREALOAD  "F5"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F24"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.00075
+  AREALOAD  "F24"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F7"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F7"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F16"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F16"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F50"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F50"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F40"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.003
+  AREALOAD  "F40"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F52"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F52"  "Story3"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F11"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.0015
+  AREALOAD  "F11"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F18"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F18"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F19"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F19"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F8"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.0015
+  AREALOAD  "F8"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F9"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.00075
+  AREALOAD  "F9"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F13"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.0015
+  AREALOAD  "F13"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F23"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.0015
+  AREALOAD  "F23"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F25"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.00075
+  AREALOAD  "F25"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F36"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.00075
+  AREALOAD  "F36"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F44"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.0015
+  AREALOAD  "F44"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F46"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.0015
+  AREALOAD  "F46"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F32"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.0015
+  AREALOAD  "F32"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F47"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "water tank load"  FVAL 0.001775
+  AREALOAD  "F47"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F49"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "Live"  FVAL 0.002
+  AREALOAD  "F49"  "Story4"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
+  AREALOAD  "F41"  "Base"  TYPE "UNIFF"  DIR "GRAV"  LC "stair live"  FVAL 0.003
+  AREALOAD  "F41"  "Base"  TYPE "UNIFF"  DIR "GRAV"  LC "FF"  FVAL 0.0015
 
 $ ANALYSIS OPTIONS
   ACTIVEDOF "UX UY UZ RX RY RZ"  
@@ -1428,6 +1685,8 @@ ETABS Ultimate C  22.7.0 File saved as G:\2082_2083\drg\sansodhan of OK\analysis
 ETABS Ultimate C  22.7.0 File saved as G:\2082_2083\drg\sansodhan of OK\analysis\working file kumar yonjan.EDB at 7/17/2026 4:19:57 PM
 ETABS Ultimate C  22.7.0 File saved as G:\2082_2083\drg\sansodhan of OK\analysis\working file kumar yonjan.EDB at 7/17/2026 4:41:17 PM
 ETABS Ultimate C  22.7.0 File saved as G:\2082_2083\drg\sansodhan of OK\analysis\working file kumar yonjan.EDB at 7/20/2026 3:09:06 PM
+ETABS Ultimate C  22.7.0 File saved as G:\2082_2083\drg\sansodhan of OK\analysis\working file kumar yonjan.EDB at 7/21/2026 4:48:21 PM
+ETABS Ultimate C  22.7.0 File saved as G:\2082_2083\drg\sansodhan of OK\analysis\working file kumar yonjan.EDB at 7/21/2026 4:48:35 PM
   ENDCOMMENTS  
 
   END
