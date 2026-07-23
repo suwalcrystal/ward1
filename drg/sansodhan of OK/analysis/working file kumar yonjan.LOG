@@ -6,7 +6,7 @@
 
 
 
- B E G I N   A N A L Y S I S                                2026/07/23  12:41:02
+ B E G I N   A N A L Y S I S                                2026/07/23  16:47:10
 
 
  RUNNING ANALYSIS AS A SEPARATE PROCESS
@@ -39,7 +39,7 @@
  NUMBER OF THREADS: FORM (AUTOMATIC)       =           6
 
 
- E L E M E N T   F O R M A T I O N                                      12:41:02
+ E L E M E N T   F O R M A T I O N                                      16:47:10
 
 
  NUMBER OF COUPLED CONSTRAINT EQUATIONS    =          48
@@ -50,7 +50,7 @@
    CONSTRAINT MASTER DOF AFTER REDUCTION   =          27
 
 
- L I N E A R   E Q U A T I O N   S O L U T I O N                        12:41:03
+ L I N E A R   E Q U A T I O N   S O L U T I O N                        16:47:10
 
  FORMING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
 
@@ -63,7 +63,7 @@
     (NOTE: FURTHER CHECKS SHOULD BE CONSIDERED AS DEEMED NECESSARY,
      SUCH AS REVIEWING EIGEN MODES FOR MECHANISMS AND RIGID-BODY MOTION)
 
-    NUMBER OF NEGATIVE EIGENVALUES         =          10
+    NUMBER OF NEGATIVE EIGENVALUES         =          11
 
  * * * W A R N I N G * * *
  THE STRUCTURE IS UNSTABLE OR ILL-CONDITIONED !!
@@ -77,7 +77,7 @@
 
 
 
- L I N E A R   S T A T I C   C A S E S                                  12:41:03
+ L I N E A R   S T A T I C   C A S E S                                  16:47:10
 
  USING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
 
@@ -99,7 +99,7 @@
  CASE: ~CHINESEY
 
 
- M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      12:41:03
+ M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      16:47:11
 
  CASE: EQX SLS
 
@@ -112,7 +112,7 @@
  NUMBER OF OUTPUT STEPS SAVED              =           3
 
 
- M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      12:41:03
+ M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      16:47:11
 
  CASE: EQX ULS
 
@@ -125,7 +125,7 @@
  NUMBER OF OUTPUT STEPS SAVED              =           3
 
 
- M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      12:41:03
+ M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      16:47:11
 
  CASE: EQY SLS
 
@@ -138,7 +138,7 @@
  NUMBER OF OUTPUT STEPS SAVED              =           3
 
 
- M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      12:41:03
+ M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      16:47:11
 
  CASE: EQY ULS
 
@@ -151,7 +151,7 @@
  NUMBER OF OUTPUT STEPS SAVED              =           3
 
 
- E I G E N   M O D A L   A N A L Y S I S                                12:41:03
+ E I G E N   M O D A L   A N A L Y S I S                                16:47:11
 
  CASE: MODAL
 
@@ -171,26 +171,26 @@
 
 
  Original stiffness at shift : EV= 0.0000000E+00, f=     .000000, T=  -INFINITY-
- Number of eigenvalues below shift =     10
- Found mode      1 of     12:  EV= 3.3812865E+01, f=    0.925467, T=    1.080535
- Found mode      2 of     12:  EV= 3.7323760E+01, f=    0.972328, T=    1.028459
- Found mode      3 of     12:  EV= 5.3609233E+01, f=    1.165306, T=    0.858144
- Found mode      4 of     12:  EV= 3.5404375E+02, f=    2.994667, T=    0.333927
- Found mode      5 of     12:  EV= 3.5973318E+02, f=    3.018633, T=    0.331276
- Found mode      6 of     12:  EV= 4.7634373E+02, f=    3.473604, T=    0.287885
- Found mode      7 of     12:  EV= 1.0261889E+03, f=    5.098399, T=    0.196140
- Found mode      8 of     12:  EV= 1.0663721E+03, f=    5.197261, T=    0.192409
- Found mode      9 of     12:  EV= 1.2590744E+03, f=    5.647365, T=    0.177074
- Found mode     10 of     12:  EV= 2.1635210E+03, f=    7.402880, T=    0.135083
- Found mode     11 of     12:  EV= 2.2312443E+03, f=    7.517851, T=    0.133017
- Found mode     12 of     12:  EV= 2.6867449E+03, f=    8.249609, T=    0.121218
+ Number of eigenvalues below shift =     11
+ Found mode      1 of     12:  EV= 3.7298845E+01, f=    0.972003, T=    1.028803
+ Found mode      2 of     12:  EV= 4.1156814E+01, f=    1.021036, T=    0.979398
+ Found mode      3 of     12:  EV= 5.5169057E+01, f=    1.182137, T=    0.845925
+ Found mode      4 of     12:  EV= 3.6227896E+02, f=    3.029296, T=    0.330110
+ Found mode      5 of     12:  EV= 3.6995834E+02, f=    3.061234, T=    0.326666
+ Found mode      6 of     12:  EV= 4.7983733E+02, f=    3.486319, T=    0.286835
+ Found mode      7 of     12:  EV= 1.0518014E+03, f=    5.161632, T=    0.193737
+ Found mode      8 of     12:  EV= 1.0864065E+03, f=    5.245855, T=    0.190627
+ Found mode      9 of     12:  EV= 1.2763190E+03, f=    5.685907, T=    0.175873
+ Found mode     10 of     12:  EV= 2.1867233E+03, f=    7.442469, T=    0.134364
+ Found mode     11 of     12:  EV= 2.2606011E+03, f=    7.567146, T=    0.132150
+ Found mode     12 of     12:  EV= 2.7073874E+03, f=    8.281239, T=    0.120755
 
  NUMBER OF EIGEN MODES FOUND               =          12
  NUMBER OF ITERATIONS PERFORMED            =           3
  NUMBER OF STIFFNESS SHIFTS                =           0
 
 
- A N A L Y S I S   C O M P L E T E                          2026/07/23  12:41:03
+ A N A L Y S I S   C O M P L E T E                          2026/07/23  16:47:11
 
 
  ETABS Ultimate C 64-bit 22.7.0 Build 4095 (Analysis Build 9993/64)
@@ -199,7 +199,7 @@
 
 
 
- B E G I N   A N A L Y S I S                                2026/07/23  12:41:05
+ B E G I N   A N A L Y S I S                                2026/07/23  16:47:13
 
 
  RUNNING ANALYSIS AS A SEPARATE PROCESS
@@ -232,7 +232,7 @@
  NUMBER OF THREADS: FORM (AUTOMATIC)       =           6
 
 
- E L E M E N T   F O R M A T I O N                                      12:41:05
+ E L E M E N T   F O R M A T I O N                                      16:47:13
 
 
  NUMBER OF COUPLED CONSTRAINT EQUATIONS    =          48
@@ -243,7 +243,7 @@
    CONSTRAINT MASTER DOF AFTER REDUCTION   =          27
 
 
- L I N E A R   E Q U A T I O N   S O L U T I O N                        12:41:06
+ L I N E A R   E Q U A T I O N   S O L U T I O N                        16:47:13
 
  FORMING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
 
@@ -256,7 +256,7 @@
     (NOTE: FURTHER CHECKS SHOULD BE CONSIDERED AS DEEMED NECESSARY,
      SUCH AS REVIEWING EIGEN MODES FOR MECHANISMS AND RIGID-BODY MOTION)
 
-    NUMBER OF NEGATIVE EIGENVALUES         =          10
+    NUMBER OF NEGATIVE EIGENVALUES         =          11
 
  * * * W A R N I N G * * *
  THE STRUCTURE IS UNSTABLE OR ILL-CONDITIONED !!
@@ -270,7 +270,7 @@
 
 
 
- M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      12:41:06
+ M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      16:47:14
 
  CASE: EQX SLS
 
@@ -283,7 +283,7 @@
  NUMBER OF OUTPUT STEPS SAVED              =           3
 
 
- M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      12:41:06
+ M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      16:47:14
 
  CASE: EQX ULS
 
@@ -296,7 +296,7 @@
  NUMBER OF OUTPUT STEPS SAVED              =           3
 
 
- M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      12:41:06
+ M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      16:47:14
 
  CASE: EQY SLS
 
@@ -309,7 +309,7 @@
  NUMBER OF OUTPUT STEPS SAVED              =           3
 
 
- M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      12:41:06
+ M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      16:47:14
 
  CASE: EQY ULS
 
@@ -322,4 +322,4 @@
  NUMBER OF OUTPUT STEPS SAVED              =           3
 
 
- A N A L Y S I S   C O M P L E T E                          2026/07/23  12:41:06
+ A N A L Y S I S   C O M P L E T E                          2026/07/23  16:47:14
