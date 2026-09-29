@@ -1,0 +1,4 @@
+﻿Index was outside the bounds of the array.
+   at abj.i(Object A_0, EventArgs A_1)
+   at System.Windows.Forms.Timer.TimerNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(HWND hWnd, MessageId msg, WPARAM wparam, LPARAM lparam)

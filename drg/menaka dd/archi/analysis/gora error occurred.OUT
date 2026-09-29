@@ -1,7 +1,7 @@
 
 
  ETABS Ultimate C 64-bit 22.7.0 Build 4095 (Analysis Build 9993/64)             
- File: H:\082_083\ward1\drg\menaka dd\archi\analysis\gora error occurred.OUT    
+ File: G:\2082_2083\drg\menaka dd\archi\analysis\gora error occurred.OUT        
                                                                      
                                                                        
 
@@ -15,12 +15,12 @@
 
                      TRANSLATIONAL MASS AND MASS MOMENTS OF INERTIA
                   U1          U2          U3          R1          R2          R3
-           30.146727   30.146727     .000000     .000000     .000000  3.5200E+08
+           31.004673   31.004673     .000000     .000000     .000000  3.6359E+08
 
                      CENTER OF MASS
   GLOBAL          U1          U2          U3
-     X      3463.548    3463.548    4332.390
-     Y      4794.887    4794.887    4906.535
+     X      3457.775    3457.775    4332.338
+     Y      4785.923    4785.923    4906.454
      Z     13716.000   13716.000   13716.000
 
  14, CONSTR = RIGID, DOF = U1 U2 R3
@@ -33,12 +33,12 @@
 
                      TRANSLATIONAL MASS AND MASS MOMENTS OF INERTIA
                   U1          U2          U3          R1          R2          R3
-           66.676769   66.676769     .000000     .000000     .000000  1.1305E+09
+           68.861243   68.861243     .000000     .000000     .000000  1.1722E+09
 
                      CENTER OF MASS
   GLOBAL          U1          U2          U3
-     X      4360.482    4360.482    5014.823
-     Y      3967.349    3967.349    4211.522
+     X      4389.233    4389.233    5015.014
+     Y      3984.971    3984.971    4211.640
      Z     10972.800   10972.800   10972.800
 
  18, CONSTR = RIGID, DOF = U1 U2 R3
@@ -51,12 +51,12 @@
 
                      TRANSLATIONAL MASS AND MASS MOMENTS OF INERTIA
                   U1          U2          U3          R1          R2          R3
-           88.597828   88.597828     .000000     .000000     .000000  1.5497E+09
+           90.962285   90.962285     .000000     .000000     .000000  1.5953E+09
 
                      CENTER OF MASS
   GLOBAL          U1          U2          U3
-     X      5188.321    5188.321    5126.096
-     Y      3576.385    3576.385    3914.409
+     X      5198.234    5198.234    5126.158
+     Y      3598.991    3598.991    3914.549
      Z      8229.600    8229.600    8229.600
 
  22, CONSTR = RIGID, DOF = U1 U2 R3
@@ -69,12 +69,12 @@
 
                      TRANSLATIONAL MASS AND MASS MOMENTS OF INERTIA
                   U1          U2          U3          R1          R2          R3
-           92.745300   92.745300     .000000     .000000     .000000  1.6414E+09
+           94.031518   94.031518     .000000     .000000     .000000  1.6707E+09
 
                      CENTER OF MASS
   GLOBAL          U1          U2          U3
-     X      5202.970    5202.970    5115.775
-     Y      3597.169    3597.169    3919.428
+     X      5207.608    5207.608    5115.804
+     Y      3616.192    3616.192    3919.547
      Z      5486.400    5486.400    5486.400
 
  26, CONSTR = RIGID, DOF = U1 U2 R3
@@ -87,12 +87,12 @@
 
                      TRANSLATIONAL MASS AND MASS MOMENTS OF INERTIA
                   U1          U2          U3          R1          R2          R3
-           88.203979   88.203979     .000000     .000000     .000000  1.4755E+09
+           90.745094   90.745094     .000000     .000000     .000000  1.5233E+09
 
                      CENTER OF MASS
   GLOBAL          U1          U2          U3
-     X      5120.579    5120.579    4742.995
-     Y      3559.038    3559.038    3416.891
+     X      5141.996    5141.996    4743.154
+     Y      3576.006    3576.006    3417.018
      Z      2743.200    2743.200    2743.200
 
  D I S P L A C E M E N T   D E G R E E S   O F   F R E E D O M
