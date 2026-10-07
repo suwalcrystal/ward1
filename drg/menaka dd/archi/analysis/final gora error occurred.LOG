@@ -1,12 +1,12 @@
 
 
  ETABS Ultimate C 64-bit 22.7.0 Build 4095 (Analysis Build 9993/64)
- File: H:\082_083\ward1\drg\me...dd\archi\analysis\final gora error occurred.LOG
+ File: G:\2082_2083\drg\menaka dd\archi\analysis\final gora error occurred.LOG
 
 
 
 
- B E G I N   A N A L Y S I S                                2026/10/06  20:34:25
+ B E G I N   A N A L Y S I S                                2026/10/07  14:24:39
 
 
  RUNNING ANALYSIS AS A SEPARATE PROCESS
@@ -26,26 +26,26 @@
  UNITS (FORCE, LENGTH, TEMPERATURE, TIME)  = N, mm, °C, sec
  GRAVITATIONAL ACCELERATION                =    9806.650
 
- ADDRESSABLE PHYSICAL MEMORY (RAM)         =       3.899 GB
+ ADDRESSABLE PHYSICAL MEMORY (RAM)         =       7.719 GB
 
  PARALLELIZATION OF ANALYSIS OPERATIONS:
   (Env. variable SAPFIRE_NUM_THREADS not set)
- NUMBER OF THREADS: STATE (AUTOMATIC)      =           4
- NUMBER OF THREADS: STIFFNESS (AUTOMATIC)  =           4
- NUMBER OF THREADS: EVENT (AUTOMATIC)      =           4
- NUMBER OF THREADS: MOVE (AUTOMATIC)       =           4
- NUMBER OF THREADS: RESPONSE (AUTOMATIC)   =           4
- NUMBER OF THREADS: SOLVE (AUTOMATIC)      =           4
- NUMBER OF THREADS: FORM (AUTOMATIC)       =           4
+ NUMBER OF THREADS: STATE (AUTOMATIC)      =           6
+ NUMBER OF THREADS: STIFFNESS (AUTOMATIC)  =           6
+ NUMBER OF THREADS: EVENT (AUTOMATIC)      =           6
+ NUMBER OF THREADS: MOVE (AUTOMATIC)       =           6
+ NUMBER OF THREADS: RESPONSE (AUTOMATIC)   =           6
+ NUMBER OF THREADS: SOLVE (AUTOMATIC)      =           6
+ NUMBER OF THREADS: FORM (AUTOMATIC)       =           6
 
 
- E L E M E N T   F O R M A T I O N                                      20:34:25
+ E L E M E N T   F O R M A T I O N                                      14:24:39
 
 
  NUMBER OF COUPLED CONSTRAINT EQUATIONS    =           0
 
 
- L I N E A R   E Q U A T I O N   S O L U T I O N                        20:34:25
+ L I N E A R   E Q U A T I O N   S O L U T I O N                        14:24:39
 
  FORMING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
 
@@ -62,7 +62,7 @@
  ---------------------------------
 
 
- L I N E A R   S T A T I C   C A S E S                                  20:34:25
+ L I N E A R   S T A T I C   C A S E S                                  14:24:39
 
  USING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
 
@@ -84,7 +84,7 @@
  CASE: ~CHINESEY
 
 
- C E N T E R   O F   R I G I D I T Y  A N A L Y S I S                   20:34:26
+ C E N T E R   O F   R I G I D I T Y  A N A L Y S I S                   14:24:39
 
  CASE: ~CENTER OF RIGIDITY
 
@@ -97,7 +97,7 @@
  NUMBER OF LOADS SAVED                     =          15
 
 
- M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      20:34:26
+ M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      14:24:39
 
  CASE: EQX SLS
 
@@ -110,7 +110,7 @@
  NUMBER OF OUTPUT STEPS SAVED              =           3
 
 
- M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      20:34:26
+ M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      14:24:39
 
  CASE: EQY SLS
 
@@ -123,7 +123,7 @@
  NUMBER OF OUTPUT STEPS SAVED              =           3
 
 
- M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      20:34:26
+ M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      14:24:39
 
  CASE: EQX ULS
 
@@ -136,7 +136,7 @@
  NUMBER OF OUTPUT STEPS SAVED              =           3
 
 
- M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      20:34:26
+ M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      14:24:39
 
  CASE: EQY ULS
 
@@ -149,7 +149,7 @@
  NUMBER OF OUTPUT STEPS SAVED              =           3
 
 
- E I G E N   M O D A L   A N A L Y S I S                                20:34:26
+ E I G E N   M O D A L   A N A L Y S I S                                14:24:39
 
  CASE: MODAL
 
@@ -172,7 +172,7 @@
  Number of eigenvalues below shift =      0
  Found mode      1 of     12:  EV= 4.9060766E+01, f=    1.114775, T=    0.897042
  Found mode      2 of     12:  EV= 5.1967842E+01, f=    1.147328, T=    0.871591
- Found mode      3 of     12:  EV= 8.4216036E+01, f=    1.460554, T=    0.684672
+ Found mode      3 of     12:  EV= 8.4216035E+01, f=    1.460554, T=    0.684672
  Found mode      4 of     12:  EV= 3.9945048E+02, f=    3.180912, T=    0.314375
  Found mode      5 of     12:  EV= 4.2930225E+02, f=    3.297628, T=    0.303248
  Found mode      6 of     12:  EV= 6.3321208E+02, f=    4.004928, T=    0.249692
@@ -188,16 +188,16 @@
  NUMBER OF STIFFNESS SHIFTS                =           0
 
 
- A N A L Y S I S   C O M P L E T E                          2026/10/06  20:34:27
+ A N A L Y S I S   C O M P L E T E                          2026/10/07  14:24:40
 
 
  ETABS Ultimate C 64-bit 22.7.0 Build 4095 (Analysis Build 9993/64)
- File: H:\082_083\ward1\drg\me...dd\archi\analysis\final gora error occurred.LOG
+ File: G:\2082_2083\drg\menaka dd\archi\analysis\final gora error occurred.LOG
 
 
 
 
- B E G I N   A N A L Y S I S                                2026/10/06  20:34:32
+ B E G I N   A N A L Y S I S                                2026/10/07  14:24:42
 
 
  RUNNING ANALYSIS AS A SEPARATE PROCESS
@@ -217,26 +217,26 @@
  UNITS (FORCE, LENGTH, TEMPERATURE, TIME)  = N, mm, °C, sec
  GRAVITATIONAL ACCELERATION                =    9806.650
 
- ADDRESSABLE PHYSICAL MEMORY (RAM)         =       3.899 GB
+ ADDRESSABLE PHYSICAL MEMORY (RAM)         =       7.719 GB
 
  PARALLELIZATION OF ANALYSIS OPERATIONS:
   (Env. variable SAPFIRE_NUM_THREADS not set)
- NUMBER OF THREADS: STATE (AUTOMATIC)      =           4
- NUMBER OF THREADS: STIFFNESS (AUTOMATIC)  =           4
- NUMBER OF THREADS: EVENT (AUTOMATIC)      =           4
- NUMBER OF THREADS: MOVE (AUTOMATIC)       =           4
- NUMBER OF THREADS: RESPONSE (AUTOMATIC)   =           4
- NUMBER OF THREADS: SOLVE (AUTOMATIC)      =           4
- NUMBER OF THREADS: FORM (AUTOMATIC)       =           4
+ NUMBER OF THREADS: STATE (AUTOMATIC)      =           6
+ NUMBER OF THREADS: STIFFNESS (AUTOMATIC)  =           6
+ NUMBER OF THREADS: EVENT (AUTOMATIC)      =           6
+ NUMBER OF THREADS: MOVE (AUTOMATIC)       =           6
+ NUMBER OF THREADS: RESPONSE (AUTOMATIC)   =           6
+ NUMBER OF THREADS: SOLVE (AUTOMATIC)      =           6
+ NUMBER OF THREADS: FORM (AUTOMATIC)       =           6
 
 
- E L E M E N T   F O R M A T I O N                                      20:34:32
+ E L E M E N T   F O R M A T I O N                                      14:24:42
 
 
  NUMBER OF COUPLED CONSTRAINT EQUATIONS    =           0
 
 
- L I N E A R   E Q U A T I O N   S O L U T I O N                        20:34:32
+ L I N E A R   E Q U A T I O N   S O L U T I O N                        14:24:42
 
  FORMING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
 
@@ -253,7 +253,7 @@
  ---------------------------------
 
 
- M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      20:34:32
+ M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      14:24:42
 
  CASE: EQX SLS
 
@@ -266,7 +266,7 @@
  NUMBER OF OUTPUT STEPS SAVED              =           3
 
 
- M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      20:34:32
+ M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      14:24:42
 
  CASE: EQY SLS
 
@@ -279,7 +279,7 @@
  NUMBER OF OUTPUT STEPS SAVED              =           3
 
 
- M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      20:34:32
+ M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      14:24:42
 
  CASE: EQX ULS
 
@@ -292,7 +292,7 @@
  NUMBER OF OUTPUT STEPS SAVED              =           3
 
 
- M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      20:34:32
+ M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      14:24:42
 
  CASE: EQY ULS
 
@@ -305,4 +305,4 @@
  NUMBER OF OUTPUT STEPS SAVED              =           3
 
 
- A N A L Y S I S   C O M P L E T E                          2026/10/06  20:34:32
+ A N A L Y S I S   C O M P L E T E                          2026/10/07  14:24:42
