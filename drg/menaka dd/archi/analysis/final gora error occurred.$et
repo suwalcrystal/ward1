@@ -1,4 +1,4 @@
-$ File G:\2082_2083\drg\menaka dd\archi\analysis\final gora error occurred.$et saved 10/7/2026 2:24:35 PM
+$ File H:\082_083\ward1\drg\menaka dd\archi\analysis\final gora error occurred.$et saved 07/10/2026 18:21:44
  
 $ PROGRAM INFORMATION
   PROGRAM  "ETABS"  VERSION "22.7.0"  
@@ -559,7 +559,7 @@ $ LINE ASSIGNS
   LINEASSIGN  "B3"  "Story2"  SECTION "wall"  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "B7"  "Story2"  SECTION "wall"  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "B8"  "Story2"  SECTION "wall"  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
-  LINEASSIGN  "B9"  "Story2"  SECTION "B 9"" *14"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
+  LINEASSIGN  "B9"  "Story2"  SECTION "B12"" * 17"""  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "B11"  "Story1"  SECTION "wall"  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "B12"  "Story1"  SECTION "wall"  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
   LINEASSIGN  "B14"  "Story1"  SECTION "wall"  CARDINALPT 8  MAXSTASPC 500 AUTOMESH "YES"  MESHATINTERSECTIONS "YES"  
@@ -714,17 +714,17 @@ $ LOAD PATTERNS
 $ POINT OBJECT LOADS
 
 $ FRAME OBJECT LOADS
-  LINELOAD  "B20"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.98
-  LINELOAD  "B6"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.98
-  LINELOAD  "B4"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 8.24
-  LINELOAD  "B22"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.98
-  LINELOAD  "B23"  "Story1"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 5.49  FEND 5.49  RDSTART 0  RDEND 0.7410714  
-  LINELOAD  "B23"  "Story1"  TYPE "TRAPF"  DIR "GRAV"  LC "9"" wall"  FSTART 10.98  FEND 10.98  RDSTART 0.7410714  RDEND 1  
-  LINELOAD  "B25"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 8.24
-  LINELOAD  "B26"  "Story1"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 5.49  FEND 5.49  RDSTART 0  RDEND 0.06989247  
-  LINELOAD  "B38"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.98
-  LINELOAD  "B40"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 8.24
-  LINELOAD  "B48"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 8.24
+  LINELOAD  "B20"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.63
+  LINELOAD  "B6"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.63
+  LINELOAD  "B4"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.97
+  LINELOAD  "B22"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.63
+  LINELOAD  "B23"  "Story1"  TYPE "TRAPF"  DIR "GRAV"  LC "9"" wall"  FSTART 10.63  FEND 10.63  RDSTART 0.7410714  RDEND 1  
+  LINELOAD  "B23"  "Story1"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 5.32  FEND 5.32  RDSTART 0  RDEND 0.7410714  
+  LINELOAD  "B25"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.97
+  LINELOAD  "B26"  "Story1"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 5.32  FEND 5.32  RDSTART 0  RDEND 0.06989247  
+  LINELOAD  "B38"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 10.63
+  LINELOAD  "B40"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.97
+  LINELOAD  "B48"  "Story1"  TYPE "UNIFF"  DIR "GRAV"  LC "9"" wall"  FVAL 7.97
   LINELOAD  "B50"  "Story1"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 4.12  FEND 4.12  RDSTART 0  RDEND 0.24096386  
   LINELOAD  "B50"  "Story1"  TYPE "TRAPF"  DIR "GRAV"  LC "partition wall"  FSTART 5.49  FEND 5.49  RDSTART 0.24096386  RDEND 0.7891566  
   LINELOAD  "B20"  "Story5"  TYPE "UNIFF"  DIR "GRAV"  LC "partition wall"  FVAL 2.1
@@ -1640,6 +1640,16 @@ ETABS Ultimate C  22.7.0 File saved as G:\2082_2083\drg\menaka dd\archi\analysis
 ETABS Ultimate C  22.7.0 File saved as G:\2082_2083\drg\menaka dd\archi\analysis\final gora error occurred.EDB at 10/7/2026 2:23:18 PM
 ETABS Ultimate C  22.7.0 File saved as G:\2082_2083\drg\menaka dd\archi\analysis\final gora error occurred.EDB at 10/7/2026 2:23:21 PM
 ETABS Ultimate C  22.7.0 File saved as G:\2082_2083\drg\menaka dd\archi\analysis\final gora error occurred.EDB at 10/7/2026 2:24:35 PM
+ETABS Ultimate C  22.7.0 File saved as G:\2082_2083\drg\menaka dd\archi\analysis\final gora error occurred.EDB at 10/7/2026 2:24:38 PM
+ETABS Ultimate C  22.7.0 File saved as G:\2082_2083\drg\menaka dd\archi\analysis\final gora error occurred.EDB at 10/7/2026 2:24:38 PM
+ETABS Ultimate C  22.7.0 File saved as G:\2082_2083\drg\menaka dd\archi\analysis\final gora error occurred.EDB at 10/7/2026 2:24:41 PM
+ETABS Ultimate C  22.7.0 File saved as G:\2082_2083\drg\menaka dd\archi\analysis\final gora error occurred.EDB at 10/7/2026 2:24:43 PM
+ETABS Ultimate C  22.7.0 File saved as H:\082_083\ward1\drg\menaka dd\archi\analysis\final gora error occurred.EDB at 07/10/2026 18:15:35
+ETABS Ultimate C  22.7.0 File saved as H:\082_083\ward1\drg\menaka dd\archi\analysis\final gora error occurred.EDB at 07/10/2026 18:15:40
+ETABS Ultimate C  22.7.0 File saved as H:\082_083\ward1\drg\menaka dd\archi\analysis\final gora error occurred.EDB at 07/10/2026 18:15:40
+ETABS Ultimate C  22.7.0 File saved as H:\082_083\ward1\drg\menaka dd\archi\analysis\final gora error occurred.EDB at 07/10/2026 18:15:51
+ETABS Ultimate C  22.7.0 File saved as H:\082_083\ward1\drg\menaka dd\archi\analysis\final gora error occurred.EDB at 07/10/2026 18:15:55
+ETABS Ultimate C  22.7.0 File saved as H:\082_083\ward1\drg\menaka dd\archi\analysis\final gora error occurred.EDB at 07/10/2026 18:21:43
   ENDCOMMENTS  
 
   END

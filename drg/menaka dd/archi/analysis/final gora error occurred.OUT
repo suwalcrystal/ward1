@@ -1,7 +1,7 @@
 
 
  ETABS Ultimate C 64-bit 22.7.0 Build 4095 (Analysis Build 9993/64)             
- File: G:\2082_2083\drg\menaka dd\archi\analysis\final gora error occurred.OUT  
+ File: H:\082_083\ward1\drg\me...dd\archi\analysis\final gora error occurred.OUT
                                                                      
                                                                        
 
@@ -69,12 +69,12 @@
 
                      TRANSLATIONAL MASS AND MASS MOMENTS OF INERTIA
                   U1          U2          U3          R1          R2          R3
-           96.624740   96.624740     .000000     .000000     .000000  1.7246E+09
+           96.719208   96.719208     .000000     .000000     .000000  1.7285E+09
 
                      CENTER OF MASS
   GLOBAL          U1          U2          U3
-     X      5087.551    5087.551    4876.097
-     Y      3594.159    3594.159    3838.170
+     X      5092.716    5092.716    4876.120
+     Y      3590.649    3590.649    3838.154
      Z      5486.400    5486.400    5486.400
 
  26, CONSTR = RIGID, DOF = U1 U2 R3
@@ -87,12 +87,12 @@
 
                      TRANSLATIONAL MASS AND MASS MOMENTS OF INERTIA
                   U1          U2          U3          R1          R2          R3
-           93.243848   93.243848     .000000     .000000     .000000  1.5717E+09
+           92.323508   92.323508     .000000     .000000     .000000  1.5512E+09
 
                      CENTER OF MASS
   GLOBAL          U1          U2          U3
-     X      5024.621    5024.621    4629.997
-     Y      3550.285    3550.285    3495.791
+     X      5022.372    5022.372    4629.986
+     Y      3548.503    3548.503    3495.782
      Z      2743.200    2743.200    2743.200
 
  D I S P L A C E M E N T   D E G R E E S   O F   F R E E D O M
