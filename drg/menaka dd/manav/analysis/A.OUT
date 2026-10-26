@@ -1,0 +1,514 @@
+
+
+ ETABS Ultimate C 64-bit 22.7.0 Build 4095 (Analysis Build 9993/64)             
+ File: H:\082_083\ward1\drg\menaka dd\manav\analysis\A.OUT                      
+                                                                     
+                                                                       
+
+ 5, CONSTR = RIGID, DOF = U1 U2 R3
+
+                     LOCAL COORDINATE SYSTEM FOR CONSTRAINT MASTER
+  GLOBAL          U1          U2          U3          R1          R2          R3
+     X      1.000000     .000000     .000000    1.000000     .000000     .000000
+     Y       .000000    1.000000     .000000     .000000    1.000000     .000000
+     Z       .000000     .000000    1.000000     .000000     .000000    1.000000
+
+                     TRANSLATIONAL MASS AND MASS MOMENTS OF INERTIA
+                  U1          U2          U3          R1          R2          R3
+          482.774761  482.774761     .000000     .000000     .000000  8.9780E+10
+
+                     CENTER OF MASS
+  GLOBAL          U1          U2          U3
+     X     13639.377   13639.377   14084.111
+     Y     10262.464   10262.464   10046.067
+     Z     15240.000   15240.000   15240.000
+
+ 9, CONSTR = RIGID, DOF = U1 U2 R3
+
+                     LOCAL COORDINATE SYSTEM FOR CONSTRAINT MASTER
+  GLOBAL          U1          U2          U3          R1          R2          R3
+     X      1.000000     .000000     .000000    1.000000     .000000     .000000
+     Y       .000000    1.000000     .000000     .000000    1.000000     .000000
+     Z       .000000     .000000    1.000000     .000000     .000000    1.000000
+
+                     TRANSLATIONAL MASS AND MASS MOMENTS OF INERTIA
+                  U1          U2          U3          R1          R2          R3
+          550.432107  550.432107     .000000     .000000     .000000  1.0527E+11
+
+                     CENTER OF MASS
+  GLOBAL          U1          U2          U3
+     X     13622.972   13622.972   14161.365
+     Y     10147.837   10147.837    9812.856
+     Z     12192.000   12192.000   12192.000
+
+ 13, CONSTR = RIGID, DOF = U1 U2 R3
+
+                     LOCAL COORDINATE SYSTEM FOR CONSTRAINT MASTER
+  GLOBAL          U1          U2          U3          R1          R2          R3
+     X      1.000000     .000000     .000000    1.000000     .000000     .000000
+     Y       .000000    1.000000     .000000     .000000    1.000000     .000000
+     Z       .000000     .000000    1.000000     .000000     .000000    1.000000
+
+                     TRANSLATIONAL MASS AND MASS MOMENTS OF INERTIA
+                  U1          U2          U3          R1          R2          R3
+          550.432107  550.432107     .000000     .000000     .000000  1.0527E+11
+
+                     CENTER OF MASS
+  GLOBAL          U1          U2          U3
+     X     13622.972   13622.972   14161.365
+     Y     10147.837   10147.837    9812.856
+     Z      9144.000    9144.000    9144.000
+
+ 17, CONSTR = RIGID, DOF = U1 U2 R3
+
+                     LOCAL COORDINATE SYSTEM FOR CONSTRAINT MASTER
+  GLOBAL          U1          U2          U3          R1          R2          R3
+     X      1.000000     .000000     .000000    1.000000     .000000     .000000
+     Y       .000000    1.000000     .000000     .000000    1.000000     .000000
+     Z       .000000     .000000    1.000000     .000000     .000000    1.000000
+
+                     TRANSLATIONAL MASS AND MASS MOMENTS OF INERTIA
+                  U1          U2          U3          R1          R2          R3
+          687.790471  687.790471     .000000     .000000     .000000  1.2224E+11
+
+                     CENTER OF MASS
+  GLOBAL          U1          U2          U3
+     X     14145.008   14145.008   14602.190
+     Y     12141.875   12141.875   11941.490
+     Z      6096.000    6096.000    6096.000
+
+ 21, CONSTR = RIGID, DOF = U1 U2 R3
+
+                     LOCAL COORDINATE SYSTEM FOR CONSTRAINT MASTER
+  GLOBAL          U1          U2          U3          R1          R2          R3
+     X      1.000000     .000000     .000000    1.000000     .000000     .000000
+     Y       .000000    1.000000     .000000     .000000    1.000000     .000000
+     Z       .000000     .000000    1.000000     .000000     .000000    1.000000
+
+                     TRANSLATIONAL MASS AND MASS MOMENTS OF INERTIA
+                  U1          U2          U3          R1          R2          R3
+          386.761701  386.761701     .000000     .000000     .000000  5.7387E+10
+
+                     CENTER OF MASS
+  GLOBAL          U1          U2          U3
+     X      8125.375    8125.375    7840.178
+     Y     12751.922   12751.922   12672.650
+     Z      3048.000    3048.000    3048.000
+
+ D I S P L A C E M E N T   D E G R E E S   O F   F R E E D O M
+
+         (A) = Active DOF, equilibrium equation
+         (-) = Restrained DOF, reaction computed
+         (+) = Constrained DOF
+         (>) = External substructure DOF
+         ( ) = Null DOF
+
+  JOINTS              UX  UY  UZ  RX  RY  RZ
+  ~15148 TO      42    +   +   A   A   A   +
+      21 TO      17    -   -   -   -   -   -
+     279 TO     277    +   +   A   A   A   +
+     242               A   A   A   A   A   A
+     241 TO     240    +   +   A   A   A   +
+     203               A   A   A   A   A   A
+     198 TO     197    +   +   A   A   A   +
+     167 TO     165    A   A   A   A   A   A
+     164 TO     583    +   +   A   A   A   +
+     582 TO     581    A   A   A   A   A   A
+      26 TO      41    +   +   A   A   A   +
+      20 TO      15    -   -   -   -   -   -
+     276 TO     195    +   +   A   A   A   +
+     161               A   A   A   A   A   A
+     160               +   +   A   A   A   +
+     159               A   A   A   A   A   A
+     158 TO      40    +   +   A   A   A   +
+      19 TO      13    -   -   -   -   -   -
+     273 TO     193    +   +   A   A   A   +
+     155               A   A   A   A   A   A
+     154               +   +   A   A   A   +
+     153               A   A   A   A   A   A
+     152 TO      39    +   +   A   A   A   +
+      12 TO       6    -   -   -   -   -   -
+     270 TO     191    +   +   A   A   A   +
+     149               A   A   A   A   A   A
+     148               +   +   A   A   A   +
+     147               A   A   A   A   A   A
+     146               +   +   A   A   A   +
+     145               A   A   A   A   A   A
+     144               +   +   A   A   A   +
+     143               A   A   A   A   A   A
+     142               +   +   A   A   A   +
+     141               A   A   A   A   A   A
+     140               +   +   A   A   A   +
+     139               A   A   A   A   A   A
+     138 TO   ~1913    +   +   A   A   A   +
+      30               +   +   -   -   -   +
+     364 TO  ~10512    +   +   A   A   A   +
+  ~14781 TO  ~14769    A   A   A   A   A   A
+  ~15027 TO  ~15013    +   +   A   A   A   +
+  ~14803 TO  ~14797    A   A   A   A   A   A
+  ~14796               -   -   -   -   -   -
+  ~14795 TO  ~14789    A   A   A   A   A   A
+  ~14788               -   -   -   -   -   -
+  ~14787 TO  ~14782    A   A   A   A   A   A
+  ~14780               -   -   -   -   -   -
+  ~14779 TO  ~14773    A   A   A   A   A   A
+  ~14772               -   -   -   -   -   -
+  ~14771 TO  ~14765    A   A   A   A   A   A
+  ~14764               -   -   -   -   -   -
+  ~14763 TO  ~14757    A   A   A   A   A   A
+  ~14756               -   -   -   -   -   -
+  ~14755 TO  ~14749    A   A   A   A   A   A
+  ~14748               -   -   -   -   -   -
+  ~14747 TO  ~14741    A   A   A   A   A   A
+  ~14740               -   -   -   -   -   -
+  ~14739 TO  ~14733    A   A   A   A   A   A
+  ~14732               -   -   -   -   -   -
+  ~14731 TO  ~14725    A   A   A   A   A   A
+  ~14724               -   -   -   -   -   -
+  ~14723 TO  ~14717    A   A   A   A   A   A
+  ~14716               -   -   -   -   -   -
+  ~14715 TO  ~14703    A   A   A   A   A   A
+  ~14702               -   -   -   -   -   -
+  ~14673 TO  ~14663    A   A   A   A   A   A
+  ~12584 TO      38    +   +   A   A   A   +
+       5 TO       1    -   -   -   -   -   -
+     280 TO     189    +   +   A   A   A   +
+     135               A   A   A   A   A   A
+     134               +   +   A   A   A   +
+     133               A   A   A   A   A   A
+     132               +   +   A   A   A   +
+     131               A   A   A   A   A   A
+     130               +   +   A   A   A   +
+     129               A   A   A   A   A   A
+     128               +   +   A   A   A   +
+     127               A   A   A   A   A   A
+     126 TO     124    +   +   A   A   A   +
+     102               -   -   -   -   -   -
+     101               +   +   A   A   A   +
+     100               -   -   -   -   -   -
+      99               +   +   A   A   A   +
+  ~14800 TO  ~14790    A   A   A   A   A   A
+  ~10614 TO     372    +   +   A   A   A   +
+      27 TO      29    +   +   -   -   -   +
+  ~10541 TO   ~1778    +   +   A   A   A   +
+  ~14672 TO  ~14662    A   A   A   A   A   A
+  ~14661               -   -   -   -   -   -
+  ~14844 TO  ~14839    A   A   A   A   A   A
+  ~14838               -   -   -   -   -   -
+  ~14837 TO  ~14832    A   A   A   A   A   A
+  ~14831               -   -   -   -   -   -
+  ~10540 TO   ~1777    +   +   A   A   A   +
+  ~14680 TO  ~14675    A   A   A   A   A   A
+  ~14674               -   -   -   -   -   -
+  ~10539 TO  ~10579    +   +   A   A   A   +
+  ~14830 TO  ~14825    A   A   A   A   A   A
+  ~14824               -   -   -   -   -   -
+  ~14687 TO  ~14682    A   A   A   A   A   A
+  ~14681               -   -   -   -   -   -
+  ~13951 TO   ~1776    +   +   A   A   A   +
+  ~14823 TO  ~14819    A   A   A   A   A   A
+  ~14817               -   -   -   -   -   -
+  ~14820 TO  ~14818    A   A   A   A   A   A
+  ~10608 TO   ~1775    +   +   A   A   A   +
+  ~14694 TO  ~14689    A   A   A   A   A   A
+  ~14688               -   -   -   -   -   -
+  ~14701 TO  ~14696    A   A   A   A   A   A
+  ~14695               -   -   -   -   -   -
+  ~14815 TO  ~14805    A   A   A   A   A   A
+  ~14804               -   -   -   -   -   -
+  ~14807               A   A   A   A   A   A
+  ~10607 TO   ~1657    +   +   A   A   A   +
+  ~14506 TO  ~14655    A   A   A   A   A   A
+  ~14654               -   -   -   -   -   -
+  ~14653 TO  ~14648    A   A   A   A   A   A
+  ~14647               -   -   -   -   -   -
+  ~14646 TO  ~14641    A   A   A   A   A   A
+  ~14640               -   -   -   -   -   -
+  ~14639 TO  ~14634    A   A   A   A   A   A
+  ~14633               -   -   -   -   -   -
+  ~14632 TO  ~14621    A   A   A   A   A   A
+  ~14620               -   -   -   -   -   -
+  ~14619 TO  ~14614    A   A   A   A   A   A
+  ~14613               -   -   -   -   -   -
+  ~14612 TO  ~14607    A   A   A   A   A   A
+  ~14606               -   -   -   -   -   -
+  ~14605 TO  ~14600    A   A   A   A   A   A
+  ~14599               -   -   -   -   -   -
+  ~14598 TO  ~14593    A   A   A   A   A   A
+  ~14592               -   -   -   -   -   -
+  ~14591 TO  ~14586    A   A   A   A   A   A
+  ~14585               -   -   -   -   -   -
+  ~14584 TO  ~14579    A   A   A   A   A   A
+  ~14578               -   -   -   -   -   -
+  ~14577 TO  ~14566    A   A   A   A   A   A
+  ~14565               -   -   -   -   -   -
+  ~14564 TO  ~14559    A   A   A   A   A   A
+  ~14558               -   -   -   -   -   -
+  ~14557 TO  ~14552    A   A   A   A   A   A
+  ~14551               -   -   -   -   -   -
+  ~14550 TO  ~14545    A   A   A   A   A   A
+  ~14544               -   -   -   -   -   -
+  ~14543 TO  ~14538    A   A   A   A   A   A
+  ~14537               -   -   -   -   -   -
+  ~14536 TO  ~14531    A   A   A   A   A   A
+  ~14530               -   -   -   -   -   -
+  ~14529 TO  ~14524    A   A   A   A   A   A
+  ~14523               -   -   -   -   -   -
+  ~14522 TO  ~14511    A   A   A   A   A   A
+  ~14510               -   -   -   -   -   -
+  ~14509 TO  ~14503    A   A   A   A   A   A
+  ~14502               -   -   -   -   -   -
+  ~14501 TO  ~14495    A   A   A   A   A   A
+  ~14494               -   -   -   -   -   -
+  ~14493 TO  ~14487    A   A   A   A   A   A
+  ~14486               -   -   -   -   -   -
+  ~14485 TO  ~14479    A   A   A   A   A   A
+  ~14478               -   -   -   -   -   -
+  ~14477 TO  ~14471    A   A   A   A   A   A
+  ~14470               -   -   -   -   -   -
+  ~14469 TO  ~14463    A   A   A   A   A   A
+  ~14462               -   -   -   -   -   -
+  ~14461 TO  ~14455    A   A   A   A   A   A
+  ~14454               -   -   -   -   -   -
+  ~14453 TO  ~14447    A   A   A   A   A   A
+  ~14446               -   -   -   -   -   -
+  ~14445 TO  ~14439    A   A   A   A   A   A
+  ~14438               -   -   -   -   -   -
+  ~14437 TO  ~14425    A   A   A   A   A   A
+  ~14424               -   -   -   -   -   -
+  ~14423 TO  ~14418    A   A   A   A   A   A
+  ~14417               -   -   -   -   -   -
+  ~14416 TO  ~14411    A   A   A   A   A   A
+  ~14410               -   -   -   -   -   -
+  ~14409 TO  ~14404    A   A   A   A   A   A
+  ~14403               -   -   -   -   -   -
+  ~14402 TO  ~14397    A   A   A   A   A   A
+  ~14396               -   -   -   -   -   -
+  ~14395 TO  ~14390    A   A   A   A   A   A
+  ~14389               -   -   -   -   -   -
+  ~14388 TO  ~14383    A   A   A   A   A   A
+  ~14382               -   -   -   -   -   -
+  ~14381 TO  ~14376    A   A   A   A   A   A
+  ~14375               -   -   -   -   -   -
+  ~14374 TO  ~14369    A   A   A   A   A   A
+  ~14368               -   -   -   -   -   -
+  ~14367 TO  ~14362    A   A   A   A   A   A
+  ~14361               -   -   -   -   -   -
+  ~14360 TO  ~14355    A   A   A   A   A   A
+  ~14354               -   -   -   -   -   -
+  ~14353 TO  ~14342    A   A   A   A   A   A
+  ~14341               -   -   -   -   -   -
+  ~14259 TO  ~14249    A   A   A   A   A   A
+  ~14161 TO     117    +   +   A   A   A   +
+      98               -   -   -   -   -   -
+      97               +   +   A   A   A   +
+      96               -   -   -   -   -   -
+      95               +   +   A   A   A   +
+      94               -   -   -   -   -   -
+      93               +   +   A   A   A   +
+      92               -   -   -   -   -   -
+      91               +   +   A   A   A   +
+      90               -   -   -   -   -   -
+      89               +   +   A   A   A   +
+      88               -   -   -   -   -   -
+      87               +   +   A   A   A   +
+      86               -   -   -   -   -   -
+      85               +   +   A   A   A   +
+  ~14500 TO  ~14481    A   A   A   A   A   A
+  ~13304 TO   ~2967    +   +   A   A   A   +
+  ~14260 TO  ~14248    A   A   A   A   A   A
+  ~14247               -   -   -   -   -   -
+  ~14168 TO   ~2965    +   +   A   A   A   +
+  ~14268 TO  ~14262    A   A   A   A   A   A
+  ~14261               -   -   -   -   -   -
+  ~14169 TO   ~1490    +   +   A   A   A   +
+  ~14276 TO  ~14270    A   A   A   A   A   A
+  ~14269               -   -   -   -   -   -
+  ~14170 TO   ~1483    +   +   A   A   A   +
+  ~14284 TO  ~14278    A   A   A   A   A   A
+  ~14277               -   -   -   -   -   -
+  ~14171 TO   ~1476    +   +   A   A   A   +
+  ~14292 TO  ~14286    A   A   A   A   A   A
+  ~14285               -   -   -   -   -   -
+     566 TO     321    +   +   A   A   A   +
+      31               +   +   -   -   -   +
+  ~14987 TO  ~14934    A   A   A   A   A   A
+  ~14037 TO  ~14033    +   +   A   A   A   +
+  ~12474 TO  ~12421    A   A   A   A   A   A
+  ~12197 TO  ~12193    +   +   A   A   A   +
+   ~8854 TO   ~8801    A   A   A   A   A   A
+   ~8577 TO   ~8573    +   +   A   A   A   +
+   ~5969 TO   ~5916    A   A   A   A   A   A
+   ~5692 TO   ~5688    +   +   A   A   A   +
+   ~3272 TO   ~3219    A   A   A   A   A   A
+   ~2915 TO   ~2911    +   +   A   A   A   +
+      23 TO      22    -   -   -   -   -   -
+     294 TO     283    +   +   A   A   A   +
+  ~14300 TO  ~14294    A   A   A   A   A   A
+  ~14293               -   -   -   -   -   -
+   ~3124 TO   ~1577    +   +   A   A   A   +
+  ~14981 TO  ~14976    A   A   A   A   A   A
+  ~14975               -   -   -   -   -   -
+  ~14933 TO  ~14928    A   A   A   A   A   A
+  ~14927               -   -   -   -   -   -
+  ~12468 TO   ~3216    A   A   A   A   A   A
+   ~2957 TO   ~2951    +   +   A   A   A   +
+  ~14303 TO  ~14302    A   A   A   A   A   A
+  ~14301               -   -   -   -   -   -
+   ~3125 TO   ~1588    +   +   A   A   A   +
+  ~14974 TO  ~14969    A   A   A   A   A   A
+  ~14968               -   -   -   -   -   -
+  ~14925 TO  ~14921    A   A   A   A   A   A
+  ~14920               -   -   -   -   -   -
+  ~12460 TO   ~3208    A   A   A   A   A   A
+   ~2950 TO   ~2944    +   +   A   A   A   +
+  ~14316 TO  ~14310    A   A   A   A   A   A
+  ~14309               -   -   -   -   -   -
+  ~14311               A   A   A   A   A   A
+   ~3126 TO   ~1595    +   +   A   A   A   +
+  ~14967 TO  ~14963    A   A   A   A   A   A
+  ~14961               -   -   -   -   -   -
+  ~14919 TO  ~14915    A   A   A   A   A   A
+  ~14913               -   -   -   -   -   -
+  ~12454 TO   ~3199    A   A   A   A   A   A
+   ~2943 TO   ~2937    +   +   A   A   A   +
+  ~14324 TO  ~14318    A   A   A   A   A   A
+  ~14317               -   -   -   -   -   -
+   ~3127 TO   ~1602    +   +   A   A   A   +
+  ~14958 TO  ~14955    A   A   A   A   A   A
+  ~14954               -   -   -   -   -   -
+  ~14912 TO  ~14907    A   A   A   A   A   A
+  ~14906               -   -   -   -   -   -
+  ~12447 TO   ~3191    A   A   A   A   A   A
+   ~2936 TO   ~2930    +   +   A   A   A   +
+  ~14332 TO  ~14326    A   A   A   A   A   A
+  ~14325               -   -   -   -   -   -
+   ~3128 TO   ~1609    +   +   A   A   A   +
+  ~14950 TO  ~14951    A   A   A   A   A   A
+  ~14947               -   -   -   -   -   -
+  ~14905 TO  ~14903    A   A   A   A   A   A
+  ~14899               -   -   -   -   -   -
+  ~12440 TO   ~3186    A   A   A   A   A   A
+   ~2929 TO   ~2923    +   +   A   A   A   +
+  ~14340 TO  ~14334    A   A   A   A   A   A
+  ~14333               -   -   -   -   -   -
+   ~3129 TO   ~3040    +   +   A   A   A   +
+  ~14946 TO  ~14941    A   A   A   A   A   A
+  ~14940               -   -   -   -   -   -
+  ~14898 TO  ~14893    A   A   A   A   A   A
+  ~14892               -   -   -   -   -   -
+  ~12433 TO   ~3177    A   A   A   A   A   A
+   ~2922 TO   ~1022    +   +   A   A   A   +
+  ~14891 TO  ~14880    A   A   A   A   A   A
+  ~14879               -   -   -   -   -   -
+  ~14878 TO  ~14873    A   A   A   A   A   A
+  ~14872               -   -   -   -   -   -
+  ~14871 TO  ~14866    A   A   A   A   A   A
+  ~14865               -   -   -   -   -   -
+  ~14864 TO  ~14859    A   A   A   A   A   A
+  ~14858               -   -   -   -   -   -
+  ~14857 TO  ~14846    A   A   A   A   A   A
+  ~14845               -   -   -   -   -   -
+  ~14184 TO  ~14174    A   A   A   A   A   A
+  ~14069 TO  ~13360    +   +   A   A   A   +
+  ~12378 TO  ~12367    A   A   A   A   A   A
+  ~12366               +   +   A   A   A   +
+  ~12365 TO  ~12360    A   A   A   A   A   A
+  ~12359               +   +   A   A   A   +
+  ~12358 TO  ~12353    A   A   A   A   A   A
+  ~12352               +   +   A   A   A   +
+  ~12351 TO  ~12346    A   A   A   A   A   A
+  ~12345               +   +   A   A   A   +
+  ~12344 TO  ~12333    A   A   A   A   A   A
+  ~12332 TO   ~9379    +   +   A   A   A   +
+   ~8758 TO   ~8747    A   A   A   A   A   A
+   ~8746               +   +   A   A   A   +
+   ~8745 TO   ~8740    A   A   A   A   A   A
+   ~8739               +   +   A   A   A   +
+   ~8738 TO   ~8733    A   A   A   A   A   A
+   ~8732               +   +   A   A   A   +
+   ~8731 TO   ~8726    A   A   A   A   A   A
+   ~8725               +   +   A   A   A   +
+   ~8724 TO   ~8713    A   A   A   A   A   A
+   ~8712 TO   ~6494    +   +   A   A   A   +
+   ~5873 TO   ~5862    A   A   A   A   A   A
+   ~5861               +   +   A   A   A   +
+   ~5860 TO   ~5855    A   A   A   A   A   A
+   ~5854               +   +   A   A   A   +
+   ~5853 TO   ~5848    A   A   A   A   A   A
+   ~5847               +   +   A   A   A   +
+   ~5846 TO   ~5841    A   A   A   A   A   A
+   ~5840               +   +   A   A   A   +
+   ~5839 TO   ~5828    A   A   A   A   A   A
+   ~5827 TO   ~3609    +   +   A   A   A   +
+   ~3176 TO   ~3165    A   A   A   A   A   A
+   ~3164               +   +   A   A   A   +
+   ~3163 TO   ~3158    A   A   A   A   A   A
+   ~3157               +   +   A   A   A   +
+   ~3156 TO   ~3151    A   A   A   A   A   A
+   ~3150               +   +   A   A   A   +
+   ~3149 TO   ~3144    A   A   A   A   A   A
+   ~3143               +   +   A   A   A   +
+   ~3142 TO   ~3131    A   A   A   A   A   A
+   ~3130 TO     110    +   +   A   A   A   +
+      84               -   -   -   -   -   -
+      83               +   +   A   A   A   +
+      82               -   -   -   -   -   -
+      81               +   +   A   A   A   +
+      80               -   -   -   -   -   -
+      79               +   +   A   A   A   +
+      78               -   -   -   -   -   -
+      77               +   +   A   A   A   +
+      76               -   -   -   -   -   -
+      75               +   +   A   A   A   +
+      74               -   -   -   -   -   -
+      73               +   +   A   A   A   +
+      72               -   -   -   -   -   -
+      71               +   +   A   A   A   +
+  ~14885 TO   ~3170    A   A   A   A   A   A
+  ~12872 TO    ~642    +   +   A   A   A   +
+  ~14183 TO  ~14173    A   A   A   A   A   A
+  ~14172               -   -   -   -   -   -
+  ~13891 TO   ~1140    +   +   A   A   A   +
+  ~14191 TO  ~14186    A   A   A   A   A   A
+  ~14185               -   -   -   -   -   -
+  ~13839 TO   ~1133    +   +   A   A   A   +
+  ~14198 TO  ~14193    A   A   A   A   A   A
+  ~14192               -   -   -   -   -   -
+  ~13832 TO   ~1000    +   +   A   A   A   +
+  ~14205 TO  ~14200    A   A   A   A   A   A
+  ~14199               -   -   -   -   -   -
+     536 TO    ~578    +   +   A   A   A   +
+  ~14212 TO  ~14207    A   A   A   A   A   A
+  ~14206               -   -   -   -   -   -
+  ~13721 TO    ~958    +   +   A   A   A   +
+  ~14219 TO  ~14214    A   A   A   A   A   A
+  ~14213               -   -   -   -   -   -
+  ~14226 TO  ~14221    A   A   A   A   A   A
+  ~14220               -   -   -   -   -   -
+  ~13751 TO    ~976    +   +   A   A   A   +
+  ~14233 TO  ~14228    A   A   A   A   A   A
+  ~14227               -   -   -   -   -   -
+  ~14240 TO  ~14235    A   A   A   A   A   A
+  ~14234               -   -   -   -   -   -
+  ~13746 TO   ~1077    +   +   A   A   A   +
+  ~14246 TO  ~14241    A   A   A   A   A   A
+  ~13821 TO     103    +   +   A   A   A   +
+      70               -   -   -   -   -   -
+      69               +   +   A   A   A   +
+      68               -   -   -   -   -   -
+      67               +   +   A   A   A   +
+      66               -   -   -   -   -   -
+      65               +   +   A   A   A   +
+      64               -   -   -   -   -   -
+      63               +   +   A   A   A   +
+      62               -   -   -   -   -   -
+      61               +   +   A   A   A   +
+      60               -   -   -   -   -   -
+      59               +   +   A   A   A   +
+      58               -   -   -   -   -   -
+      57 TO     281    +   +   A   A   A   +
+    NULL                                    
+
+  CONSTRAINTS         U1  U2  U3  R1  R2  R3
+ 5       TO 21         A   A               A
