@@ -6,7 +6,7 @@
 
 
 
- B E G I N   A N A L Y S I S                                2026/11/18  14:36:19
+ B E G I N   A N A L Y S I S                                2026/11/19  06:13:01
 
 
  RUNNING ANALYSIS AS A SEPARATE PROCESS
@@ -39,13 +39,13 @@
  NUMBER OF THREADS: FORM (AUTOMATIC)       =           4
 
 
- E L E M E N T   F O R M A T I O N                                      14:36:19
+ E L E M E N T   F O R M A T I O N                                      06:13:01
 
 
  NUMBER OF COUPLED CONSTRAINT EQUATIONS    =           0
 
 
- L I N E A R   E Q U A T I O N   S O L U T I O N                        14:36:20
+ L I N E A R   E Q U A T I O N   S O L U T I O N                        06:13:01
 
  FORMING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
 
@@ -62,7 +62,7 @@
  ---------------------------------
 
 
- L I N E A R   S T A T I C   C A S E S                                  14:36:20
+ L I N E A R   S T A T I C   C A S E S                                  06:13:01
 
  USING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
 
@@ -84,7 +84,7 @@
  CASE: ~CHINESEY
 
 
- M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      14:36:20
+ M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      06:13:01
 
  CASE: EQX SLS
 
@@ -97,7 +97,7 @@
  NUMBER OF OUTPUT STEPS SAVED              =           3
 
 
- M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      14:36:20
+ M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      06:13:01
 
  CASE: EQY SLS
 
@@ -110,7 +110,7 @@
  NUMBER OF OUTPUT STEPS SAVED              =           3
 
 
- M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      14:36:20
+ M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      06:13:01
 
  CASE: EQX ULS
 
@@ -123,7 +123,7 @@
  NUMBER OF OUTPUT STEPS SAVED              =           3
 
 
- M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      14:36:20
+ M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      06:13:01
 
  CASE: EQY ULS
 
@@ -136,7 +136,7 @@
  NUMBER OF OUTPUT STEPS SAVED              =           3
 
 
- E I G E N   M O D A L   A N A L Y S I S                                14:36:20
+ E I G E N   M O D A L   A N A L Y S I S                                06:13:01
 
  CASE: MODAL
 
@@ -171,15 +171,15 @@
  Found mode      7 of     11:  EV= 2.8649645E+03, f=    8.518826, T=    0.117387
  Found mode      8 of     11:  EV= 3.2657755E+03, f=    9.095222, T=    0.109948
  Found mode      9 of     11:  EV= 3.8507318E+03, f=    9.876243, T=    0.101253
- Found mode     10 of     11:  EV= 1.6533367E+08, f=    2046.448, T=    0.000489
- Found mode     11 of     11:  EV= 4.6543674E+08, f=    3433.606, T=    0.000291
+ Found mode     10 of     11:  EV= 1.6533433E+08, f=    2046.452, T=    0.000489
+ Found mode     11 of     11:  EV= 4.6544202E+08, f=    3433.625, T=    0.000291
 
  NUMBER OF EIGEN MODES FOUND               =          11
  NUMBER OF ITERATIONS PERFORMED            =           1
  NUMBER OF STIFFNESS SHIFTS                =           0
 
 
- A N A L Y S I S   C O M P L E T E                          2026/11/18  14:36:20
+ A N A L Y S I S   C O M P L E T E                          2026/11/19  06:13:01
 
 
  ETABS Ultimate C 64-bit 22.7.0 Build 4095 (Analysis Build 9993/64)
@@ -188,7 +188,7 @@
 
 
 
- B E G I N   A N A L Y S I S                                2026/11/18  14:36:24
+ B E G I N   A N A L Y S I S                                2026/11/19  06:13:05
 
 
  RUNNING ANALYSIS AS A SEPARATE PROCESS
@@ -221,13 +221,13 @@
  NUMBER OF THREADS: FORM (AUTOMATIC)       =           4
 
 
- E L E M E N T   F O R M A T I O N                                      14:36:24
+ E L E M E N T   F O R M A T I O N                                      06:13:05
 
 
  NUMBER OF COUPLED CONSTRAINT EQUATIONS    =           0
 
 
- L I N E A R   E Q U A T I O N   S O L U T I O N                        14:36:24
+ L I N E A R   E Q U A T I O N   S O L U T I O N                        06:13:05
 
  FORMING STIFFNESS AT ZERO (UNSTRESSED) INITIAL CONDITIONS
 
@@ -244,7 +244,7 @@
  ---------------------------------
 
 
- M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      14:36:24
+ M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      06:13:05
 
  CASE: EQX SLS
 
@@ -257,7 +257,7 @@
  NUMBER OF OUTPUT STEPS SAVED              =           3
 
 
- M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      14:36:24
+ M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      06:13:05
 
  CASE: EQY SLS
 
@@ -270,7 +270,7 @@
  NUMBER OF OUTPUT STEPS SAVED              =           3
 
 
- M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      14:36:24
+ M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      06:13:06
 
  CASE: EQX ULS
 
@@ -283,7 +283,7 @@
  NUMBER OF OUTPUT STEPS SAVED              =           3
 
 
- M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      14:36:24
+ M U L T I - S T E P   L I N E A R   S T A T I C   A N A L Y S I S      06:13:06
 
  CASE: EQY ULS
 
@@ -296,4 +296,4 @@
  NUMBER OF OUTPUT STEPS SAVED              =           3
 
 
- A N A L Y S I S   C O M P L E T E                          2026/11/18  14:36:24
+ A N A L Y S I S   C O M P L E T E                          2026/11/19  06:13:06
